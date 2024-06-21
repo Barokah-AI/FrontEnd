@@ -11,6 +11,9 @@ function App() {
       <main>
         <Chatbot />
       </main>
+      <footer className="App-footer">
+        <p>© 2024 Barokah Chatbot AI . All rights reserved.</p>
+      </footer>
     </div>
   );
 }
