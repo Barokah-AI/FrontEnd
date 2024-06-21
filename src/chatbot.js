@@ -32,7 +32,13 @@ const Chatbot = () => {
         ))}
       </div>
       <form className="chatbot-form" onSubmit={handleMessageSubmit}>
-        
+        <input
+          type="text"
+          value={newMessage}
+          onChange={(e) => setNewMessage(e.target.value)}
+          placeholder="Ketik pesan..."
+        />
+        <button type="submit">Kirim</button>
       </form>
     </div>
   );
