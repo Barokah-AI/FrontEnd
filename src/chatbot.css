@@ -11,4 +11,48 @@
     background-color: #fff;
   }
   
- 
+ /* Gaya pesan yang lebih baik */
+ .chatbot-messages {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #f1f1f1;
+}
+
+/* Gaya pesan individual */
+.message {
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 75%;
+  word-wrap: break-word;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message.user {
+  background-color: #dcf8c6;
+  align-self: flex-end;
+}
+
+.message.bot {
+  background-color: #e3e3e3;
+  align-self: flex-start;
+}
+
+/* Gaya form input dan tombol */
+.chatbot-form {
+  display: flex;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.chatbot-form input {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  margin-right: 10px;
+  font-size: 1em;
+}
+

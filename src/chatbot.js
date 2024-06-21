@@ -3,6 +3,7 @@ import './chatbot.css';
 
 const Chatbot = () => {
   const [messages, setMessages] = useState([
+    { text: 'Halo! Ada yang bisa saya bantu?', sender: 'bot' }
   ]);
   const [newMessage, setNewMessage] = useState('');
 
@@ -30,6 +31,9 @@ const Chatbot = () => {
           </div>
         ))}
       </div>
+      <form className="chatbot-form" onSubmit={handleMessageSubmit}>
+        
+      </form>
     </div>
   );
 };
