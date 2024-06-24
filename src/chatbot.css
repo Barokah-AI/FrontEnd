@@ -1,45 +1,48 @@
 .chatbot-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 400px;
-    height: 600px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-  }
-  
- /* Gaya pesan yang lebih baik */
- .chatbot-messages {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin-left: 10px;
+}
+
+.chatbot-messages {
   flex: 1;
   padding: 20px;
   overflow-y: auto;
   background-color: #f1f1f1;
 }
 
-/* Gaya pesan individual */
-.message {
+.message-wrapper {
+  display: flex;
   margin: 10px 0;
+}
+
+.message {
   padding: 15px;
   border-radius: 10px;
-  max-width: 75%;
   word-wrap: break-word;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 75%;
 }
 
 .message.user {
   background-color: #dcf8c6;
-  align-self: flex-end;
+  margin-left: auto;
+  text-align: right;
 }
 
 .message.bot {
   background-color: #e3e3e3;
-  align-self: flex-start;
+  margin-right: auto;
+  text-align: left;
 }
 
-/* Gaya form input dan tombol */
 .chatbot-form {
   display: flex;
   padding: 20px;
