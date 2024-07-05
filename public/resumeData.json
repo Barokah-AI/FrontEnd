@@ -59,6 +59,41 @@
         "npm":"1214040",
         "lahir":"30 Agustus 2003",
         "description":"Ini marlina, mahasiswa D4 Teknik Informatika. Saat ini dia pusing dan capek karena banyak tugas yang harus diselesaikan. Tapi dia tetap semangat dan berusaha untuk menyelesaikan tugasnya."
+      },
+      {
+        "image":"agita.png",
+        "nama":"Agita Nurfadillah",
+        "npm":"1214029",
+        "lahir":"30 Agustus 2003",
+        "description":"Ini agita, mahasiswa D4 Teknik Informatika. Saat ini dia pusing dan capek karena banyak tugas yang harus diselesaikan. Tapi dia tetap semangat dan berusaha untuk menyelesaikan tugasnya."
+      },
+      {
+        "image":"ade.png",
+        "nama":"Ade Candra",
+        "npm":"1214048",
+        "lahir":"30 Agustus 2003",
+        "description":"Ini ade, mahasiswa D4 Teknik Informatika. Saat ini dia pusing dan capek karena banyak tugas yang harus diselesaikan. Tapi dia tetap semangat dan berusaha untuk menyelesaikan tugasnya."
+      },
+      {
+        "image":"dimas.png",
+        "nama":"Dimas Ardianto",
+        "npm":"1214054",
+        "lahir":"30 Agustus 2003",
+        "description":"Ini dimas, mahasiswa D4 Teknik Informatika. Saat ini dia pusing dan capek karena banyak tugas yang harus diselesaikan. Tapi dia tetap semangat dan berusaha untuk menyelesaikan tugasnya."
+      },
+      {
+        "image":"dito.png",
+        "nama":"Erdito Nausha Adam",
+        "npm":"1214031",
+        "lahir":"30 Agustus 2003",
+        "description":"Ini dito, mahasiswa D4 Teknik Informatika. Saat ini dia pusing dan capek karena banyak tugas yang harus diselesaikan. Tapi dia tetap semangat dan berusaha untuk menyelesaikan tugasnya."
+      },
+      {
+        "image":"",
+        "nama":"Dani Ferdinan",
+        "npm":"1214050",
+        "lahir":"30 Agustus 2003",
+        "description":"Ini dito, mahasiswa D4 Teknik Informatika. Saat ini dia pusing dan capek karena banyak tugas yang harus diselesaikan. Tapi dia tetap semangat dan berusaha untuk menyelesaikan tugasnya."
       }
     ]
   }
