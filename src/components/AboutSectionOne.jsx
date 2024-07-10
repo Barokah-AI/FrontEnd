@@ -34,15 +34,15 @@ const AboutSectionOne = () => {
               >
                 <div className="mx-[-12px] flex flex-wrap">
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Premium quality" />
-                    <List text="Tailwind CSS" />
-                    <List text="Use for lifetime" />
+                    <List text="Pemrosesan Bahasa Alami (NLP)" />
+                    <List text="Pembelajaran Mesin (Machine Learning)" />
+                    <List text="Multi Bahasa" />
                   </div>
 
                   <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                    <List text="Next.js" />
-                    <List text="Rich documentation" />
-                    <List text="Developer friendly" />
+                    <List text="Personalisasi" />
+                    <List text="Integrasi yang Mudah" />
+                    <List text="Keamanan dan Privasi" />
                   </div>
                 </div>
               </div>
