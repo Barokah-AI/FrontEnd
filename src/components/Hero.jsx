@@ -16,15 +16,16 @@ const Hero = () => {
                   Barokah AI
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Welcome! Kita siap bantu kamu jawab pertanyaan dan nikmati kemudahan ngobrol yang selalu siap sedia.
-                  Yuk, mulai percakapan seru dengan Barokah AI sekarang.
+                  Welcome! Kita siap bantu kamu jawab pertanyaan dan nikmati
+                  kemudahan ngobrol yang selalu siap sedia. Yuk, mulai
+                  percakapan seru dengan Barokah AI sekarang.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
                     to="/chat"
                     className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
-                    Chatbot
+                    Get Started
                   </Link>
                   <Link
                     to="https://github.com/Barokah-AI/FrontEnd"

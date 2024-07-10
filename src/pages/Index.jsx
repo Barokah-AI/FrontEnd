@@ -3,8 +3,7 @@ import ScrollUp from "../components/ScrollUp";
 import Hero from "../components/Hero";
 import Features from "../components/Features";
 import Brands from "../components/Brands";
-import AboutSectionOne from "../components/AboutSectionOne";
-import AboutSectionTwo from "../components/AboutSectionTwo";
+import About from "../components/About";
 import Testimonials from "../components/Testimonials";
 import Contact from "../components/Contact";
 import Header from "../components/Header";
@@ -16,8 +15,7 @@ const Index = () => {
       <Header />
       <ScrollUp />
       <Hero />
-      <AboutSectionOne />
-      <AboutSectionTwo />
+      <About />
       <Brands />
       <Features />
       <Testimonials />

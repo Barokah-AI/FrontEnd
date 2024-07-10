@@ -2,25 +2,25 @@ const menuData = [
   {
     id: 1,
     title: "Home",
-    path: "/",
+    path: "#home",
     newTab: false,
   },
   {
     id: 2,
     title: "About",
-    path: "/about",
+    path: "#about",
     newTab: false,
   },
   {
     id: 3,
     title: "Features",
-    path: "/features",
+    path: "#features",
     newTab: false,
   },
   {
     id: 4,
     title: "Profile",
-    path: "/profile",
+    path: "#profile",
     newTab: false,
   },
 ];
