@@ -23,8 +23,8 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Crafted for Startup, SaaS and Business Sites."
-                paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
+                title="Barokah-AI"
+                paragraph="BarokahAI adalah teman digital yang hadir untuk menjawab semua pertanyaan kamu dengan cepat dan tepat. Menggunakan kecerdasan buatan, BarokahAI menyediakan informasi yang kamu butuhkan. Dengan fitur canggih dan antarmuka yang ramah pengguna, BarokahAI hadir untuk memberikan dukungan yang aman dan dapat diandalkan. Mari jelajahi pengetahuan baru dan temukan kemudahan dalam setiap interaksi dengan BarokahAI!"
                 mb="44px"
               />
 
