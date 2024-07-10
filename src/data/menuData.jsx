@@ -13,14 +13,14 @@ const menuData = [
   },
   {
     id: 3,
-    title: "Blog",
-    path: "/blog",
+    title: "Features",
+    path: "/features",
     newTab: false,
   },
   {
     id: 4,
-    title: "Support",
-    path: "/contact",
+    title: "Profile",
+    path: "/profile",
     newTab: false,
   },
 ];
