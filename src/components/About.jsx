@@ -20,12 +20,12 @@ const About = () => {
     <section id="about">
       <div className="pt-16 md:pt-20 lg:pt-28">
         <div className="container">
-          <div className="border-b border-body-color-[0.15] pb-16 dark:border-white-[0.15] md:pb-20 lg:pb-28">
+          <div className="pb-16 md:pb-20 lg:pb-28">
             <div className="-mx-4 flex flex-wrap items-center">
               <div className="w-full px-4 lg:w-1/2">
                 <SectionTitle
                   title="Barokah-AI"
-                  paragraph="BarokahAI adalah teman digital yang hadir untuk menjawab semua pertanyaan kamu dengan cepat dan tepat. Menggunakan kecerdasan buatan, BarokahAI menyediakan informasi yang kamu butuhkan. Dengan fitur canggih dan antarmuka yang ramah pengguna, BarokahAI hadir untuk memberikan dukungan yang aman dan dapat diandalkan. Mari jelajahi pengetahuan baru dan temukan kemudahan dalam setiap interaksi dengan BarokahAI!"
+                  paragraph="BarokahAI is a digital friend who is here to answer all your questions quickly and precisely. Using artificial intelligence, BarokahAI provides the information you need. With advanced features and a user-friendly interface, BarokahAI is here to provide safe and reliable support. Let's explore new knowledge and find ease in every interaction with BarokahAI!"
                   mb="44px"
                 />
 
@@ -52,7 +52,7 @@ const About = () => {
               <div className="w-full px-4 lg:w-1/2">
                 <div className="relative mx-auto aspect-w-25 aspect-h-24 max-w-[500px] lg:mr-0">
                   <img
-                    src="/images/about/about-image.svg"
+                    src="https://github.com/Barokah-AI/FrontEnd/assets/94734096/d42f6324-a33d-4103-8e60-9b7288c3fa74"
                     alt="about-image"
                     className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
                   />
@@ -93,39 +93,27 @@ const About = () => {
               <div className="max-w-[470px]">
                 <div className="mb-9">
                   <h2 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                    Langkah-langkah
+                    Step by Step to Use Barokah-AI
                   </h2>
                   <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                    1. Mengakses Website atau Aplikasi:
+                    Accessing the Website or Application:
                   </h3>
                   <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                    • Buka browser favorit lo dan kunjungi website resmi
-                    Barokah-AI di https://barokah-ai.vercel.app{" "}
-                  </p>
-                  <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                    • Di halaman utama website atau aplikasi, kamu bakal liat
-                    ikon atau kotak chat Barokah-AI. Klik aja buat mulai
-                    ngobrol.
+                    Open your favorite browser and visit the official Barokah-AI
+                    website at https://barokah-ai.vercel.app. On the main page
+                    of the website or application, you will see the Barokah-AI
+                    icon or chat box. Just click to start chatting.
                   </p>
                 </div>
                 <div className="mb-9">
                   <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                    2. Memulai Interaksi:
+                    Starting Interaction:
                   </h3>
                   <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                    • Ketik pertanyaan atau perintah kamu di kotak chat.
-                    Barokah-AI bakal langsung jawab dengan cepat dan tepat. Kamu
-                    bisa nanya apa aja, mulai dari info produk, bantuan teknis,
-                    saran personal, atau sekedar ngobrol santai.
-                  </p>
-                </div>
-                <div className="mb-1">
-                  <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                    Next.js
-                  </h3>
-                  <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                    Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
-                    consectetur adipiscing elit setim.
+                    Type your question or command in the chat box. Barokah-AI
+                    will immediately answer quickly and accurately. You can ask
+                    anything, starting from product information, technical
+                    assistance, personal advice, or just casual chat.
                   </p>
                 </div>
               </div>
