@@ -12,14 +12,12 @@ const Hero = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div className="mx-auto max-w-[800px] text-center">
-                <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Free and Open-Source Next.js Template for Startup & SaaS
+                <h1 className="mb-5 text-5xl font-extrabold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-green-500 dark:text-white sm:text-6xl sm:leading-tight md:text-7xl md:leading-tight">
+                  Barokah AI
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
-                  Startup is free Next.js template for startups and SaaS
-                  business websites comes with all the essential pages,
-                  components, and sections you need to launch a complete
-                  business website, built-with Next 13.x and Tailwind CSS.
+                  Welcome! Kita siap bantu kamu jawab pertanyaan dan nikmati kemudahan ngobrol yang selalu siap sedia.
+                  Yuk, mulai percakapan seru dengan Barokah AI sekarang.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
@@ -29,7 +27,7 @@ const Hero = () => {
                     Chatbot
                   </Link>
                   <Link
-                    href="https://github.com/NextJSTemplates/startup-nextjs"
+                    to="https://github.com/NextJSTemplates/startup-nextjs"
                     className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
                     Star on GitHub
