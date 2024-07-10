@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
 const useConversations = () => {
-  const api = "http://127.0.0.1:5000/chat";
-  //   const api =
-  //     "https://asia-southeast2-erditona-dev.cloudfunctions.net/barokahai/chat";
+  // const api = "http://127.0.0.1:5000/chat";
+  const api =
+    "https://asia-southeast2-erditona-dev.cloudfunctions.net/barokahai/chat";
 
   const [input, setInput] = useState("");
   const [conversations, setConversations] = useState([]);
@@ -26,7 +26,7 @@ const useConversations = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ message: question }),
+        body: JSON.stringify({ prompt: question }),
       });
 
       if (res.ok) {
@@ -35,7 +35,7 @@ const useConversations = () => {
           setConversations((prev) =>
             prev.map((conv, index) =>
               index === prev.length - 1
-                ? { ...conv, answer: data.ITeung }
+                ? { ...conv, answer: data.response }
                 : conv
             )
           );
