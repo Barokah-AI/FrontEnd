@@ -25,21 +25,21 @@ const AboutSectionTwo = () => {
           <div className="w-full px-4 lg:w-1/2">
             <div className="max-w-[470px]">
               <div className="mb-9">
+                <h2 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Langkah-langkah</h2>
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Bug free code
+                1. Mengakses Website atau Aplikasi:
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
+                •	Buka browser favorit lo dan kunjungi website resmi Barokah-AI di https://barokah-ai.vercel.app </p>
+                <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                •	Di halaman utama website atau aplikasi, kamu bakal liat ikon atau kotak chat Barokah-AI. Klik aja buat mulai ngobrol.</p>
               </div>
               <div className="mb-9">
                 <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                  Premier support
+                2. Memulai Interaksi:
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                •	Ketik pertanyaan atau perintah kamu di kotak chat. Barokah-AI bakal langsung jawab dengan cepat dan tepat. Kamu bisa nanya apa aja, mulai dari info produk, bantuan teknis, saran personal, atau sekedar ngobrol santai.
                 </p>
               </div>
               <div className="mb-1">
