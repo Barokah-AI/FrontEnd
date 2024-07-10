@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
 const useConversations = () => {
-  // const api = "http://127.0.0.1:5000/chat";
   const api =
     "https://asia-southeast2-erditona-dev.cloudfunctions.net/barokahai/chat";
 
@@ -40,9 +39,20 @@ const useConversations = () => {
             )
           );
         }, 1000);
+      } else {
+        throw new Error("Network response was not ok");
       }
     } catch (error) {
       console.error("Error:", error);
+      setTimeout(() => {
+        setConversations((prev) =>
+          prev.map((conv, index) =>
+            index === prev.length - 1
+              ? { ...conv, answer: "Aku gak ngerti,coba tanya yang lain" }
+              : conv
+          )
+        );
+      }, 1000);
     } finally {
       setTimeout(() => {
         setIsLoading(false);

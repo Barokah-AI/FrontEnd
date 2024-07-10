@@ -73,10 +73,6 @@ const Conversation = ({ conversations }) => {
                       <p className="mb-1.5 text-sm text-gray-800 dark:text-white">
                         {conv.answer}
                       </p>
-                    ) : conv.error ? (
-                      <p className="text-sm text-red-500">
-                        Aku gak ngerti, coba tanya yang lain ya...
-                      </p>
                     ) : (
                       <span className="loading loading-dots loading-lg"></span>
                     )}
