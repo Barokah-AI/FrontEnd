@@ -20,7 +20,8 @@ const Hero = () => {
                 </h1>
                 <p className="mb-5 text-base !leading-relaxed text-body-color dark:text-body-color-dark sm:text-lg md:text-xl">
                   In the form of a chatbot, BarokahAI offers an AI assistant
-                  with fast service and ready to answer all your questions
+                  with fast service and ready to answer all your questions,
+                  provides a responsive display tailored to your needs.
                 </p>
                 <div className="flex mb-7 flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
