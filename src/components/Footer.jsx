@@ -25,8 +25,7 @@ const Footer = () => {
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                   Ikuti Kami di Media Sosial
-                   Untuk mendapatkan update terbaru, berita, dan konten menarik dari Barokah AI, jangan lupa untuk mengikuti kami di media sosial!
+                Follow Us on Social Media To get the latest updates, news and interesting content from Barokah AI, don't forget to follow us on social media!
 
                 </p>
                 <div className="flex items-center">
