@@ -54,12 +54,7 @@ const About = () => {
                   <img
                     src="https://github.com/Barokah-AI/FrontEnd/assets/94734096/d42f6324-a33d-4103-8e60-9b7288c3fa74"
                     alt="about-image"
-                    className="mx-auto max-w-full drop-shadow-three dark:hidden dark:drop-shadow-none lg:mr-0"
-                  />
-                  <img
-                    src="/images/about/about-image-dark.svg"
-                    alt="about-image"
-                    className="mx-auto hidden max-w-full drop-shadow-three dark:block dark:drop-shadow-none lg:mr-0"
+                    className="mx-auto max-w-full drop-shadow-three dark:drop-shadow-none lg:mr-0"
                   />
                 </div>
               </div>
@@ -79,13 +74,7 @@ const About = () => {
                   src="https://github.com/Barokah-AI/FrontEnd/assets/104063079/cf74a9a2-5084-4310-9817-b201af54cec8"
                   alt="about image"
                   fill
-                  className="drop-shadow-three dark:hidden dark:drop-shadow-none"
-                />
-                <img
-                  src="/images/about/about-image-2-dark.svg"
-                  alt="about image"
-                  fill
-                  className="hidden drop-shadow-three dark:block dark:drop-shadow-none"
+                  className="drop-shadow-three dark:drop-shadow-none"
                 />
               </div>
             </div>
