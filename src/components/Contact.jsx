@@ -11,10 +11,10 @@ const Contact = () => {
               data-wow-delay=".15s"
             >
               <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
-                Butuh Bantuan? Buat Permintaan
+                Need Help? Make a Request
               </h2>
               <p className="mb-12 text-base font-medium text-body-color">
-                Tim dukungan Barokah AI kami akan merespons Anda sesegera mungkin melalui email.
+                Barokah AI's support team will respond to you as soon as possible via email.
               </p>
               <form>
                 <div className="-mx-4 flex flex-wrap">
@@ -24,11 +24,11 @@ const Contact = () => {
                         htmlFor="name"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
-                        Nama Lengkap
+                        Full Name
                       </label>
                       <input
                         type="text"
-                        placeholder="Masukkan nama lengkap Anda"
+                        placeholder="Input your full name here"
                         className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       />
                     </div>
@@ -39,11 +39,11 @@ const Contact = () => {
                         htmlFor="email"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
-                        Alamat Email
+                        Email Address
                       </label>
                       <input
                         type="email"
-                        placeholder="Masukkan alamat email Anda"
+                        placeholder="Input your email address here"
                         className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       />
                     </div>
@@ -54,19 +54,19 @@ const Contact = () => {
                         htmlFor="message"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
-                        Pesan Anda
+                        Message
                       </label>
                       <textarea
                         name="message"
                         rows={5}
-                        placeholder="Masukkan pesan Anda di sini"
+                        placeholder="Type your message here"
                         className="border-stroke w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       ></textarea>
                     </div>
                   </div>
                   <div className="w-full px-4">
                     <button className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
-                      Kirim Permintaan
+                      Send Message
                     </button>
                   </div>
                 </div>
