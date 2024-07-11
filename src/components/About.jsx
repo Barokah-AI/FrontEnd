@@ -35,15 +35,15 @@ const About = () => {
                 >
                   <div className="mx-[-12px] flex flex-wrap">
                     <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                      <List text="Pemrosesan Bahasa Alami (NLP)" />
-                      <List text="Pembelajaran Mesin (Machine Learning)" />
-                      <List text="Multi Bahasa" />
+                      <List text="Natural Language Processing" />
+                      <List text="Machine Learning" />
+                      <List text="Multi Language" />
                     </div>
 
                     <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                      <List text="Personalisasi" />
-                      <List text="Integrasi yang Mudah" />
-                      <List text="Keamanan dan Privasi" />
+                      <List text="Personalization" />
+                      <List text="Easy Integration" />
+                      <List text="Security and Privacy" />
                     </div>
                   </div>
                 </div>
