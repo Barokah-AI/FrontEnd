@@ -4,30 +4,66 @@ import SingleTestimonial from "./SingleTestimonial";
 const testimonialData = [
   {
     id: 1,
-    name: "Musharof Chy",
-    designation: "Founder @TailGrids",
+    name: "Juwita Stefany H",
+    designation: "1214026",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-01.png",
-    star: 5,
+      "Bachelor of applied Informatics Engineering student. Person who is quite diligent and likes to learn new things.",
+    image: "/images/testimonials/juwi.png",
+    contact: "@wops1e_",
   },
   {
     id: 2,
-    name: "Devid Weilium",
-    designation: "Founder @UIdeck",
+    name: "Marlina M Lubis",
+    designation: "1214040",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-02.png",
-    star: 5,
+      "Bachelor of applied Informatics Engineering student. Person who is quite diligent and likes to learn new things.",
+    image: "/images/testimonials/marlina.png",
+    contact: "@marlina_lubis7",
   },
   {
     id: 3,
-    name: "Lethium Frenci",
-    designation: "Founder @Lineicons",
+    name: "Agita Nurfadilah",
+    designation: "1214029",
     content:
-      "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
-    star: 5,
+      "Bachelor of applied Informatics Engineering student. Person who is quite diligent and likes to learn new things.",
+    image: "/images/testimonials/agita.png",
+    contact: "@agitanurfd",
+  },
+  {
+    id: 4,
+    name: "Dimas Ardianto",
+    designation: "1214054",
+    content:
+      "Bachelor of applied Informatics Engineering student. Person who is quite diligent and likes to learn new things.",
+    image: "/images/testimonials/dimas.png",
+    contact: "@ardnttt",
+  },
+  {
+    id: 5,
+    name: "Ade Candra",
+    designation: "1214048",
+    content:
+      "Bachelor of applied Informatics Engineering student. Person who is quite diligent and likes to learn new things.",
+    image: "/images/testimonials/ade.png",
+    contact: "@ade_candra12",
+  },
+  {
+    id: 6,
+    name: "Erdito Nausha Adam",
+    designation: "1214031",
+    content:
+      "Bachelor of applied Informatics Engineering student. Person who is quite diligent and likes to learn new things.",
+    image: "/images/testimonials/dito.png",
+    contact: "@erditona_",
+  },
+  {
+    id: 7,
+    name: "Dani Ferdinan",
+    designation: "1214050",
+    content:
+      "Bachelor of applied Informatics Engineering student. Person who is quite diligent and likes to learn new things.",
+    image: "/images/testimonials/dani.png",
+    contact: "@daniferdinandall",
   },
 ];
 
@@ -39,8 +75,8 @@ const Testimonials = () => {
     >
       <div className="container">
         <SectionTitle
-          title="What Our Users Says"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Profile Team"
+          paragraph="Let get to know us better. We make great products that make life easier and everyday life more enjoyable."
           center
         />
 
