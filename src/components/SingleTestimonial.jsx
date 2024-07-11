@@ -1,39 +1,47 @@
-const starIcon = (
-  <svg width="18" height="16" viewBox="0 0 18 16" className="fill-current">
-    <path d="M9.09815 0.361679L11.1054 6.06601H17.601L12.3459 9.59149L14.3532 15.2958L9.09815 11.7703L3.84309 15.2958L5.85035 9.59149L0.595291 6.06601H7.0909L9.09815 0.361679Z" />
-  </svg>
-);
+import React from "react";
+import { FaInstagram } from "react-icons/fa";
 
 const SingleTestimonial = ({ testimonial }) => {
-  const { star, name, image, content, designation } = testimonial;
-
-  let ratingIcons = [];
-  for (let index = 0; index < star; index++) {
-    ratingIcons.push(
-      <span key={index} className="text-yellow">
-        {starIcon}
-      </span>
-    );
-  }
+  const { name, image, content, designation, contact } = testimonial;
 
   return (
     <div className="w-full">
-      <div className="rounded-sm bg-white p-8 shadow-two duration-300 hover:shadow-one dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark lg:px-5 xl:px-8">
-        <div className="mb-5 flex items-center space-x-1">{ratingIcons}</div>
-        <p className="mb-8 border-b border-body-color border-opacity-10 pb-8 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-10 dark:text-white">
-          “{content}
-        </p>
-        <div className="flex items-center">
-          <div className="relative mr-4 h-[50px] w-full max-w-[50px] overflow-hidden rounded-full">
-            <img src={image} alt={name} />
+      <div className="rounded-lg bg-white p-6 shadow-md duration-300 hover:shadow-lg dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark lg:px-8 xl:px-10">
+        <div className="flex items-center mb-4">
+          <div className="relative mr-4 h-20 w-20 overflow-hidden rounded-full">
+            <img
+              src={image}
+              alt={name}
+              className="object-cover w-full h-full rounded-full"
+            />
           </div>
-          <div className="w-full">
-            <h3 className="mb-1 text-lg font-semibold text-dark dark:text-white lg:text-base xl:text-lg">
+          <div>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white lg:text-base xl:text-lg">
               {name}
             </h3>
-            <p className="text-sm text-body-color">{designation}</p>
+            <p className="text-sm text-gray-700 dark:text-gray-300 italic font-semibold">
+              {designation}
+            </p>
           </div>
         </div>
+        <p className="mb-4 border-b border-gray-200 dark:border-gray-600 pb-4 text-base leading-relaxed text-gray-800 dark:text-gray-300">
+          "{content}"
+        </p>
+        {contact && (
+          <div className="flex items-center justify-center mt-2">
+            <a
+              href={`https://instagram.com/${contact.replace(/\s/g, '')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-500 dark:text-blue-400 flex items-center mr-2 hover:text-blue-600 dark:hover:text-blue-500"
+            >
+              <FaInstagram className="text-xl" style={{ color: '#E4405F' }} />
+            </a>
+            <span className="text-sm text-gray-700 dark:text-gray-300">
+              {contact}
+            </span>
+          </div>
+        )}
       </div>
     </div>
   );
