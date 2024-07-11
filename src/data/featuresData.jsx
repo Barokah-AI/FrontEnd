@@ -10,9 +10,9 @@ const featuresData = [
         <path d="M23.2222 0C22.6699 0 22.2222 0.447715 22.2222 1V12.3333C22.2222 12.8856 22.6699 13.3333 23.2222 13.3333H39C39.5523 13.3333 40 12.8856 40 12.3333V0.999999C40 0.447714 39.5523 0 39 0H23.2222ZM0 39C0 39.5523 0.447715 40 1 40H16.7778C17.3301 40 17.7778 39.5523 17.7778 39V27.6667C17.7778 27.1144 17.3301 26.6667 16.7778 26.6667H1C0.447716 26.6667 0 27.1144 0 27.6667V39ZM0 21.2222C0 21.7745 0.447715 22.2222 1 22.2222H16.7778C17.3301 22.2222 17.7778 21.7745 17.7778 21.2222V0.999999C17.7778 0.447714 17.3301 0 16.7778 0H1C0.447716 0 0 0.447715 0 1V21.2222Z" />
       </svg>
     ),
-    title: "Crafted for Startups",
+    title: "Quick and Precise Answers",
     paragraph:
-      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
+      "BarokahAI provides rapid and accurate responses to user inquiries.",
   },
   {
     id: 2,
@@ -25,9 +25,9 @@ const featuresData = [
         <path d="M19.408 28.931C19.7603 29.1896 20.2396 29.1894 20.5918 28.9306L36.3556 17.3466L38.8979 15.4883C39.4437 15.0894 39.4446 14.275 38.8996 13.8749L20.5918 0.43445C20.2396 0.175911 19.7604 0.175913 19.4082 0.434452L1.09706 13.8774C0.553051 14.2767 0.552712 15.0892 1.09638 15.4891L3.62222 17.3466L19.408 28.931Z" />
       </svg>
     ),
-    title: "High-quality Design",
+    title: "Atificial Intelligence",
     paragraph:
-      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
+      "Utilizes AI technology to deliver the necessary information",
   },
   {
     id: 3,
@@ -40,9 +40,9 @@ const featuresData = [
         <path d="M20 15C22.75 15 25 17.25 25 20C25 22.75 22.75 25 20 25C17.25 25 15 22.75 15 20C15 17.25 17.25 15 20 15ZM20 0C22.75 0 25 2.25 25 5C25 7.75 22.75 10 20 10C17.25 10 15 7.75 15 5C15 2.25 17.25 0 20 0ZM5 30C7.75 30 10 32.25 10 35C10 37.75 7.75 40 5 40C2.25 40 0 37.75 0 35C0 32.25 2.25 30 5 30ZM5 15C7.75 15 10 17.25 10 20C10 22.75 7.75 25 5 25C2.25 25 0 22.75 0 20C0 17.25 2.25 15 5 15ZM5 0C7.75 0 10 2.25 10 5C10 7.75 7.75 10 5 10C2.25 10 0 7.75 0 5C0 2.25 2.25 0 5 0ZM35 0C37.75 0 40 2.25 40 5C40 7.75 37.75 10 35 10C32.25 10 30 7.75 30 5C30 2.25 32.25 0 35 0Z" />
       </svg>
     ),
-    title: "Ready to Use",
+    title: "Advanced Features",
     paragraph:
-      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
+      "Includes sophisticated functionalities designed to enhance user experience.",
   },
   {
     id: 4,
@@ -55,9 +55,9 @@ const featuresData = [
         <path d="M29.8914 22.4349L22.7321 19.3734C21.9499 19.0473 21.0498 19.0473 20.2676 19.3734L13.1083 22.4349C12.3336 22.757 11.4746 21.9704 11.8095 21.1983L17.5094 8.41426C17.8855 7.56477 19.0865 7.56477 19.4626 8.41426L25.1625 21.1983C25.4941 21.9704 24.6351 22.757 23.8604 22.4349Z" />
       </svg>
     ),
-    title: "Fast Performance",
+    title: "User Friendly Interface",
     paragraph:
-      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
+      "Offers an easy-to-navogate and intuitive platform",
   },
   {
     id: 5,
@@ -70,9 +70,9 @@ const featuresData = [
         <path d="M30.8333 0H9.16667C4.10875 0 0 4.10875 0 9.16667V30.8333C0 35.8913 4.10875 40 9.16667 40H30.8333C35.8913 40 40 35.8913 40 30.8333V9.16667C40 4.10875 35.8913 0 30.8333 0ZM20 35C13.9249 35 9 30.0751 9 24C9 17.9249 13.9249 13 20 13C26.0751 13 31 17.9249 31 24C31 30.0751 26.0751 35 20 35ZM34.1667 11.6667C32.5837 11.6667 31.25 10.3329 31.25 8.75C31.25 7.16709 32.5837 5.83333 34.1667 5.83333C35.7496 5.83333 37.0833 7.16709 37.0833 8.75C37.0833 10.3329 35.7496 11.6667 34.1667 11.6667Z" />
       </svg>
     ),
-    title: "Quick Setup",
+    title: "Safe and Reliable",
     paragraph:
-      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
+      "Ensures a secure and dependable support environment",
   },
   {
     id: 6,
@@ -85,9 +85,9 @@ const featuresData = [
         <path d="M30.7976 34.2705C30.9643 34.3755 31.137 34.4608 31.3127 34.5274L38.1867 39.2841C39.2552 40.118 41.0257 39.3358 40.8106 37.7021L39.7888 35.2351C39.5955 34.683 39.6174 34.0823 39.8543 33.558L47.9252 17.9469C48.5998 16.6077 48.2021 15.0151 46.933 14.2608L45.5681 13.4648C44.0733 12.615 42.1948 13.4308 41.8023 15.0063L37.5791 19.1813C37.3654 19.3431 37.1515 19.4687 36.9393 19.5564C36.3201 19.8012 35.6658 19.9557 34.994 20.0139L24.3142 21.0229C23.4862 21.1021 22.6727 20.8121 22.1158 20.2294L20.6325 18.5863L24.0431 17.1163C24.7214 16.831 25.2915 16.3457 25.6636 15.7172C26.0356 15.0887 26.191 14.3442 26.1066 13.6048L25.6894 9.96356L35.4093 9.90912C36.1367 9.90912 36.8756 10.1668 37.4246 10.6457L39.839 12.7754C41.3977 14.141 40.9168 16.7526 39.0317 17.5064L32.899 19.6711C32.3486 19.8855 31.7436 19.9843 31.1405 19.9625L27.3282 19.8578L28.7328 33.8236C28.8109 34.4081 28.9705 34.9787 29.2035 35.5183C29.4486 36.0775 29.7986 36.5916 30.2362 37.0323L30.7976 34.2705Z" />
       </svg>
     ),
-    title: "Increase Conversion",
+    title: "Knowledge Exploration",
     paragraph:
-      "Tuae nam ex similique incidunt expedita exerci tationem laudantium. Repellendus quisquam numquam perferendis earum sapiente non tempore? Fugit repellat ut maiores.",
+      "Facilitats the discovery of new information and learning opportunities",
   },
 ];
 
