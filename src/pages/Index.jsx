@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import ScrollUp from "../components/ScrollUp";
 import Hero from "../components/Hero";
-// import HeroTest from "../components/HeroTest";
+import ScrollToTop from "../components/ScrollToTop";
 import Features from "../components/Features";
 import Brands from "../components/Brands";
 import About from "../components/About";
@@ -22,6 +22,7 @@ const Index = () => {
       <Testimonials />
       <Contact />
       <Footer />
+      <ScrollToTop />
     </>
   );
 };
