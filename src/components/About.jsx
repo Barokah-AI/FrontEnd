@@ -122,10 +122,11 @@ const About = () => {
                     Accessing the Website or Application:
                   </h3>
                   <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                    Open your favorite browser and visit the official Barokah-AI
-                    website at https://barokah-ai.vercel.app. On the main page
-                    of the website or application, you will see the Barokah-AI
-                    icon or chat box. Just click to start chatting.
+                  Open your favorite browser and visit the official 
+                  Barokah-AI website at barokah-ai.vercel.app. 
+                  On the main page of the website or application, 
+                  you will see a Get Started button to start a conversation. 
+                  Just click to start chatting.
                   </p>
                 </div>
                 <div className="mb-9">
@@ -133,10 +134,10 @@ const About = () => {
                     Starting Interaction:
                   </h3>
                   <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                    Type your question or command in the chat box. Barokah-AI
-                    will immediately answer quickly and accurately. You can ask
-                    anything, starting from product information, technical
-                    assistance, personal advice, or just casual chat.
+                  Please type your question or command in the chat box. 
+                  Barokah-AI will respond quickly and accurately. 
+                  You can ask anything from product information, 
+                  technical assistance, personal advice, to casual chat.
                   </p>
                 </div>
               </div>
