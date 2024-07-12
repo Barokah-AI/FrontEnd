@@ -15,7 +15,7 @@ const ChatPage = () => {
     <>
       {/* sidebar */}
       {/* <!-- Sidebar Toggle --> */}
-      <div className="drawer sticky top-0 inset-x-0 z-30 bg-white border-y px-4 sm:px-6 md:px-8 lg:hidden">
+      <div className="drawer sticky top-0 inset-x-0 z-30 bg-white border-y px-4 sm:px-6 md:px-8 lg:hidden dark:bg-dark dark:border-y-neutral-700">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex items-center py-3 space-x-5">
           <div className="flex items-center justify-between">
@@ -156,7 +156,7 @@ const ChatPage = () => {
 
       <div
         id="application-sidebar"
-        className="hidden fixed top-0 start-0 bottom-0 z-[60] w-64 bg-white border-e border-gray-200 overflow-y-auto lg:block lg:translate-x-0 lg:end-auto lg:bottom-0 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300"
+        className="hidden fixed top-0 start-0 bottom-0 z-[60] w-64 bg-white border-e border-gray-200 overflow-y-auto lg:block lg:translate-x-0 lg:end-auto lg:bottom-0 [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:bg-dark dark:border-neutral-700 dark:shadow-lg dark:translate-x-0 dark:end-auto dark:bottom-0 dark:[&::-webkit-scrollbar]:w-2 dark:[&::-webkit-scrollbar-thumb]:rounded-full dark:[&::-webkit-scrollbar-track]:bg-neutral-800 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-700"
       >
         <nav className="hs-accordion-group size-full flex flex-col">
           <div className="flex items-center justify-between pt-4 pe-4 ps-7">
@@ -255,7 +255,7 @@ const ChatPage = () => {
 
       {/* content */}
       <div className="relative h-screen w-full lg:ps-64">
-        <div className="min-h-screen py-10 lg:py-14">
+        <div className="py-10 sm:min-h-screen  sm:py-14">
           {/* title */}
           <div className="max-w-4xl px-4 sm:px-6 lg:px-8 mx-auto text-center">
             <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white">
@@ -275,7 +275,7 @@ const ChatPage = () => {
         </div>
 
         {/* Input area */}
-        <footer className="w-full px-4 mx-auto sticky bottom-0 z-10 p-3 sm:py-6 sm:px-10">
+        <footer className="fixed bottom-0 w-full px-4 mx-auto z-10 p-3 sm:sticky sm:py-6 sm:px-10">
           {/* Input */}
           <div className="relative">
             <input
