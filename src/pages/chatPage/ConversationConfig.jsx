@@ -11,14 +11,14 @@ const useConversations = () => {
   const handleKeyPress = (event) => {
     const question = input.trim();
     if (event.key === "Enter" && question) {
-      setConversations((prev) => [...prev, { question, answer: null }]);
-      setIsLoading(true);
       setInput("");
       handleSubmit(question);
     }
   };
 
   const handleSubmit = async (question) => {
+    setConversations((prev) => [...prev, { question, answer: null }]);
+    setIsLoading(true);
     try {
       const res = await fetch(api, {
         method: "POST",
