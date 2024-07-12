@@ -254,7 +254,7 @@ const ChatPage = () => {
       {/* End sideebar */}
 
       {/* content */}
-      <div className="relative h-screen w-full lg:ps-64">
+      <div className="relative w-full lg:ps-64">
         <div className="py-10 sm:min-h-screen  sm:py-14">
           {/* title */}
           <div className="max-w-4xl px-4 sm:px-6 lg:px-8 mx-auto text-center">
