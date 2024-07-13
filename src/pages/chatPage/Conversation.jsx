@@ -8,7 +8,7 @@ const Conversation = ({ conversations }) => {
         <li className="w-full py-2 px-4 mx-auto flex gap-x-2 sm:gap-x-4 sm:py-4 sm:px-10">
           <img
             className="flex-shrink-0 w-[2.375rem] h-[2.375rem] rounded-full"
-            src="https://github.com/Barokah-AI/BackEnd/assets/94734096/0bf32c79-e402-4565-9868-8a21c84d8b33"
+            src="/images/logo/logo.png"
             alt="avatar"
           />
           {/* Card --> */}
@@ -56,8 +56,8 @@ const Conversation = ({ conversations }) => {
             {/* Question */}
 
             {/* Answer */}
-            <li className="w-full py-2 px-4 mx-auto gap-x-2 sm:gap-x-4 sm:py-4 sm:px-10">
-              <div className="flex">
+            <li className="w-full py-2 px-4 mx-auto gap-x-5 sm:gap-x-4 sm:py-4 sm:px-10">
+              <div className="flex space-x-5">
                 <img
                   className="flex-shrink-0 w-[2.375rem] h-[2.375rem] rounded-full"
                   src="https://github.com/Barokah-AI/BackEnd/assets/94734096/0bf32c79-e402-4565-9868-8a21c84d8b33"
@@ -82,7 +82,7 @@ const Conversation = ({ conversations }) => {
               </div>
 
               {/* Button Group */}
-              <div className="w-full py-2 px-4 mx-auto gap-x-2 sm:gap-x-4 sm:py-4 sm:px-10">
+              <div className="w-full ml-5 py-2 px-4 mx-auto gap-x-2 sm:gap-x-4 sm:py-4 sm:px-10">
                 <div className="sm:flex sm:justify-between">
                   <div>
                     <div className="inline-flex border border-gray-200 rounded-full p-0.5 dark:border-neutral-700">
