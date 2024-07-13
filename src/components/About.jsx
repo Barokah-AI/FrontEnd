@@ -75,7 +75,7 @@ const About = () => {
               >
                 <div className="relative mx-auto aspect-w-25 aspect-h-24 max-w-[500px] lg:mr-0">
                   <img
-                    src="/images/about/about-section-1.png"
+                    src="/images/about/pic-about.svg"
                     alt="about-image"
                     className="mx-auto max-w-full drop-shadow-three dark:drop-shadow-none lg:mr-0"
                   />
