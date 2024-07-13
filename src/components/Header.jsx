@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import menuData from "../data/menuData";
 
 const Header = () => {
@@ -53,10 +53,16 @@ const Header = () => {
     };
   }, []);
 
+  const navigate = useNavigate();
+
   const handleMenuClick = (path) => {
-    const targetSection = document.querySelector(path);
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: "smooth" });
+    if (path.startsWith("/")) {
+      navigate(path); // Navigate to internal routes like /signin
+    } else {
+      const targetSection = document.querySelector(path);
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: "smooth" });
+      }
     }
     setNavbarOpen(false); // Close the navbar on menu click
   };
@@ -145,13 +151,13 @@ const Header = () => {
               </div>
               <div className="flex items-center justify-end pr-16 lg:pr-0">
                 <Link
-                  href="/signin"
+                  to="/signin"
                   className="hidden px-4 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
                 >
                   Sign In
                 </Link>
                 <Link
-                  href="/signup"
+                  to="/signup"
                   className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-lg bg-primary px-4 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9"
                 >
                   Sign Up
