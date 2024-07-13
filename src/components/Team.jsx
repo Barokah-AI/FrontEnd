@@ -1,88 +1,23 @@
 import SectionTitle from "./SectionTittle";
-import SingleTestimonial from "./SingleTestimonial";
+import TeamCard from "./TeamCard";
+import teamData from "../data/teamData";
 
-const testimonialData = [
-  {
-    id: 1,
-    name: "Juwita Stefany H",
-    designation: "1214026",
-    content:
-      "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
-    image: "/images/testimonials/juwi.png",
-    contact: "@wops1e_",
-  },
-  {
-    id: 2,
-    name: "Marlina M Lubis",
-    designation: "1214040",
-    content:
-      "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
-    image: "/images/testimonials/marlina.png",
-    contact: "@marlina_lubis7",
-  },
-  {
-    id: 3,
-    name: "Agita Nurfadilah",
-    designation: "1214029",
-    content:
-      "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
-    image: "/images/testimonials/agita.png",
-    contact: "@agitanurfd",
-  },
-  {
-    id: 4,
-    name: "Dimas Ardianto",
-    designation: "1214054",
-    content:
-      "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
-    image: "/images/testimonials/dimas.png",
-    contact: "@ardnttt",
-  },
-  {
-    id: 5,
-    name: "Ade Candra",
-    designation: "1214048",
-    content:
-      "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
-    image: "/images/testimonials/ade.png",
-    contact: "@ade_candra12",
-  },
-  {
-    id: 6,
-    name: "Erdito Nausha Adam",
-    designation: "1214031",
-    content:
-      "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
-    image: "/images/testimonials/dito.png",
-    contact: "@erditona_",
-  },
-  {
-    id: 7,
-    name: "Dani Ferdinan",
-    designation: "1214050",
-    content:
-      "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
-    image: "/images/testimonials/dani.png",
-    contact: "@daniferdinandall",
-  },
-];
-
-const Testimonials = () => {
+const Team = () => {
   return (
     <section
-      id="profile"
+      id="team"
       className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28"
     >
       <div className="container">
         <SectionTitle
-          title="Profile Team"
-          paragraph="Let get to know us better. We make great products that make life easier and everyday life more enjoyable."
+          title="Our Team"
+          paragraph="Meet our talented individuals who make our mission possible. Each member brings unique skills and expertise, working together to deliver the best results"
           center
         />
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          {testimonialData.map((testimonial) => (
-            <SingleTestimonial key={testimonial.id} testimonial={testimonial} />
+          {teamData.map((team) => (
+            <TeamCard key={team.id} team={team} />
           ))}
         </div>
       </div>
@@ -218,4 +153,4 @@ const Testimonials = () => {
   );
 };
 
-export default Testimonials;
+export default Team;
