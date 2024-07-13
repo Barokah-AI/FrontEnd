@@ -19,8 +19,8 @@ const menuData = [
   },
   {
     id: 4,
-    title: "Profile",
-    path: "#profile",
+    title: "Our Team",
+    path: "#team",
     newTab: false,
   },
 ];
