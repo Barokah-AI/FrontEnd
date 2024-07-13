@@ -22,7 +22,7 @@ const ChatPage = () => {
             {/* Logo */}
             <div className="flex gap-2">
               <img
-                src="https://github.com/Barokah-AI/BackEnd/assets/94734096/0bf32c79-e402-4565-9868-8a21c84d8b33"
+                src="/images/logo/logo.png"
                 alt="Image Description"
                 className="w-10 h-auto"
               />
@@ -67,7 +67,7 @@ const ChatPage = () => {
               {/* Logo */}
               <div className="flex gap-2">
                 <img
-                  src="https://github.com/Barokah-AI/BackEnd/assets/94734096/0bf32c79-e402-4565-9868-8a21c84d8b33"
+                  src="/images/logo/logo.png"
                   alt="Image Description"
                   className="w-10 h-auto"
                 />
@@ -163,7 +163,7 @@ const ChatPage = () => {
             {/* Logo */}
             <div className="flex gap-2">
               <img
-                src="https://github.com/Barokah-AI/BackEnd/assets/94734096/0bf32c79-e402-4565-9868-8a21c84d8b33"
+                src="/images/logo/logo.png"
                 alt="Image Description"
                 className="w-10 h-auto"
               />
@@ -255,7 +255,7 @@ const ChatPage = () => {
 
       {/* content */}
       <div className="relative w-full lg:ps-64">
-        <div className="py-10 sm:min-h-screen  sm:py-14">
+        <div className="pt-10 pb-24 sm:pb-0 sm:min-h-screen sm:pt-14">
           {/* title */}
           <div className="max-w-4xl px-4 sm:px-6 lg:px-8 mx-auto text-center">
             <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white">
