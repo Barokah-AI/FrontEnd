@@ -81,7 +81,7 @@ const Header = () => {
               >
                 <div className="flex gap-2">
                   <img
-                    src="https://github.com/Barokah-AI/BackEnd/assets/94734096/0bf32c79-e402-4565-9868-8a21c84d8b33"
+                    src="/images/logo/logo.png"
                     alt="Image Description"
                     className="w-10 h-auto"
                   />
@@ -142,6 +142,20 @@ const Header = () => {
                     ))}
                   </ul>
                 </nav>
+              </div>
+              <div className="flex items-center justify-end pr-16 lg:pr-0">
+                <Link
+                  href="/signin"
+                  className="hidden px-4 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
+                >
+                  Sign In
+                </Link>
+                <Link
+                  href="/signup"
+                  className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-lg bg-primary px-4 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9"
+                >
+                  Sign Up
+                </Link>
               </div>
             </div>
           </div>
