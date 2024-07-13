@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import ScrollUp from "../components/ScrollUp";
 import Hero from "../components/Hero";
 import ScrollToTop from "../components/ScrollToTop";
