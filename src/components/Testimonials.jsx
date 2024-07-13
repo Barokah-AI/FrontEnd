@@ -7,7 +7,7 @@ const testimonialData = [
     name: "Juwita Stefany H",
     designation: "1214026",
     content:
-      "Bachelor of applied Informatics Engineering student. Person who is quite diligent and likes to learn new things.",
+      "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
     image: "/images/testimonials/juwi.png",
     contact: "@wops1e_",
   },
@@ -16,7 +16,7 @@ const testimonialData = [
     name: "Marlina M Lubis",
     designation: "1214040",
     content:
-      "Bachelor of applied Informatics Engineering student. Person who is quite diligent and likes to learn new things.",
+      "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
     image: "/images/testimonials/marlina.png",
     contact: "@marlina_lubis7",
   },
@@ -25,7 +25,7 @@ const testimonialData = [
     name: "Agita Nurfadilah",
     designation: "1214029",
     content:
-      "Bachelor of applied Informatics Engineering student. Person who is quite diligent and likes to learn new things.",
+      "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
     image: "/images/testimonials/agita.png",
     contact: "@agitanurfd",
   },
@@ -34,7 +34,7 @@ const testimonialData = [
     name: "Dimas Ardianto",
     designation: "1214054",
     content:
-      "Bachelor of applied Informatics Engineering student. Person who is quite diligent and likes to learn new things.",
+      "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
     image: "/images/testimonials/dimas.png",
     contact: "@ardnttt",
   },
@@ -43,7 +43,7 @@ const testimonialData = [
     name: "Ade Candra",
     designation: "1214048",
     content:
-      "Bachelor of applied Informatics Engineering student. Person who is quite diligent and likes to learn new things.",
+      "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
     image: "/images/testimonials/ade.png",
     contact: "@ade_candra12",
   },
@@ -52,7 +52,7 @@ const testimonialData = [
     name: "Erdito Nausha Adam",
     designation: "1214031",
     content:
-      "Bachelor of applied Informatics Engineering student. Person who is quite diligent and likes to learn new things.",
+      "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
     image: "/images/testimonials/dito.png",
     contact: "@erditona_",
   },
@@ -61,7 +61,7 @@ const testimonialData = [
     name: "Dani Ferdinan",
     designation: "1214050",
     content:
-      "Bachelor of applied Informatics Engineering student. Person who is quite diligent and likes to learn new things.",
+      "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
     image: "/images/testimonials/dani.png",
     contact: "@daniferdinandall",
   },

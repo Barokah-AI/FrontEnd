@@ -8,22 +8,18 @@ const Footer = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
-                <Link to="/" className="mb-8 inline-block">
+              <div className="flex gap-2">
                   <img
-                    src="/images/logo/logo-2.svg"
-                    alt="logo"
-                    className="w-full dark:hidden"
-                    width={140}
-                    height={30}
+                    src="https://github.com/Barokah-AI/BackEnd/assets/94734096/0bf32c79-e402-4565-9868-8a21c84d8b33"
+                    alt="Image Description"
+                    className="w-10 h-auto"
                   />
-                  <img
-                    src="/images/logo/logo.svg"
-                    alt="logo"
-                    className="hidden w-full dark:block"
-                    width={140}
-                    height={30}
-                  />
-                </Link>
+                  <div>
+                    <h1 className="mt-1 text-2xl font-bold text-primary">
+                      BarokahAI
+                    </h1>
+                  </div>
+                </div>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
                 Follow Us on Social Media To get the latest updates, news and interesting content from Barokah AI, don't forget to follow us on social media!
 
@@ -115,23 +111,23 @@ const Footer = () => {
                 <ul>
                   <li>
                     <Link
-                      to="/blog"
+                      to="#features"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Blog
+                      Features
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="/"
+                      to="#profile"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Pricing
+                      Profile
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="/about"
+                      to="#about"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       About

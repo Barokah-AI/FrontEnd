@@ -65,9 +65,9 @@ const featuresData = [
       <svg width="40" height="41" viewBox="0 0 40 41" className="fill-current">
       <path
         opacity="0.5"
-        d="M20 2C10.058 2 2 10.058 2 20s8.058 18 18 18 18-8.058 18-18S29.942 2 20 2zM18 27h-4v-4h4v4zm0-6h-4v-4h4v4zm6 6h-4v-4h4v4zm0-6h-4v-4h4v4z"
+        d="M20 2c-4.418 0-8 3.582-8 8v8H8c-1.104 0-2 .896-2 2v14c0 1.104.896 2 2 2h24c1.104 0 2-.896 2-2V20c0-1.104-.896-2-2-2h-4V10c0-4.418-3.582-8-8-8zM10 10c0-3.313 2.687-6 6-6s6 2.687 6 6v8H10V10zM8 20h24v14H8V20z"
       />
-      <path d="M12 8h16v4H12V8zm-2 6h20v2H10v-2zm2 4h16v4H12v-4z" />
+      <path d="M18 22h4v4h-4v-4zM18 28h4v4h-4v-4z" />
     </svg>
     ),
     title: "Safe and Reliable",
@@ -80,10 +80,10 @@ const featuresData = [
       <svg width="40" height="41" viewBox="0 0 40 41" className="fill-current">
       <path
         opacity="0.5"
-        d="M20 2c-4.418 0-8 3.582-8 8v8H8c-1.104 0-2 .896-2 2v14c0 1.104.896 2 2 2h24c1.104 0 2-.896 2-2V20c0-1.104-.896-2-2-2h-4V10c0-4.418-3.582-8-8-8zM10 10c0-3.313 2.687-6 6-6s6 2.687 6 6v8H10V10zM8 20h24v14H8V20z"
+        d="M20 2C10.058 2 2 10.058 2 20s8.058 18 18 18 18-8.058 18-18S29.942 2 20 2zM18 27h-4v-4h4v4zm0-6h-4v-4h4v4zm6 6h-4v-4h4v4zm0-6h-4v-4h4v4z"
       />
-      <path d="M18 22h4v4h-4v-4zM18 28h4v4h-4v-4z" />
-    </svg>
+      <path d="M12 8h16v4H12V8zm-2 6h20v2H10v-2zm2 4h16v4H12v-4z" />
+      </svg>
     ),
     title: "Knowledge Exploration",
     paragraph:
