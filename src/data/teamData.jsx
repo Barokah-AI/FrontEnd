@@ -19,7 +19,7 @@ const teamData = [
   },
   {
     id: 3,
-    name: "Agita Nurfadilah",
+    name: "Agita Nurfadillah",
     designation: "1214029",
     content:
       "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
