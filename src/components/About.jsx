@@ -44,7 +44,7 @@ const About = () => {
               >
                 <SectionTitle
                   title="Barokah-AI"
-                  paragraph="BarokahAI is a digital friend who is here to answer all your questions quickly and precisely. Using artificial intelligence, BarokahAI provides the information you need. With advanced features and a user-friendly interface, BarokahAI is here to provide safe and reliable support. Let's explore new knowledge and find ease in every interaction with BarokahAI!"
+                  paragraph="Barokah-AI is a digital friend who is here to answer all your questions quickly and precisely. Using artificial intelligence, Barokah-AI provides the information you need. With advanced features and a user-friendly interface, Barokah-AI is here to provide safe and reliable support. Let's explore new knowledge and find ease in every interaction with Barokah-AI!"
                   mb="44px"
                 />
 
