@@ -27,7 +27,7 @@ const featuresData = [
     ),
     title: "Atificial Intelligence",
     paragraph:
-      "Utilizes AI technology to deliver the necessary information",
+      "Utilizes AI technology to deliver the necessary information.",
   },
   {
     id: 3,
@@ -72,7 +72,7 @@ const featuresData = [
     ),
     title: "Safe and Reliable",
     paragraph:
-      "Ensures a secure and dependable support environment",
+      "Ensures a secure and dependable support environment.",
   },
   {
     id: 6,
@@ -87,7 +87,7 @@ const featuresData = [
     ),
     title: "Knowledge Exploration",
     paragraph:
-      "Facilitats the discovery of new information and learning opportunities",
+      "Facilitats the discovery of new information and learning opportunities.",
   },
 ];
 
