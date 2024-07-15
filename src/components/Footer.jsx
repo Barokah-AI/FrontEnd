@@ -21,7 +21,7 @@ const Footer = () => {
                   </div>
                 </div>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                Follow Us on Social Media To get the latest updates, news and interesting content from Barokah AI, don't forget to follow us on social media!
+                Follow Us on Social Media To get the latest updates, news and interesting content from BarokahAI, don't forget to follow us on social media!
 
                 </p>
                 <div className="flex items-center">
@@ -111,7 +111,7 @@ const Footer = () => {
                 <ul>
                   <li>
                     <Link
-                      to="#features"
+                      to="https://barokah-ai.vercel.app"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Features
@@ -119,7 +119,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      to="#profile"
+                      to="#https://barokah-ai.vercel.app"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Profile
@@ -127,10 +127,10 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link
-                      to="#about"
+                      to="https://barokah-ai.vercel.app"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      About
+                      Our Team
                     </Link>
                   </li>
                 </ul>
