@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Conversation from "./Conversation";
 import useConversations from "./ConversationConfig";
 
@@ -227,10 +228,10 @@ const ChatPage = () => {
           {/* Footer */}
           <div className="mt-auto">
             <div className="p-4 border-t border-gray-200 dark:border-neutral-700">
-              <a
+              <Link
                 className="flex justify-between items-center gap-x-3 py-2 px-3 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-300"
-                href="#"
-              >
+                to="/signin"
+                >
                 Sign in
                 <svg
                   className="flex-shrink-0 size-4"
@@ -245,7 +246,7 @@ const ChatPage = () => {
                   <polyline points="10 17 15 12 10 7" />
                   <line x1="15" x2="3" y1="12" y2="12" />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
           {/* End Footer */}
