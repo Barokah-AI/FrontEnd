@@ -16,7 +16,7 @@ const SigninPage = () => {
                   Sign in to your account
                 </h3>
                 <p className="mb-11 text-center text-base font-medium text-body-color">
-                  Login to your account for a faster checkout.
+                  Please login to start more conversations.
                 </p>
                 <button className="border-stroke dark:text-body-color-dark dark:shadow-two mb-6 flex w-full items-center justify-center rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none">
                   <span className="mr-3">
@@ -89,7 +89,7 @@ const SigninPage = () => {
                     <input
                       type="email"
                       name="email"
-                      placeholder="example@email.com"
+                      placeholder="example@gmail.com"
                       className="border-[f0f0f0] w-full rounded-md border bg-[#FCFDFE] py-3 px-6 text-base text-body-color placeholder-body-color outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#2C303B] dark:text-body-color-dark dark:placeholder-body-color-dark dark:focus:border-primary"
                     />
                   </div>
