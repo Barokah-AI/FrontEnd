@@ -146,19 +146,35 @@ const Header = () => {
                         </a>
                       </li>
                     ))}
+                    <li className="group relative lg:hidden">
+                      <Link
+                        to="/signin"
+                        className="flex py-2 text-base text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
+                      >
+                        Sign In
+                      </Link>
+                    </li>
+                    <li className="group relative lg:hidden">
+                      <Link
+                        to="/signup"
+                        className="flex py-2 text-base text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
+                      >
+                        Sign Up
+                      </Link>
+                    </li>
                   </ul>
                 </nav>
               </div>
-              <div className="flex items-center justify-end pr-16 lg:pr-0">
+              <div className="hidden items-center justify-end pr-16 lg:flex lg:pr-0">
                 <Link
                   to="/signin"
-                  className="hidden px-4 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white md:block"
+                  className="px-4 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white"
                 >
                   Sign In
                 </Link>
                 <Link
                   to="/signup"
-                  className="ease-in-up shadow-btn hover:shadow-btn-hover hidden rounded-lg bg-primary px-4 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:block md:px-9 lg:px-6 xl:px-9"
+                  className="ease-in-up shadow-btn hover:shadow-btn-hover rounded-lg bg-primary px-4 py-3 text-base font-medium text-white transition duration-300 hover:bg-opacity-90 md:px-9 lg:px-6 xl:px-9"
                 >
                   Sign Up
                 </Link>
