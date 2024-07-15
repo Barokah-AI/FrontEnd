@@ -73,7 +73,7 @@ const Hero = () => {
                     Get Started
                   </Link>
                   <Link
-                    to="https://github.com/Barokah-AI/FrontEnd"
+                    to="https://github.com/Barokah-AI"
                     className="inline-block rounded-lg bg-black px-4 py-3 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
                     Start on Github
