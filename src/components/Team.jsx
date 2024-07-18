@@ -8,6 +8,11 @@ const titleVariants = {
   visible: { opacity: 1, y: 0 },
 };
 
+const itemVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 },
+};
+
 const Team = () => {
   return (
     <section
