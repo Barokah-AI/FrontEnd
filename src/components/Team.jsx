@@ -20,11 +20,19 @@ const Team = () => {
       className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28"
     >
       <div className="container">
-        <SectionTitle
-          title="Our Team"
-          paragraph="Meet our talented individuals who make our mission possible. Each member brings unique skills and expertise, working together to deliver the best results"
-          center
-        />
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={titleVariants}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5, duration: 1 }}
+        >
+          <SectionTitle
+            title="Our Team"
+            paragraph="Meet our talented individuals who make our mission possible. Each member brings unique skills and expertise, working together to deliver the best results"
+            center
+          />
+        </motion.div>
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           {teamData.map((team) => (
