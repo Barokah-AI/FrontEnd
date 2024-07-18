@@ -10,8 +10,8 @@ const Team = () => {
     >
       <div className="container">
         <SectionTitle
-          title="Our Team"
-          paragraph="Meet our talented individuals who make our mission possible. Each member brings unique skills and expertise, working together to deliver the best results"
+          title="OurTeam"
+          paragraph="Meet Our Talented individuals who make our mission possible. Each member brings unique skills and expertise, working together to deliver the best results."
           center
         />
 
