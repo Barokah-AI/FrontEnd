@@ -29,7 +29,7 @@ const TeamCard = ({ team }) => {
         {contact && (
           <div className="flex items-center justify-center mt-2">
             <a
-              href={`https://instagram.com/${contact.replace(/\s/g, "")}`}
+              href={`https://instagram.com/${contact.replace(/\s/g, "")}`} // Adjust Intagram URL accordingly
               target="_blank"
               rel="noopener noreferrer"
               className="text-pink-500 dark:text-pink-400 flex items-center mr-2 hover:text-pink-600 dark:hover:text-pink-500"
