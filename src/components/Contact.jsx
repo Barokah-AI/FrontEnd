@@ -14,7 +14,7 @@ const Contact = () => {
                 Need Help? Make a Request
               </h2>
               <p className="mb-12 text-base font-medium text-body-color">
-                Barokah AI's Support Team Will respond to you as soon as possible via email.
+                Barokah AI's support team will respond to you as soon as possible via email.
               </p>
               <form>
                 <div className="-mx-4 flex flex-wrap">
@@ -24,7 +24,7 @@ const Contact = () => {
                         htmlFor="name"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
-                        FullName
+                        Full Name
                       </label>
                       <input
                         type="text"
