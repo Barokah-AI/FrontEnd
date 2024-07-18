@@ -29,7 +29,7 @@ const ChatPage = () => {
               />
               <div>
                 <h1 className="mt-1 text-2xl font-bold text-blue-600">
-                  BarokahAI
+                  Barokah-AI
                 </h1>
               </div>
             </div>
@@ -74,7 +74,7 @@ const ChatPage = () => {
                 />
                 <div>
                   <h1 className="mt-1 text-2xl font-bold text-blue-600">
-                    BarokahAI
+                    Barokah-AI
                   </h1>
                 </div>
               </div>
@@ -170,7 +170,7 @@ const ChatPage = () => {
               />
               <div>
                 <h1 className="mt-1 text-2xl font-bold text-blue-600">
-                  BarokahAI
+                  Barokah-AI
                 </h1>
               </div>
             </div>
