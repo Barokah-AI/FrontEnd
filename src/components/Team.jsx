@@ -36,7 +36,16 @@ const Team = () => {
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           {teamData.map((team) => (
-            <TeamCard key={team.id} team={team} />
+            <motion.div
+              key={team.id}
+              initial="hidden"
+              whileInView="visible"
+              variants={itemVariants}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 + index * 0.2, duration: 0.5 }}
+            >
+              <TeamCard team={team} />
+            </motion.div>
           ))}
         </div>
       </div>
