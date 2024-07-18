@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 const SigninPage = () => {
   return (
     <>
-    <Header /> {/* Include Header component */}
+      <Header /> {/* Include Header component */}
       <section className="relative z-10 overflow-hidden pb-16 pt-36 md:pb-20 lg:pb-28 lg:pt-[180px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
