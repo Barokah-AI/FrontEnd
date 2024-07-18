@@ -1,6 +1,7 @@
 import SectionTitle from "./SectionTittle";
 import TeamCard from "./TeamCard";
 import teamData from "../data/teamData";
+import { motion } from "framer-motion";
 
 const Team = () => {
   return (
