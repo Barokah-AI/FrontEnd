@@ -23,11 +23,5 @@ const menuData = [
     path: "#team",
     newTab: false,
   },
-  {
-    id: 5,
-    title: "Our Team",
-    path: "#team",
-    newTab: false,
-  },
 ];
 export default menuData;
