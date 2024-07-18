@@ -93,7 +93,7 @@ const Header = () => {
                   />
                   <div>
                     <h1 className="mt-1 text-2xl font-bold text-primary">
-                      Barokah-AI
+                      BarokahAI
                     </h1>
                   </div>
                 </div>
