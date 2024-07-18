@@ -47,7 +47,7 @@ const Hero = () => {
                   transition={{ duration: 1 }}
                 >
                   Unleash the Power of AI with{" "}
-                  <span className="text-primary">BarokahAI</span>
+                  <span className="text-primary">Barokah-AI</span>
                 </motion.h1>
                 <motion.p
                   className="text-base text-center !leading-relaxed text-body-color dark:text-body-color-dark sm:text-xl lg:text-start"
@@ -55,7 +55,7 @@ const Hero = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 1 }}
                 >
-                  Welcome to BarokahAI, your gateway to unlocking the boundless
+                  Welcome to Barokah-AI, your gateway to unlocking the boundless
                   power of Artificial Intelligence. Experience unparalleled
                   precision, efficiency, and innovation with every interaction.
                 </motion.p>
@@ -145,9 +145,9 @@ const Hero = () => {
               stroke="url(#paint5_linear_25:217)"
             />
             <circle
-              opacity="0.8"
-              cx="191.659"
-              cy="302.659"
+              opacity="0.9"
+              cx="191.6599"
+              cy="302.6599"
               r="133.362"
               transform="rotate(133.319 191.659 302.659)"
               fill="url(#paint6_linear_25:217)"
@@ -165,7 +165,7 @@ const Hero = () => {
                 <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
               </linearGradient>
               <radialGradient
-                id="paint1_radial_25:217"
+                id="paint1_radial_25:219"
                 cx="0"
                 cy="0"
                 r="1"
@@ -210,7 +210,7 @@ const Hero = () => {
               </linearGradient>
               <linearGradient
                 id="paint5_linear_25:217"
-                x1="356"
+                x1="359"
                 y1="110"
                 x2="356"
                 y2="470"
