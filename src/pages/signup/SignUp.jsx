@@ -173,7 +173,7 @@ const SignupPage = () => {
                   </div>
                 </form>
                 <p className="text-center text-base font-medium text-body-color">
-                  Already using BarokahAI?{" "}
+                  Already using Barokah-AI?{" "}
                   <Link to="/signin" className="text-primary hover:underline">
                     Sign in
                   </Link>
