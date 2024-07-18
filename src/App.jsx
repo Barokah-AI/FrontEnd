@@ -3,8 +3,8 @@ import { Route, Routes } from "react-router-dom";
 
 import Index from "./pages/Index";
 import ChatPage from "./pages/chatPage/ChatPage";
-import SigninPage from "./pages/signin/SignIn";
-import SignupPage from "./pages/signup/SignUp";
+import SigninPage from "./authPage/SignIn";
+import SignupPage from "./authPage/SignUp";
 
 const App = () => {
   return (
