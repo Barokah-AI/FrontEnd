@@ -93,7 +93,7 @@ const Header = () => {
                   />
                   <div>
                     <h1 className="mt-1 text-2xl font-bold text-primary">
-                      BarokahAI
+                      Barokah-AI
                     </h1>
                   </div>
                 </div>
@@ -159,7 +159,7 @@ const Header = () => {
                         to="/signup"
                         className="flex py-2 text-base text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
                       >
-                        Sign Up
+                        SignUp
                       </Link>
                     </li>
                   </ul>
@@ -170,7 +170,7 @@ const Header = () => {
                   to="/signin"
                   className="px-4 py-3 text-base font-medium text-dark hover:opacity-70 dark:text-white"
                 >
-                  Sign In
+                  SignIn
                 </Link>
                 <Link
                   to="/signup"
