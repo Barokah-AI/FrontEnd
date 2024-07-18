@@ -24,11 +24,11 @@ const Features = () => {
             whileInView="visible"
             variants={titleVariants}
             viewport={{ once: true }}
-            transition={{ delay: 0.5, duration: 1 }}
+            transition={{ delay: 0.4, duration: 1 }}
           >
             <SectionTitle
               title="Main Features"
-              paragraph="Explore the Key Features of BarokahAI and Discover Ease and Excellence in Every Interaction. We hope your experience here will be both beneficial and satisfying."
+              paragraph="Explore the Key Features of Barokah-AI and Discover Ease and Excellence in Every Interaction. We hope your experience here will be both beneficial and satisfying."
               center
             />
           </motion.div>
@@ -40,7 +40,7 @@ const Features = () => {
                 whileInView="visible"
                 variants={itemVariants}
                 viewport={{ once: true }}
-                transition={{ delay: 0.5 + index * 0.2, duration: 0.5 }}
+                transition={{ delay: 0.4 + index * 0.2, duration: 0.4 }}
               >
                 <SingleFeature feature={feature} />
               </motion.div>
