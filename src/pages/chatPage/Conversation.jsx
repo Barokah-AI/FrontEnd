@@ -60,7 +60,7 @@ const Conversation = ({ conversations }) => {
               <div className="flex space-x-5">
                 <img
                   className="flex-shrink-0 w-[2.375rem] h-[2.375rem] rounded-full"
-                  src="https://github.com/Barokah-AI/BackEnd/assets/94734096/0bf32c79-e402-4565-9868-8a21c84d8b33"
+                  src="https://github.com/Barokah-AI/Frontend/assets/94734096/0bf32c79-e402-4565-9868-8a21c84d8b33"
                   alt="avatar"
                 />
                 {/* Card */}
