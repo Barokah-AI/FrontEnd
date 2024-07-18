@@ -3,6 +3,11 @@ import TeamCard from "./TeamCard";
 import teamData from "../data/teamData";
 import { motion } from "framer-motion";
 
+const titleVariants = {
+  hidden: { opacity: 0, y: -50 },
+  visible: { opacity: 1, y: 0 },
+};
+
 const Team = () => {
   return (
     <section
