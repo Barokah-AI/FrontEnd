@@ -49,7 +49,7 @@ const Hero = () => {
                   Unleash the Power of AI with{" "}
                   <span className="text-primary">BarokahAI</span>
                 </motion.h1>
-                {/* <motion.p
+                <motion.p
                   className="text-base text-center !leading-relaxed text-body-color dark:text-body-color-dark sm:text-xl lg:text-start"
                   initial={{ opacity: 0, y: -50 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -58,7 +58,7 @@ const Hero = () => {
                   Welcome to BarokahAI, your gateway to unlocking the boundless
                   power of Artificial Intelligence. Experience unparalleled
                   precision, efficiency, and innovation with every interaction.
-                </motion.p> */}
+                </motion.p>
 
                 <motion.div
                   className="flex justify-center mt-7 gap-3 w-full lg:justify-start"
