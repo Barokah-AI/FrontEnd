@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import menuData from "../data/menuData";
 
 const Footer = () => {
   return (
@@ -21,7 +22,7 @@ const Footer = () => {
                   </div>
                 </div>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                Follow Us on Social Media To get the latest updates, news and interesting content from BarokahAI, don't forget to follow us on social media!
+                Follow Us on Social Media To get the latest updates, news and interesting content from Barokah AI, don't forget to follow us on social media!
 
                 </p>
                 <div className="flex items-center">
@@ -103,36 +104,22 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
+            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
+              <div className="mb-10 w-full">
+                <h4 className="mb-9 text-lg font-semibold text-dark dark:text-dark">
                   Useful Links
-                </h2>
+                </h4>
                 <ul>
-                  <li>
-                    <Link
-                      to="https://barokah-ai.vercel.app"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Features
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="#https://barokah-ai.vercel.app"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Profile
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="https://barokah-ai.vercel.app"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Our Team
-                    </Link>
-                  </li>
+                  {menuData.map((menuItem) => (
+                    <li key={menuItem.id}>
+                      <a
+                        href={menuItem.path}
+                        className="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      >
+                        {menuItem.title}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
