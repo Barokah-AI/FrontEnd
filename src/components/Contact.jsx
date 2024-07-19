@@ -11,7 +11,7 @@ const Contact = () => {
               data-wow-delay=".15s"
             >
               <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
-                Need Help? Make a Request
+              Butuh bantuan? Buat sebuah permintaan
               </h2>
               <p className="mb-12 text-base font-medium text-body-color">
                 Barokah AI's support team will respond to you as soon as possible via email.
@@ -24,7 +24,7 @@ const Contact = () => {
                         htmlFor="name"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
-                        Full Name
+                        Nama Lengkap
                       </label>
                       <input
                         type="text"
