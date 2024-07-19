@@ -165,12 +165,12 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <Link
-                      to="/contact"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    <a
+                      href="#"
+                      className="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Open Support Ticket
-                    </Link>
+                    </a>
                   </li>
                   <li>
                     <Link
