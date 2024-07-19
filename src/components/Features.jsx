@@ -24,11 +24,11 @@ const Features = () => {
             whileInView="visible"
             variants={titleVariants}
             viewport={{ once: true }}
-            transition={{ delay: 0.5, duration: 1 }}
+            transition={{ delay: 0.6, duration: 2 }}
           >
             <SectionTitle
               title="Main Features"
-              paragraph="Explore the Key Features of BarokahAI and Discover Ease and Excellence in Every Interaction. We hope your experience here will be both beneficial and satisfying."
+              paragraph="Jelajahi Fitur Utama BarokahAI dan Temukan Kemudahan dan Keunggulan dalam Setiap Interaksi. Kami berharap pengalaman Anda di sini bermanfaat dan memuaskan."
               center
             />
           </motion.div>
