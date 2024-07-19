@@ -98,7 +98,7 @@ const About = () => {
             >
               <div className="relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0">
                 <img
-                  src="https://github.com/Barokah-AI/Frontend/assets/104063079/cf74a9a2-5084-4310-9817-b201af54cec8"
+                  src="https://github.com/Barokah-AI/FrontEnd/assets/104063079/cf74a9a2-5084-4310-9817-b201af54cec8"
                   alt="about image"
                   fill
                   className="drop-shadow-three dark:drop-shadow-none"
