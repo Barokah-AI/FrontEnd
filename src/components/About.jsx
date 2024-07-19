@@ -128,7 +128,7 @@ const About = () => {
                     start a conversation. Just click to start chatting.
                   </p>
                 </div>
-                {/* <div className="mb-9">
+                <div className="mb-9">
                   <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                     Starting Interaction:
                   </h3>
@@ -138,7 +138,7 @@ const About = () => {
                     anything from product information, technical assistance,
                     personal advice, to casual chat.
                   </p>
-                </div> */}
+                </div>
               </div>
             </motion.div>
           </div>
