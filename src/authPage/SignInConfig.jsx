@@ -19,8 +19,7 @@ export const loginUser = async (email, password) => {
       throw new Error(data.message || "Login failed. Please try again.");
     }
 
-    // Simpan token ke dalam cookies dengan waktu kedaluwarsa 1 jam
-    Cookies.set("authToken", data.token, { expires: 1 }); // expires dalam hari
+    Cookies.set("authToken", data.token, { expires: 1 });
 
     return data;
   } catch (error) {
