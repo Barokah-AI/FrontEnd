@@ -84,7 +84,7 @@ const SigninPage = () => {
                       htmlFor="email"
                       className="mb-3 block text-sm font-medium text-dark dark:text-white"
                     >
-                      Your Email
+                      Your Emailre
                     </label>
                     <input
                       type="email"
@@ -98,7 +98,7 @@ const SigninPage = () => {
                       htmlFor="password"
                       className="mb-3 block text-sm font-medium text-dark dark:text-white"
                     >
-                      Your Password
+                      Your Passwordre
                     </label>
                     <input
                       type="password"
@@ -118,14 +118,14 @@ const SigninPage = () => {
                         htmlFor="checkboxLabelOne"
                         className="text-sm font-medium text-body-color"
                       >
-                        Remember me
+                        Remember mere
                       </label>
                     </div>
                     <Link
                       to="/forgot-password"
                       className="text-sm font-medium text-primary hover:underline"
                     >
-                      Forget Password?
+                      Forget Password?re
                     </Link>
                   </div>
                   <div className="mb-6">
