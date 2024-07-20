@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
+import PrivateRoute from "./routes/privateRoutes";
 
 import Index from "./pages/Index";
 import ChatPage from "./pages/chatPage/ChatPage";
@@ -12,7 +13,14 @@ const App = () => {
     <>
       <Routes>
         <Route path="/" element={<Index />} />
-        <Route path="/chat" element={<ChatPage />} />
+        <Route
+          path="/chat"
+          element={
+            <PrivateRoute>
+              <ChatPage />
+            </PrivateRoute>
+          }
+        />
         <Route path="/signin" element={<SigninPage />} />
         <Route path="/signup" element={<SignupPage />} />
         <Route path="*" element={<NotFoundPage />} />
