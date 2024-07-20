@@ -23,20 +23,20 @@ const Team = () => {
       </div>
       <div className="absolute right-0 top-5 z-[-1]">
         <svg
-          width="238"
-          height="531"
-          viewBox="0 0 238 531"
+          width="240"
+          height="535"
+          viewBox="0 0 240 535"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <rect
             opacity="0.3"
-            x="422.819"
-            y="-70.8145"
-            width="196"
-            height="541.607"
+            x="425.820"
+            y="-70.8545"
+            width="195"
+            height="545.605"
             rx="2"
-            transform="rotate(51.2997 422.819 -70.8145)"
+            transform="rotate(51.2595 425.815 -70.8545)"
             fill="url(#paint0_linear_83:2)"
           />
           <rect
