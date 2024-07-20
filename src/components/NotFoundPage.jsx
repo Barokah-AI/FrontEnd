@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 
 export const metadata = {
-  title: "Error Page | Free Next.js Template for Startup and SaaS",
-  description: "This is Error Page for Startup Nextjs Template",
+  title: "Not Found Page | BarokahAI",
+  description:
+    "Sorry, the page you are looking for does not exist. Please check the URL or return to the homepage.",
 };
 
 const NotFoundPage = () => {
