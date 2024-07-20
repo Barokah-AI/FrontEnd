@@ -12,7 +12,7 @@ const Conversation = ({ conversations }) => {
             alt="avatar"
           />
           {/* Card --> */}
-          <div className="bg-white border border-gray-200 rounded-lg p-4 space-y-3 dark:bg-neutral-900 dark:border-neutral-700">
+          <div className="bg-white border border-gray-200 rounded-lg p-5 space-y-5 dark:bg-neutral-900 dark:border-neutral-700">
             <h2 className="font-medium text-gray-800 dark:text-white">
               How can we help?
             </h2>
@@ -38,7 +38,7 @@ const Conversation = ({ conversations }) => {
         {conversations.map((conv, index) => (
           <React.Fragment key={index}>
             {/* Question */}
-            <li className="w-full py-2 px-4 ms-auto flex justify-end gap-x-2 sm:gap-x-4 sm:py-4 sm:px-10">
+            <li className="w-full py-5 px-10 ms-auto flex justify-end gap-x-5 sm:gap-x-5 sm:py-5 sm:px-10">
               <div className="grow text-end space-y-3">
                 {/* Card */}
                 <div className="inline-block bg-blue-600 rounded-lg p-4 shadow-sm">
@@ -56,7 +56,7 @@ const Conversation = ({ conversations }) => {
             {/* Question */}
 
             {/* Answer */}
-            <li className="w-full py-2 px-4 mx-auto gap-x-5 sm:gap-x-4 sm:py-4 sm:px-10">
+            <li className="w-full py-5 px-5 mx-auto gap-x-5 sm:gap-x-4 sm:py-4 sm:px-10">
               <div className="flex space-x-5">
                 <img
                   className="flex-shrink-0 w-[2.375rem] h-[2.375rem] rounded-full"
@@ -86,7 +86,7 @@ const Conversation = ({ conversations }) => {
                 <div className="sm:flex sm:justify-between">
                   <div>
                     <div className="inline-flex border border-gray-200 rounded-full p-0.5 dark:border-neutral-700">
-                      <button
+                      {/* <button
                         type="button"
                         className="inline-flex flex-shrink-0 justify-center items-center size-8 rounded-full text-gray-500 hover:bg-blue-100 hover:text-blue-800 focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:text-neutral-500 dark:hover:bg-blue-900 dark:hover:text-blue-200"
                       >
@@ -102,7 +102,7 @@ const Conversation = ({ conversations }) => {
                           <path d="M7 10v12" />
                           <path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z" />
                         </svg>
-                      </button>
+                      </button> */}
                       <button
                         type="button"
                         className="inline-flex flex-shrink-0 justify-center items-center size-8 rounded-full text-gray-500 hover:bg-blue-100 hover:text-blue-800 focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:text-neutral-500 dark:hover:bg-blue-900 dark:hover:text-blue-200"
