@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 export const metadata = {
   title: "Not Found Page | BarokahAI",
   description:
@@ -146,12 +144,12 @@ const NotFoundPage = () => {
                   The page you were looking for appears to have been moved,
                   deleted or does not exist.
                 </p>
-                <Link
-                  to="/"
+                <button
+                  onClick={() => window.history.back()}
                   className="px-8 py-3 text-base font-bold text-white duration-300 rounded-md bg-primary shadow-signUp hover:bg-white hover:text-primary md:px-9 lg:px-8 xl:px-9"
                 >
-                  Back to Homepage
-                </Link>
+                  Back to Previous Page
+                </button>
               </div>
             </div>
           </div>
