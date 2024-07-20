@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
-              <div className="flex gap-2">
+              {/* <div className="flex gap-2">
                   <img
                     src="https://github.com/Barokah-AI/BackEnd/assets/94734096/0bf32c79-e402-4565-9868-8a21c84d8b33"
                     alt="Image Description"
@@ -20,7 +20,7 @@ const Footer = () => {
                       BarokahAI
                     </h1>
                   </div>
-                </div>
+                </div> */}
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
                 Follow Us on Social Media To get the latest updates, news and interesting content from Barokah AI, don't forget to follow us on social media!
 
