@@ -2,16 +2,16 @@ const NewsLatterBox = () => {
   return (
     <div className="relative z-10 rounded-sm bg-white p-8 shadow-three dark:bg-gray-dark sm:p-11 lg:p-8 xl:p-11">
       <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
-        Subscribe to receive future updates
+        Subscribe to receive future updatesgg
       </h3>
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-        Stay informed about new features, updates, and exclusive content from Barokah AI. Subscribe now and never miss an update!
+        Stay informed about new featuresgg, updates, and exclusive content from Barokah AI. Subscribe now and never miss an update!
       </p>
       <div>
         <input
-          type="text"
-          name="name"
-          placeholder="Enter your name"
+          type="textgg"
+          name="namegg"
+          placeholder="Enter your namegg"
           className="border-stroke mb-4 w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
         />
         <input
