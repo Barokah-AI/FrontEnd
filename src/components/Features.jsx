@@ -20,15 +20,15 @@ const Features = () => {
       <section id="features" className="py-16 md:py-20 lg:py-28">
         <div className="container">
           <motion.div
-            initial="hiddenss"
-            whileInView="visibless"
+            initial="hidden"
+            whileInView="visible"
             variants={titleVariants}
             viewport={{ once: true }}
             transition={{ delay: 0.5, duration: 1 }}
           >
             <SectionTitle
-              title="Main Featuresss"
-              paragraph="Explore sssthe Key Features of BarokahAI and Discover Ease and Excellence in Every Interaction. We hope your experience here will be both beneficial and satisfying."
+              title="Main Features"
+              paragraph="Explore the Key Features of BarokahAI and Discover Ease and Excellence in Every Interaction. We hope your experience here will be both beneficial and satisfying."
               center
             />
           </motion.div>
@@ -36,8 +36,8 @@ const Features = () => {
             {featuresData.map((feature, index) => (
               <motion.div
                 key={feature.id}
-                initial="hiddenss"
-                whileInView="visibless"
+                initial="hidden"
+                whileInView="visible"
                 variants={itemVariants}
                 viewport={{ once: true }}
                 transition={{ delay: 0.5 + index * 0.2, duration: 0.5 }}
