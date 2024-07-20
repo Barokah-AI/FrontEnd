@@ -67,7 +67,7 @@ const Hero = () => {
                   transition={{ duration: 1, delay: 1.5 }}
                 >
                   <Link
-                    to="/chat"
+                    to="/signin"
                     className="rounded-lg bg-primary px-4 py-3 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
                     Get Started
