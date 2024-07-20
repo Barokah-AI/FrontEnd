@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-20 lg:pt-24">
+      <footer className="relative z-15 bg-white pt-20 dark:bg-gray-dark md:pt-25 lg:pt-30">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
-              <div className="mb-12 max-w-[360px] lg:mb-16">
+            <div className="w-full px-5 md:w-1/2 lg:w-5/12 xl:w-8/12">
+              <div className="mb-15 max-w-[360px] lg:mb-20">
               <div className="flex gap-2">
                   <img
                     src="https://github.com/Barokah-AI/FrontEnd/assets/94734096/0bf32c79-e402-4565-9868-8a21c84d8b33"
                     alt="Image Description"
-                    className="w-10 h-auto"
+                    className="w-15 h-auto"
                   />
                   <div>
                     <h1 className="mt-1 text-2xl font-bold text-primary">
@@ -25,26 +25,6 @@ const Footer = () => {
 
                 </p>
                 <div className="flex items-center">
-                  <Link
-                    to="/"
-                    aria-label="social-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                  >
-                    <svg
-                      width="18"
-                      height="18"
-                      viewBox="0 0 22 22"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12.1 10.4939V7.42705C12.1 6.23984 13.085 5.27741 14.3 5.27741H16.5V2.05296L13.5135 1.84452C10.9664 1.66676 8.8 3.63781 8.8 6.13287V10.4939H5.5V13.7183H8.8V20.1667H12.1V13.7183H15.4L16.5 10.4939H12.1Z"
-                        fill="currentColor"
-                      />
-                    </svg>
-                  </Link>
                   <Link
                     to="/"
                     aria-label="social-link"
