@@ -258,15 +258,15 @@ const About = () => {
                 <stop offset="1" stopColor="#4A6CF7" />
               </linearGradient>
               <linearGradient
-                id="paint3_linear_72:302"
-                x1="256.267"
-                y1="76.6717"
-                x2="-40.8688"
-                y2="31.1572"
+                id="paint3_linear_75:305"
+                x1="255.265"
+                y1="75.6515"
+                x2="-40.8585"
+                y2="35.1575"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#4A6CF7" stopOpacity="0" />
-                <stop offset="1" stopColor="#4A6CF7" />
+                <stop stopColor="#5A5CF5" stopOpacity="0" />
+                <stop offset="1" stopColor="#5A5CF7" />
               </linearGradient>
             </defs>
           </svg>
