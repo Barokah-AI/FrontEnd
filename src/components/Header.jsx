@@ -55,17 +55,17 @@ const Header = () => {
 
   const navigate = useNavigate();
 
-  // const handleMenuClick = (path) => {
-  //   if (path.startsWith("/")) {
-  //     navigate(path); // Navigate to internal routes like /signin
-  //   } else {
-  //     const targetSection = document.querySelector(path);
-  //     if (targetSection) {
-  //       targetSection.scrollIntoView({ behavior: "smooth" });
-  //     }
-  //   }
-  //   setNavbarOpen(false); // Close the navbar on menu click
-  // };
+  const handleMenuClick = (path) => {
+    if (path.startsWith("/")) {
+      navigate(path); // Navigate to internal routes like /signin
+    } else {
+      const targetSection = document.querySelector(path);
+      if (targetSection) {
+        targetSection.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+    setNavbarOpen(false); // Close the navbar on menu click
+  };
 
   return (
     <>
