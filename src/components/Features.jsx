@@ -24,15 +24,15 @@ const Features = () => {
             whileInView="visible"
             variants={titleVariants}
             viewport={{ once: true }}
-            transition={{ delay: 0.6, duration: 2 }}
+            transition={{ delay: 0.5, duration: 1 }}
           >
             <SectionTitle
               title="Main Features"
-              paragraph="Jelajahi Fitur Utama BarokahAI dan Temukan Kemudahan dan Keunggulan dalam Setiap Interaksi. Kami berharap pengalaman Anda di sini bermanfaat dan memuaskan."
+              paragraph="Explore the Key Features of BarokahAI and Discover Ease and Excellence in Every Interaction. We hope your experience here will be both beneficial and satisfying."
               center
             />
           </motion.div>
-          <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-5 gap-x-10 gap-y-14 md:grid-cols-5 lg:grid-cols-5">
             {featuresData.map((feature, index) => (
               <motion.div
                 key={feature.id}
@@ -40,7 +40,7 @@ const Features = () => {
                 whileInView="visible"
                 variants={itemVariants}
                 viewport={{ once: true }}
-                transition={{ delay: 0.5 + index * 0.2, duration: 0.5 }}
+                transition={{ delay: 0.5 + index * 0.5, duration: 0.5 }}
               >
                 <SingleFeature feature={feature} />
               </motion.div>
