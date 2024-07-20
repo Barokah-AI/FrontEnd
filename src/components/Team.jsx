@@ -34,7 +34,7 @@ const Team = () => {
           />
         </motion.div>
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+        {/* <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           {teamData.map((team, index) => (
             <motion.div
               key={team.id}
@@ -47,7 +47,7 @@ const Team = () => {
               <TeamCard team={team} />
             </motion.div>
           ))}
-        </div>
+        </div> */}
       </div>
       <div className="absolute right-0 top-5 z-[-1]">
         <svg
