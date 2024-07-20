@@ -6,6 +6,18 @@ export const metadata = {
     "Sorry, the page you are looking for does not exist. Please check the URL or return to the homepage.",
 };
 
+const textVariants = {
+  hidden: { opacity: 0, y: -50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      delay: 0.2,
+    },
+  },
+};
+
 const NotFoundPage = () => {
   return (
     <>
