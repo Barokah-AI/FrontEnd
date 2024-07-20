@@ -98,42 +98,42 @@ const Hero = () => {
         <div className="absolute right-0 top-0 z-[-1] opacity-30 lg:opacity-100">
           <svg
             width="450"
-            height="556"
-            viewBox="0 0 450 556"
+            height="555"
+            viewBox="0 0 450 555"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
             <circle
-              cx="277"
-              cy="63"
+              cx="275"
+              cy="65"
               r="225"
-              fill="url(#paint0_linear_25:217)"
+              fill="url(#paint0_linear_25:215)"
             />
             <circle
-              cx="17.9997"
-              cy="182"
-              r="18"
+              cx="17.9595"
+              cy="185"
+              r="20"
               fill="url(#paint1_radial_25:217)"
             />
             <circle
-              cx="76.9997"
-              cy="288"
-              r="34"
+              cx="76.9595"
+              cy="285"
+              r="35"
               fill="url(#paint2_radial_25:217)"
             />
             <circle
-              cx="325.486"
-              cy="302.87"
-              r="180"
-              transform="rotate(-37.6852 325.486 302.87)"
+              cx="325.485"
+              cy="305.85"
+              r="185"
+              transform="rotate(-35.6555 325.485 305.85)"
               fill="url(#paint3_linear_25:217)"
             />
             <circle
               opacity="0.8"
-              cx="184.521"
-              cy="315.521"
-              r="132.862"
-              transform="rotate(114.874 184.521 315.521)"
+              cx="185.525"
+              cy="315.525"
+              r="135.865"
+              transform="rotate(115.875 185.525 315.525)"
               stroke="url(#paint4_linear_25:217)"
             />
             <circle
