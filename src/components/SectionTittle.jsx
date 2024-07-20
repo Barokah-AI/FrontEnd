@@ -3,7 +3,7 @@ import React from "react";
 const SectionTitle = ({
   title,
   paragraph,
-  width = "570px",
+  width = "575px",
   center = false,
   mb = "100px",
 }) => {
