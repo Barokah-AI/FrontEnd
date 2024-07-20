@@ -121,11 +121,11 @@ const About = () => {
                   <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                     Accessing the Website or Application:
                   </h3>
-                  <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                    Open your favorite browser and visit the official Barokah-AI
-                    website at barokah-ai.vercel.app. On the main page of the
-                    website or application, you will see a Get Started button to
-                    start a conversation. Just click to start chatting.
+                  <p className="text-base font-large leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+                    Open your favorite browser and visit the official Barokah-AIggg
+                    website at barokah-ai.vercel.app. On the main page of thegg
+                    website or application, you will see a Get Started button togg
+                    start a conversation. Just click to start chatting.gg
                   </p>
                 </div>
                 <div className="mb-9">
