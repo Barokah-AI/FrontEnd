@@ -48,7 +48,7 @@ const useConversations = () => {
         setConversations((prev) =>
           prev.map((conv, index) =>
             index === prev.length - 1
-              ? { ...conv, answer: "Aku gak ngerti,coba tanya yang lain" }
+              ? { ...conv, answer: "Aku gak ngerti,coba buat pertanyaan yang lain." }
               : conv
           )
         );
