@@ -87,7 +87,7 @@ const NewsLatterBox = () => {
           </svg>
         </span>
 
-        <span className="absolute right-2 top-[140px]">
+        {/* <span className="absolute right-2 top-[140px]">
           <svg
             width="38"
             height="38"
@@ -113,7 +113,7 @@ const NewsLatterBox = () => {
               </linearGradient>
             </defs>
           </svg>
-        </span>
+        </span> */}
 
         <span className="absolute right-0 top-0">
           <svg
