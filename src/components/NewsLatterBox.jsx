@@ -46,13 +46,13 @@ const NewsLatterBox = () => {
             <defs>
               <linearGradient
                 id="paint0_linear_1028_600"
-                x1="-18.3187"
-                y1="55.1044"
-                x2="37.161"
-                y2="15.3509"
+                x1="-20.3585"
+                y1="55.1545"
+                x2="35.165"
+                y2="15.3505"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="light" stopOpacity="0.62" />
+                <stop stopColor="light" stopOpacity="0.65" />
                 <stop offset="1" stopColor="light" stopOpacity="0" />
               </linearGradient>
             </defs>
@@ -61,9 +61,9 @@ const NewsLatterBox = () => {
 
         <span className="absolute bottom-24 left-1.5">
           <svg
-            width="39"
-            height="32"
-            viewBox="0 0 39 32"
+            width="40"
+            height="35"
+            viewBox="0 0 40 35"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -87,7 +87,7 @@ const NewsLatterBox = () => {
           </svg>
         </span>
 
-        <span className="absolute right-2 top-[140px]">
+        {/* <span className="absolute right-2 top-[140px]">
           <svg
             width="38"
             height="38"
@@ -113,7 +113,7 @@ const NewsLatterBox = () => {
               </linearGradient>
             </defs>
           </svg>
-        </span>
+        </span> */}
 
         <span className="absolute right-0 top-0">
           <svg
