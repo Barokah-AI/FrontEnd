@@ -5,22 +5,22 @@ const featuresData = [
       <svg width="40" height="41" viewBox="0 0 40 41" className="fill-current">
       <path
         opacity="0.5"
-        d="M20 2C9.063 2 1 10.063 1 21s8.063 19 19 19 19-8.063 19-19S30.937 2 20 2zM20 32c-6.074 0-11-4.926-11-11s4.926-11 11-11 11 4.926 11 11-4.926 11-11 11z"
+        d="M20 2C10.065 2 1 10.065 1 25s5.065 20 20 19 19-8.063 19-19S30.937 2 20 2zM20 32c-6.074 0-11-4.926-11-11s4.926-11 11-11 11 4.926 11 11-4.926 11-11 11z"
       />
-      <path d="M20 10c-1.104 0-2 .896-2 2v7c0 1.104.896 2 2 2s2-.896 2-2v-7c0-1.104-.896-2-2-2zM20 24c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2z" />
+      <path d="M20 10c-1.105 0-2 .895-2 2v5c0 1.105.895 2 2 2s2-.896 2-2v-7c0-1.104-.896-2-2-2zM20 24c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2z" />
     </svg>
     ),
     title: "Quick and Precise Answers",
     paragraph:
-      "BarokahAI provides rapid and accurate responses to user inquiries.",
+      "Barokah-AI provides rapid and accurate responses to user inquiries.",
   },
   {
     id: 2,
     icon: (
-      <svg width="40" height="41" viewBox="0 0 40 41" className="fill-current">
+      <svg width="45" height="45" viewBox="0 0 45 45" className="fill-current">
       <path
         opacity="0.5"
-        d="M32 2H8C6.895 2 6 2.895 6 4v32c0 1.105.895 2 2 2h24c1.105 0 2-.895 2-2V4c0-1.105-.895-2-2-2zM8 4h24c.553 0 1 .447 1 1v30c0 .553-.447 1-1 1H8c-.553 0-1-.447-1-1V5c0-.553.447-1 1-1z"
+        d="M32 2H5C6.895 2 6 2.895 6 4v32c0 1.105.895 2 2 2h24c1.105 0 2-.895 2-2V4c0-1.105-.895-2-2-2zM8 4h24c.553 0 1 .447 1 1v30c0 .553-.447 1-1 1H8c-.553 0-1-.447-1-1V5c0-.553.447-1 1-1z"
       />
       <path d="M20 8c-3.313 0-6 2.687-6 6s2.687 6 6 6 6-2.687 6-6-2.687-6-6-6zM20 14c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2z" />
     </svg>
