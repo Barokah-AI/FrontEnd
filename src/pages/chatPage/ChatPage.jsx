@@ -21,7 +21,7 @@ const ChatPage = () => {
         <div className="drawer-content flex items-center py-3 space-x-5">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <div className="flex gap-2">
+            {/* <div className="flex gap-2">
               <img
                 src="/images/logo/logo.png"
                 alt="Image Description"
@@ -32,7 +32,7 @@ const ChatPage = () => {
                   BarokahAI
                 </h1>
               </div>
-            </div>
+            </div> */}
             {/* <!--Logo */}
           </div>
 
