@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export const metadata = {
   title: "Not Found Page | BarokahAI",
   description:
