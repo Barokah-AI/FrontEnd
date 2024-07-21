@@ -16,13 +16,13 @@ export const loginUser = async (email, password) => {
     const data = await response.json();
 
     if (!response.ok) {
-      throw new Error(data.message || "Ups Login failed. Please try again.");
+      throw new Error(data.message || "Login failed. Please try again.");
     }
 
     Cookies.set("authToken", data.token, { expires: 1 });
 
     return data;
   } catch (error) {
-    throw new Error(error.message || "Sorry An error occurred. Please try again.");
+    throw new Error(error.message || "An error occurred. Please try again.");
   }
 };
