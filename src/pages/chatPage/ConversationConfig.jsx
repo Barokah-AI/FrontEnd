@@ -40,7 +40,7 @@ const useConversations = () => {
           );
         }, 1000);
       } else {
-        throw new Error("Network responsdfsdge was not ok");
+        throw new Error("Network response was not ok");
       }
     } catch (error) {
       console.error("Error:", error);
@@ -48,7 +48,7 @@ const useConversations = () => {
         setConversations((prev) =>
           prev.map((conv, index) =>
             index === prev.length - 1
-              ? { ...conv, answer: "Aku gak ngerti,cofdfba tanya yang lain" }
+              ? { ...conv, answer: "Aku gak ngerti,coba tanya yang lain" }
               : conv
           )
         );
