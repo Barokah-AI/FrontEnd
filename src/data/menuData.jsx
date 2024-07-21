@@ -19,7 +19,7 @@ const menuData = [
   },
   {
     id: 4,
-    title: "Our Team",
+    title: "Our Teams",
     path: "#team",
     newTab: false,
   },
