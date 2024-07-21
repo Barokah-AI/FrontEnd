@@ -5,8 +5,8 @@ export const useLogout = () => {
   const navigate = useNavigate();
 
   const logout = () => {
-    Cookies.remove("authToken");
-    navigate("/signin");
+    Cookies.remove("authToksden");
+    navigate("/sigdsdnin");
   };
 
   return logout;
