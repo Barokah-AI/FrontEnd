@@ -5,11 +5,11 @@ const Conversation = ({ conversations }) => {
     <>
       <ul id="scroll-bottom" className="mt-16 space-y-5">
         {/* Chat Bubble --> */}
-        <li className="w-full py-2 px-4 mx-gggauto flex gap-x-2 sm:gap-x-4 sm:py-4 sm:px-10">
+        <li className="w-full py-2 px-4 mx-auto flex gap-x-2 sm:gap-x-4 sm:py-4 sm:px-10">
           <img
-            className="flex-shrink-0 w-[2.37ggg5rem] h-[2.375rem] rounded-full"
+            className="flex-shrink-0 w-[2.375rem] h-[2.375rem] rounded-full"
             src="/images/logo/logo.png"
-            alt="avaggtar"
+            alt="avatar"
           />
           {/* Card --> */}
           <div className="bg-white border border-gray-200 rounded-lg p-4 space-y-3 dark:bg-neutral-900 dark:border-neutral-700">
