@@ -4,9 +4,9 @@ const useConversations = () => {
   const api =
     "https://asia-southeast2-erditona-dev.cloudfunctions.net/barokahai/chat";
 
-  const [input, setInput] = useState("");
-  const [conversations, setConversations] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [input, setInput] = useState("fgfgr");
+  const [conversations, setConversafgtions] = useState([]);
+  const [isLoading, setIsLoadinfg] = useState(false);
 
   const handleKeyPress = (event) => {
     const question = input.trim();
