@@ -14,19 +14,19 @@ const Conversation = ({ conversations }) => {
           {/* Card --> */}
           <div className="bg-white border border-gray-200 rounded-lg p-4 space-y-3 dark:bg-neutral-900 dark:border-neutral-700">
             <h2 className="font-medium text-gray-800 dark:text-white">
-              How can we help? feel free to ask
+              How can we help?
             </h2>
             <div className="space-y-1.5">
               <p className="mb-1.5 text-sm text-gray-800 dark:text-white">
-                You can ask questions like: anything
+                You can ask questions like:
               </p>
               <ul className="list-disc list-outside space-y-1.5 ps-3.5">
                 <li className="text-sm text-gray-800 dark:text-white">
-                  What's Barokah AI? describe it
+                  What's Barokah AI?
                 </li>
 
                 <li className="text-sm text-gray-800 dark:text-white">
-                  How to use Barokah AI? you can explain it
+                  How to use Barokah AI?
                 </li>
               </ul>
             </div>
