@@ -119,24 +119,24 @@ const About = () => {
                     Step by Step to Use Barokah-AI
                   </h2>
                   <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                    Accessing the Website or Application:
+                    Accessing the Website or Application: Barokah-AI
                   </h3>
                   <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
                     Open your favorite browser and visit the official Barokah-AI
                     website at barokah-ai.vercel.app. On the main page of the
                     website or application, you will see a Get Started button to
-                    start a conversation. Just click to start chatting.
+                    start a conversation. Just click to start chatting. You can
                   </p>
                 </div>
                 <div className="mb-9">
                   <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                    Starting Interaction:
+                    Starting Interaction: Chatting with Barokah-AI
                   </h3>
                   <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
                     Please type your question or command in the chat box.
                     Barokah-AI will respond quickly and accurately. You can ask
                     anything from product information, technical assistance,
-                    personal advice, to casual chat.
+                    personal advice, to casual chat. Barokah-AI is here to help
                   </p>
                 </div>
               </div>
