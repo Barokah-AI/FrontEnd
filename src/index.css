@@ -34,8 +34,8 @@
 
 .loading-dots {
   display: inline-block;
-  font-size: 2rem;
-  color: gray;
+  font-size: 4rem;
+  color: rgb(202, 72, 72);
 }
 
 .loading-dots span {
