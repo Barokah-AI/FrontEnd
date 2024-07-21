@@ -112,7 +112,7 @@ const ChatPage = () => {
                     <path d="M5 12h14" />
                     <path d="M12 5v14" />
                   </svg>
-                  New chat  // New chat
+                  New chat
                 </a>
               </li>
               <li>
@@ -133,7 +133,7 @@ const ChatPage = () => {
                     <polyline points="7 10 12 15 17 10" />
                     <line x1="12" x2="12" y1="15" y2="3" />
                   </svg>
-                  Save conversation // Save conversation
+                  Save conversation
                 </a>
               </li>
             </ul>
