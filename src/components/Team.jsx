@@ -28,8 +28,8 @@ const Team = () => {
           transition={{ delay: 0.5, duration: 1 }}
         >
           <SectionTitle
-            title="Our Team"
-            paragraph="Meet our talented individuals who make our mission possible. Each member brings unique skills and expertise, working together to deliver the best results"
+            title="Our Teams"
+            paragraph="Meet the talented individuals who make our mission possible. Each member brings unique skills and expertise, collaborating to deliver exceptional results."
             center
           />
         </motion.div>
