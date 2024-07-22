@@ -46,7 +46,7 @@ const Hero = () => {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 1 }}
                 >
-                  Explore the Power of AI with{" "}
+                  Unleash the Power of AI with{" "}
                   <span className="text-primary">BarokahAI</span>
                 </motion.h1>
                 <motion.p
@@ -73,7 +73,7 @@ const Hero = () => {
                     Get Started
                   </Link>
                   <Link
-                    to="https://github.com/Barokah-AI"
+                    to="https://github.com/orgs/Barokah-AI/repositories"
                     className="inline-block rounded-lg bg-black px-4 py-3 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
                     Begin on Github
