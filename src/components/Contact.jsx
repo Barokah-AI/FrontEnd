@@ -48,7 +48,7 @@ const Contact = () => {
                       />
                     </div>
                   </div>
-                  <div className="w-full px-4">
+                  {/* <div className="w-full px-4">
                     <div className="mb-8">
                       <label
                         htmlFor="message"
@@ -68,7 +68,7 @@ const Contact = () => {
                     <button className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
                       Send Message
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </form>
             </div>
