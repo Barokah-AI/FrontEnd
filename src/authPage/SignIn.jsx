@@ -10,6 +10,7 @@ const SigninPage = () => {
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [showModal, setShowModal] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -19,7 +20,11 @@ const SigninPage = () => {
 
     try {
       await loginUser(email, password);
-      navigate("/chat");
+      setShowModal(true);
+      setTimeout(() => {
+        setShowModal(false);
+        navigate("/chat");
+      }, 2000); // Menampilkan modal selama 2 detik sebelum berpindah halaman
     } catch (error) {
       setError(error.message);
     } finally {
@@ -133,6 +138,14 @@ const SigninPage = () => {
           </svg>
         </div>
       </section>
+      {showModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+          <div className="bg-white rounded-lg shadow-lg p-6">
+            <h2 className="text-2xl font-bold mb-4">Login Successful!</h2>
+            <p>You will be redirected to the chat page shortly.</p>
+          </div>
+        </div>
+      )}
       <Footer />
     </>
   );
