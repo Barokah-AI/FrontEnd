@@ -291,7 +291,9 @@ const ChatPage = () => {
           <h3 className="mb-2 text-2xl font-bold text-gray-800 dark:text-neutral-200">
             Sign out
           </h3>
-          <p className="text-gray-500 dark:text-neutral-500"></p>
+          <p className="text-gray-500 dark:text-neutral-500">
+            Are you sure you want to sign out?
+          </p>
           <div className="modal-action flex justify-center">
             {/* button logout warna merah */}
             <button
