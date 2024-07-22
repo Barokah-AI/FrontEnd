@@ -13,7 +13,7 @@ const teamData = [
     name: "Marlina M Lubis",
     designation: "1214040",
     content:
-      "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
+      "Bachelor Applied Informatics Engineering students who are enthusiastic about learning continuously and are always eager to explore new technology.",
     image: "/images/testimonials/marlina.png",
     contact: "@marlina_lubis7",
   },
@@ -22,7 +22,7 @@ const teamData = [
     name: "Agita Nurfadillah",
     designation: "1214029",
     content:
-      "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
+      "Bachelor Applied Informatics Engineering, with a deep interest in continuous learning and exploration of the latest technologies.",
     image: "/images/testimonials/agita.png",
     contact: "@agitanurfd",
   },
@@ -40,7 +40,7 @@ const teamData = [
     name: "Ade Candra",
     designation: "1214048",
     content:
-      "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
+      "Bachelor Applied Informatics Engineering student with a deep interest in continuous learning and exploring the latest technology.",
     image: "/images/testimonials/ade.png",
     contact: "@ade_candra12",
   },
