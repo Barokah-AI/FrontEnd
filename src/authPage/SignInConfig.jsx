@@ -1,4 +1,6 @@
 import Cookies from "js-cookie";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const loginUser = async (email, password) => {
   try {
@@ -27,27 +29,32 @@ export const loginUser = async (email, password) => {
   }
 };
 
-export const handleSignIn = async (
-  email,
-  password,
-  setLoading,
-  setError,
-  setShowModal,
-  navigate
-) => {
-  setLoading(true);
-  setError("");
+const useHandleSignin = () => {
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [showModal, setShowModal] = useState(false);
+  const navigate = useNavigate();
 
-  try {
-    await loginUser(email, password);
-    setShowModal(true);
-    setTimeout(() => {
-      setShowModal(false);
-      navigate("/chat");
-    }, 2000);
-  } catch (error) {
-    setError(error.message);
-  } finally {
-    setLoading(false);
-  }
+  const handleSignIn = async (e, email, password) => {
+    e.preventDefault();
+    setLoading(true);
+    setError("");
+
+    try {
+      await loginUser(email, password);
+      setShowModal(true);
+      setTimeout(() => {
+        setShowModal(false);
+        navigate("/chat");
+      }, 2000);
+    } catch (error) {
+      setError(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return { handleSignIn, loading, error, showModal };
 };
+
+export default useHandleSignin;
