@@ -141,9 +141,9 @@ const ChatPage = () => {
             {/* Footer */}
             <div className="mt-auto">
               <div className="p-4 border-t border-gray-200 dark:border-neutral-700">
-                <button
+                <label
                   className="flex justify-between items-center gap-x-3 py-2 px-3 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-300"
-                  onClick={logout}
+                  htmlFor="my_modal_6"
                 >
                   Sign out
                   <svg
@@ -159,7 +159,7 @@ const ChatPage = () => {
                     <polyline points="10 17 15 12 10 7" />
                     <line x1="15" x2="3" y1="12" y2="12" />
                   </svg>
-                </button>
+                </label>
               </div>
             </div>
             {/* End Footer */}
@@ -267,6 +267,47 @@ const ChatPage = () => {
         </nav>
       </div>
       {/* End sideebar */}
+
+      {/* Modal Logout */}
+      <input
+        type="checkbox"
+        id="my_modal_6"
+        className="modal-toggle absolute opacity-0 w-0 h-0"
+      />
+      <div className="modal" role="dialog">
+        <div className="modal-box text-center">
+          <span className="mb-4 inline-flex justify-center items-center size-[62px] rounded-full border-4 border-red-50 bg-red-100 text-red-500 dark:bg-red-700 dark:border-red-600 dark:text-red-100">
+            <svg
+              className="shrink-0 size-5"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </svg>
+          </span>
+          <h3 className="mb-2 text-2xl font-bold text-gray-800 dark:text-neutral-200">
+            Sign out
+          </h3>
+          <p className="text-gray-500 dark:text-neutral-500"></p>
+          <div className="modal-action flex justify-center">
+            {/* button logout warna merah */}
+            <button
+              onClick={logout}
+              className="btn bg-red-500 hover:bg-red-600 text-white"
+              htmlFor="my_modal_6"
+            >
+              Sign out
+            </button>
+            <label htmlFor="my_modal_6" className="btn">
+              Cancel
+            </label>
+          </div>
+        </div>
+      </div>
+      {/* End Modal Logout */}
 
       {/* content */}
       <div className="relative w-full lg:ps-64">
