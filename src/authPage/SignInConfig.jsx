@@ -26,3 +26,28 @@ export const loginUser = async (email, password) => {
     throw new Error(error.message || "An error occurred. Please try again.");
   }
 };
+
+export const handleSignIn = async (
+  email,
+  password,
+  setLoading,
+  setError,
+  setShowModal,
+  navigate
+) => {
+  setLoading(true);
+  setError("");
+
+  try {
+    await loginUser(email, password);
+    setShowModal(true);
+    setTimeout(() => {
+      setShowModal(false);
+      navigate("/chat");
+    }, 2000);
+  } catch (error) {
+    setError(error.message);
+  } finally {
+    setLoading(false);
+  }
+};
