@@ -49,7 +49,6 @@ const SigninPage = () => {
 
                 <div className="mb-6 flex items-center justify-center">
                   <span className="h-[1px] w-full bg-body-color"></span>
-                  <p className="px-5 text-base text-body-color">or</p>
                   <span className="h-[1px] w-full bg-body-color"></span>
                 </div>
                 <form onSubmit={handleSubmit}>
