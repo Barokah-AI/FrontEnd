@@ -1,22 +1,14 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { handleSignIn } from "./SignInConfig";
+import { useHandleSignin } from "./SignInConfig";
 
 const SigninPage = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState("");
-  const [showModal, setShowModal] = useState(false);
-  const navigate = useNavigate();
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    handleSignIn(email, password, setLoading, setError, setShowModal, navigate);
-  };
+  const { handleSignin, loading, error, showModal } = useHandleSignin();
 
   return (
     <>
@@ -38,7 +30,7 @@ const SigninPage = () => {
                   Please login to start more conversations.
                 </p>
 
-                <form onSubmit={handleSubmit}>
+                <form onSubmit={handleSignin}>
                   <div className="mb-8">
                     <label
                       htmlFor="email"
