@@ -114,7 +114,7 @@ const About = () => {
               variants={textVariants}
             >
               <div className="max-w-[470px]">
-                {/* <div className="mb-9">
+                <div className="mb-9">
                   <h2 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                     Step by Step to Use Barokah-AI
                   </h2>
@@ -127,7 +127,7 @@ const About = () => {
                   or app, you will see a 'Get Started' button to start a conversation. 
                   Just click to start chatting.
                   </p>
-                </div> */}
+                </div>
                 <div className="mb-9">
                   <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                     Starting Interaction:
