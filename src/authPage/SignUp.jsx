@@ -190,7 +190,13 @@ const SignupPage = () => {
           transition={{ duration: 0.5 }}
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
         >
-          <div className="text-center bg-white rounded-lg shadow-lg p-10">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            className="text-center bg-white rounded-lg shadow-lg p-10"
+          >
             {/* icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -208,7 +214,7 @@ const SignupPage = () => {
             </svg>
             <h2 className="text-2xl font-bold mb-4">Signup Successful!</h2>
             <p className="mb-4">You have successfully signed up.</p>
-          </div>
+          </motion.div>
         </motion.div>
       )}
       <Footer /> {/* Include Footer component */}
