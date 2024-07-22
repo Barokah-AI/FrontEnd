@@ -3,11 +3,19 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { useState } from "react";
+import useHandleSignup from "./SignUpConfig";
 
 const SignupPage = () => {
+  const [namalengkap, setNamalengkap] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmpass, setConfirmpass] = useState("");
+  const { handleSignup, loading, error, showModal } = useHandleSignup();
+
   return (
     <>
-      <Header /> {/* Include Header component */}
+      <Header />
       <section className="relative z-10 overflow-hidden pb-16 pt-36 md:pb-20 lg:pb-28 lg:pt-[180px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
@@ -24,19 +32,24 @@ const SignupPage = () => {
                 <p className="mb-11 text-center text-base font-medium text-body-color">
                   It’s totally free and super easy
                 </p>
-                <form>
+                <form
+                  onSubmit={(e) =>
+                    handleSignup(e, namalengkap, email, password, confirmpass)
+                  }
+                >
                   <div className="mb-8">
                     <label
-                      htmlFor="name"
+                      htmlFor="namalengkap"
                       className="mb-3 block text-sm text-dark dark:text-white"
                     >
-                      {" "}
-                      Full Name{" "}
+                      Full Name
                     </label>
                     <input
                       type="text"
-                      name="name"
+                      name="namalengkap"
                       placeholder="Enter your full name"
+                      value={namalengkap}
+                      onChange={(e) => setNamalengkap(e.target.value)}
                       className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
                     />
                   </div>
@@ -45,13 +58,14 @@ const SignupPage = () => {
                       htmlFor="email"
                       className="mb-3 block text-sm text-dark dark:text-white"
                     >
-                      {" "}
-                      Email{" "}
+                      Email
                     </label>
                     <input
                       type="email"
                       name="email"
                       placeholder="Enter your email"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
                       className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
                     />
                   </div>
@@ -60,37 +74,47 @@ const SignupPage = () => {
                       htmlFor="password"
                       className="mb-3 block text-sm text-dark dark:text-white"
                     >
-                      {" "}
-                      Your Password{" "}
+                      Your Password
                     </label>
                     <input
                       type="password"
                       name="password"
                       placeholder="Enter your password"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
                       className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
                     />
                   </div>
                   <div className="mb-8">
                     <label
-                      htmlFor="password"
+                      htmlFor="confirmpass"
                       className="mb-3 block text-sm text-dark dark:text-white"
                     >
-                      {" "}
-                      Confirm Password{" "}
+                      Confirm Password
                     </label>
                     <input
                       type="password"
-                      name="password"
+                      name="confirmpass"
                       placeholder="Enter your password again"
+                      value={confirmpass}
+                      onChange={(e) => setConfirmpass(e.target.value)}
                       className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
                     />
                   </div>
                   <div className="mb-6">
-                    <button className="shadow-submit rounded-lg dark:shadow-submit-dark flex w-full items-center justify-center  bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90">
-                      Sign up
+                    <button
+                      className="shadow-submit rounded-lg dark:shadow-submit-dark flex w-full items-center justify-center bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90"
+                      disabled={loading}
+                    >
+                      {loading ? (
+                        <span className="loading loading-spinner loading-md text-white"></span>
+                      ) : (
+                        "Sign Up"
+                      )}
                     </button>
                   </div>
                 </form>
+                {error && <p className="text-red-500 text-center">{error}</p>}
                 <p className="text-center text-base font-medium text-body-color">
                   Already using BarokahAI?{" "}
                   <Link to="/signin" className="text-primary hover:underline">
@@ -159,6 +183,34 @@ const SignupPage = () => {
           </svg>
         </div>
       </section>
+      {showModal && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
+        >
+          <div className="text-center bg-white rounded-lg shadow-lg p-10">
+            {/* icon */}
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="mb-4 inline-flex justify-center items-center size-[46px] rounded-full border-4 border-green-50 bg-green-100 text-green-500 dark:bg-green-700 dark:border-green-600 dark:text-green-100"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M5 13l4 4L19 7"
+              />
+            </svg>
+            <h2 className="text-2xl font-bold mb-4">Signup Successful!</h2>
+            <p className="mb-4">You have successfully signed up.</p>
+          </div>
+        </motion.div>
+      )}
       <Footer /> {/* Include Footer component */}
     </>
   );
