@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { loginUser } from "./SignInConfig";
+import { handleSignIn } from "./SignInConfig";
 
 const SigninPage = () => {
   const [email, setEmail] = useState("");
@@ -13,23 +13,9 @@ const SigninPage = () => {
   const [showModal, setShowModal] = useState(false);
   const navigate = useNavigate();
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setLoading(true);
-    setError("");
-
-    try {
-      await loginUser(email, password);
-      setShowModal(true);
-      setTimeout(() => {
-        setShowModal(false);
-        navigate("/chat");
-      }, 2000);
-    } catch (error) {
-      setError(error.message);
-    } finally {
-      setLoading(false);
-    }
+    handleSignIn(email, password, setLoading, setError, setShowModal, navigate);
   };
 
   return (
@@ -52,10 +38,6 @@ const SigninPage = () => {
                   Please login to start more conversations.
                 </p>
 
-                <div className="mb-6 flex items-center justify-center">
-                  <span className="h-[1px] w-full bg-body-color"></span>
-                  <span className="h-[1px] w-full bg-body-color"></span>
-                </div>
                 <form onSubmit={handleSubmit}>
                   <div className="mb-8">
                     <label
@@ -73,7 +55,7 @@ const SigninPage = () => {
                       className="border-stroke dark:bg-form-input dark:border-form-strokedark dark:focus:border-primary dark:text-body-color-dark focus:border-primary w-full rounded-lg border bg-transparent py-3 px-6 text-base font-medium outline-none transition"
                     />
                   </div>
-                  <div className="mb-6">
+                  <div className="mb-8">
                     <label
                       htmlFor="password"
                       className="mb-3 block text-sm font-medium text-dark dark:text-white"
