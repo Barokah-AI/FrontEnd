@@ -30,7 +30,7 @@ const SigninPage = () => {
                   Please login to start more conversations.
                 </p>
 
-                <form onSubmit={handleSignin}>
+                <form onSubmit={(e) => handleSignin(e, email, password)}>
                   <div className="mb-8">
                     <label
                       htmlFor="email"
@@ -71,7 +71,7 @@ const SigninPage = () => {
                       {loading ? (
                         <span className="loading loading-spinner loading-md text-white"></span>
                       ) : (
-                        "Sign Up"
+                        "Sign In"
                       )}
                     </button>
                   </div>

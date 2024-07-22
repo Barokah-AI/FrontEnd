@@ -35,7 +35,7 @@ const useHandleSignin = () => {
   const [showModal, setShowModal] = useState(false);
   const navigate = useNavigate();
 
-  const handleSignIn = async (e, email, password) => {
+  const handleSignin = async (e, email, password) => {
     e.preventDefault();
     setLoading(true);
     setError("");
@@ -54,7 +54,7 @@ const useHandleSignin = () => {
     }
   };
 
-  return { handleSignIn, loading, error, showModal };
+  return { handleSignin, loading, error, showModal };
 };
 
 export default useHandleSignin;
