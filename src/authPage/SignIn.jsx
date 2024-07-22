@@ -72,12 +72,16 @@ const SigninPage = () => {
                     />
                   </div>
                   <div className="mb-5">
-                    <input
-                      type="submit"
-                      value={loading ? "Signing In..." : "Sign In"}
-                      className="w-full cursor-pointer rounded-lg border border-primary bg-primary p-3 text-base font-medium text-white transition hover:bg-opacity-90"
+                    <button
+                      className="shadow-submit rounded-lg dark:shadow-submit-dark flex w-full items-center justify-center bg-primary px-9 py-4 text-base font-medium text-white duration-300 hover:bg-primary/90"
                       disabled={loading}
-                    />
+                    >
+                      {loading ? (
+                        <span className="loading loading-spinner loading-md text-white"></span>
+                      ) : (
+                        "Sign Up"
+                      )}
+                    </button>
                   </div>
                 </form>
                 {error && <p className="text-red-500 text-center">{error}</p>}
@@ -127,7 +131,13 @@ const SigninPage = () => {
           transition={{ duration: 0.5 }}
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
         >
-          <div className="text-center bg-white rounded-lg shadow-lg p-10">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.8 }}
+            transition={{ duration: 0.4, ease: "easeInOut" }}
+            className="text-center bg-white rounded-lg shadow-lg p-10"
+          >
             {/* icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -145,7 +155,7 @@ const SigninPage = () => {
             </svg>
             <h2 className="text-2xl font-bold mb-4">Login Successful!</h2>
             <p>You will be redirected to the chat page shortly.</p>
-          </div>
+          </motion.div>
         </motion.div>
       )}
       <Footer />
