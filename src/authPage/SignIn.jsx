@@ -24,7 +24,7 @@ const SigninPage = () => {
       setTimeout(() => {
         setShowModal(false);
         navigate("/chat");
-      }, 10000);
+      }, 2000);
     } catch (error) {
       setError(error.message);
     } finally {
@@ -145,7 +145,7 @@ const SigninPage = () => {
           transition={{ duration: 0.5 }}
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
         >
-          <div className="text-center bg-white rounded-lg shadow-lg p-6">
+          <div className="text-center bg-white rounded-lg shadow-lg p-10">
             {/* icon */}
             <svg
               xmlns="http://www.w3.org/2000/svg"
