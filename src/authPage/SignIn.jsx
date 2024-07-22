@@ -84,7 +84,7 @@ const SigninPage = () => {
                       className="border-stroke dark:bg-form-input dark:border-form-strokedark dark:focus:border-primary dark:text-body-color-dark focus:border-primary w-full rounded-lg border bg-transparent py-3 px-6 text-base font-medium outline-none transition"
                     />
                   </div>
-                  <div className="mb-10">
+                  <div className="mb-5">
                     <input
                       type="submit"
                       value={loading ? "Signing In..." : "Sign In"}
