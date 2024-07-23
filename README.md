@@ -21,7 +21,7 @@ BarokahAI adalah aplikasi chatbot AI yang dirancang dengan menggunakan React, Ta
 1. Clone repository ini ke lokal:
 
    ```bash
-   git clone https://github.com/username/BarokahAI.git
+   git clone https://github.com/Barokah-AI/FrontEnd.git
 
 2. Masuk ke direktori proyek:
 
