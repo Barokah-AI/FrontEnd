@@ -32,7 +32,7 @@ const Features = () => {
               center
             />
           </motion.div>
-          <div className="grid grid-cols-5 gap-x-10 gap-y-14 md:grid-cols-5 lg:grid-cols-5">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
             {featuresData.map((feature, index) => (
               <motion.div
                 key={feature.id}
@@ -40,7 +40,7 @@ const Features = () => {
                 whileInView="visible"
                 variants={itemVariants}
                 viewport={{ once: true }}
-                transition={{ delay: 0.5 + index * 0.5, duration: 0.5 }}
+                transition={{ delay: 0.5 + index * 0.2, duration: 0.5 }}
               >
                 <SingleFeature feature={feature} />
               </motion.div>
