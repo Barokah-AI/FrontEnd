@@ -57,7 +57,7 @@ const featuresData = [
     ),
     title: "User Friendly Interface",
     paragraph:
-      "Offers an easy-to-navogate and intuitive platform",
+      "Offers an easy-to-navogate and intuitive platformasaas",
   },
   {
     id: 5,
@@ -72,7 +72,7 @@ const featuresData = [
     ),
     title: "Safe and Reliable",
     paragraph:
-      "Ensures a secure and dependable support environment.",
+      "Ensures a secure and dependable support environment.saa",
   },
   {
     id: 6,
@@ -87,7 +87,7 @@ const featuresData = [
     ),
     title: "Knowledge Exploration",
     paragraph:
-      "Facilitats the discovery of new information and learning opportunities.",
+      "Facilitats the discovery of new information and learning opportunities.sasasa",
   },
 ];
 
