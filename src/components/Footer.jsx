@@ -1,18 +1,19 @@
 import { Link } from "react-router-dom";
+import menuData from "../data/menuData";
 
 const Footer = () => {
   return (
     <>
-      <footer className="relative z-15 bg-white pt-20 dark:bg-gray-dark md:pt-25 lg:pt-30">
+      <footer className="relative z-10 bg-white pt-16 dark:bg-gray-dark md:pt-20 lg:pt-24">
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
-            <div className="w-full px-5 md:w-1/2 lg:w-5/12 xl:w-8/12">
-              <div className="mb-15 max-w-[360px] lg:mb-20">
+            <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
+              <div className="mb-12 max-w-[360px] lg:mb-16">
               <div className="flex gap-2">
                   <img
-                    src="https://github.com/Barokah-AI/FrontEnd/assets/94734096/0bf32c79-e402-4565-9868-8a21c84d8b33"
+                    src="https://github.com/Barokah-AI/BackEnd/assets/94734096/0bf32c79-e402-4565-9868-8a21c84d8b33"
                     alt="Image Description"
-                    className="w-15 h-auto"
+                    className="w-10 h-auto"
                   />
                   <div>
                     <h1 className="mt-1 text-2xl font-bold text-primary">
@@ -21,10 +22,30 @@ const Footer = () => {
                   </div>
                 </div>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                Follow Us on Social Media To get the latest updates, news and interesting content from BarokahAI, don't forget to follow us on social media!
+                For the latest updates, latest news, and interesting content from Barokah AI, don't forget to follow us on social media!
 
                 </p>
                 <div className="flex items-center">
+                  <Link
+                    to="/"
+                    aria-label="social-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 22 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.1 10.4939V7.42705C12.1 6.23984 13.085 5.27741 14.3 5.27741H16.5V2.05296L13.5135 1.84452C10.9664 1.66676 8.8 3.63781 8.8 6.13287V10.4939H5.5V13.7183H8.8V20.1667H12.1V13.7183H15.4L16.5 10.4939H12.1Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </Link>
                   <Link
                     to="/"
                     aria-label="social-link"
@@ -83,36 +104,22 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold text-black dark:text-white">
-                  Useful Links
-                </h2>
+            <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
+              <div className="mb-10 w-full">
+                <h4 className="mb-9 text-lg font-semibold text-dark dark:text-dark">
+                Relevant Links
+                </h4>
                 <ul>
-                  <li>
-                    <Link
-                      to="https://barokah-ai.vercel.app"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Features
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="#https://barokah-ai.vercel.app"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Profile
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      to="https://barokah-ai.vercel.app"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
-                    >
-                      Our Team
-                    </Link>
-                  </li>
+                  {menuData.map((menuItem) => (
+                    <li key={menuItem.id}>
+                      <a
+                        href={menuItem.path}
+                        className="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                      >
+                        {menuItem.title}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -124,28 +131,28 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <Link
-                      to="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                  <a
+                      href="#"
+                      className="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       TOS
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
-                      to="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    <a
+                      href="#"
+                      className="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Privacy Policy
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
-                      to="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    <a
+                      href="#"
+                      className="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Refund Policy
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -158,28 +165,28 @@ const Footer = () => {
                 </h2>
                 <ul>
                   <li>
-                    <Link
-                      to="/contact"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    <a
+                      href="#"
+                      className="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Open Support Ticket
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
-                      to="/"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    <a
+                      href="#"
+                      className="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
                       Terms of Use
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link
-                      to="/about"
-                      className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
+                    <a
+                      href="#"
+                      className="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      About
-                    </Link>
+                      FAQ
+                    </a>
                   </li>
                 </ul>
               </div>
