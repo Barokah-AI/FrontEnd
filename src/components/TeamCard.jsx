@@ -5,9 +5,9 @@ const TeamCard = ({ team }) => {
 
   return (
     <div className="w-full">
-      <div className="rounded-lg bg-white p-10 shadow-md duration-300 hover:shadow-lg dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark lg:px-8 xl:px-10">
-        <div className="flex items-center mb-5">
-          <div className="relative mr-5 h-25 w-25 overflow-hidden rounded-full">
+      <div className="rounded-lg bg-white p-6 shadow-md duration-300 hover:shadow-lg dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark lg:px-8 xl:px-10">
+        <div className="flex items-center mb-4">
+          <div className="relative mr-4 h-20 w-20 overflow-hidden rounded-full">
             <img
               src={image}
               alt={name}
@@ -23,7 +23,7 @@ const TeamCard = ({ team }) => {
             </p>
           </div>
         </div>
-        <p className="mb-4 border-b border-gray-200 dark:border-gray-600 pb-5 text-base leading-relaxed text-gray-800 dark:text-gray-300">
+        <p className="mb-4 border-b border-gray-200 dark:border-gray-600 pb-4 text-base leading-relaxed text-gray-800 dark:text-gray-300">
           "{content}"
         </p>
         {contact && (
