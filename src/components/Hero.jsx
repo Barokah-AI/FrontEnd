@@ -66,7 +66,7 @@ const Hero = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, delay: 1.5 }}
                 >
-                  {/* <Link
+                  <Link
                     to="/signin"
                     className="rounded-lg bg-primary px-4 py-3 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
                   >
@@ -77,7 +77,7 @@ const Hero = () => {
                     className="inline-block rounded-lg bg-black px-4 py-3 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
                     Begin on Github
-                  </Link> */}
+                  </Link>
                 </motion.div>
               </motion.div>
 
