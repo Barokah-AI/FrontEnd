@@ -1,6 +1,17 @@
 import SectionTitle from "./SectionTittle";
 import TeamCard from "./TeamCard";
 import teamData from "../data/teamData";
+import { motion } from "framer-motion";
+
+const titleVariants = {
+  hidden: { opacity: 0, y: -50 },
+  visible: { opacity: 1, y: 0 },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0 },
+};
 
 const Team = () => {
   return (
@@ -9,34 +20,51 @@ const Team = () => {
       className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-16 md:py-20 lg:py-28"
     >
       <div className="container">
-        <SectionTitle
-          title="Our Team"
-          paragraph="Meet our talented individuals who make our mission possible. Each member brings unique skills and expertise, working together to deliver the best results"
-          center
-        />
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          variants={titleVariants}
+          viewport={{ once: true }}
+          transition={{ delay: 0.5, duration: 1 }}
+        >
+          <SectionTitle
+            title="Our Teams"
+            paragraph="Meet the talented individuals who make our mission possible. Each member brings unique skills and expertise, collaborating to deliver exceptional results."
+            center
+          />
+        </motion.div>
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          {teamData.map((team) => (
-            <TeamCard key={team.id} team={team} />
+          {teamData.map((team, index) => (
+            <motion.div
+              key={team.id}
+              initial="hidden"
+              whileInView="visible"
+              variants={itemVariants}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 + index * 0.2, duration: 0.5 }}
+            >
+              <TeamCard team={team} />
+            </motion.div>
           ))}
         </div>
       </div>
       <div className="absolute right-0 top-5 z-[-1]">
         <svg
-          width="240"
-          height="535"
-          viewBox="0 0 240 535"
+          width="238"
+          height="531"
+          viewBox="0 0 238 531"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <rect
             opacity="0.3"
-            x="425.820"
-            y="-70.8545"
-            width="195"
-            height="545.605"
+            x="422.819"
+            y="-70.8145"
+            width="196"
+            height="541.607"
             rx="2"
-            transform="rotate(51.2595 425.815 -70.8545)"
+            transform="rotate(51.2997 422.819 -70.8145)"
             fill="url(#paint0_linear_83:2)"
           />
           <rect
