@@ -7,7 +7,7 @@ const NewsLatterBox = () => {
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
         Stay informed about new features, updates, and exclusive content from Barokah AI. Subscribe now and never miss an update!
       </p>
-      <div>
+      {/* <div>
         <input
           type="text"
           name="name"
@@ -28,7 +28,7 @@ const NewsLatterBox = () => {
         <p className="text-center text-base leading-relaxed text-body-color dark:text-body-color-dark">
           No spam guaranteed. We value your privacy, So please don’t send any spam mail.
         </p>
-      </div>
+      </div> */}
 
       <div>
         <span className="absolute left-2 top-7">
