@@ -125,7 +125,7 @@ const About = () => {
                   Open your favorite browser and visit the official Barokah-AI 
                   website at barokah-ai.vercel.app. On the home page of the site 
                   or app, you will see a 'Get Started' button to start a conversation. 
-                  Just click to start chatting.
+                  Just click to start chatting. You can also access Barokah-AI via 
                   </p>
                 </div>
                 <div className="mb-9">
@@ -136,7 +136,7 @@ const About = () => {
                     Please type your question or command in the chat box.
                     Barokah-AI will respond quickly and accurately. You can ask
                     anything from product information, technical assistance,
-                    personal advice, to casual chat.
+                    personal advice, to casual chat. Barokah-AI is here to help
                   </p>
                 </div>
               </div>
