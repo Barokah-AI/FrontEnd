@@ -8,15 +8,15 @@ const teamData = [
     image: "/images/testimonials/juwi.png",
     contact: "@wops1e_",
   },
-  {
-    id: 2,
-    name: "Marlina M Lubis",
-    designation: "1214040",
-    content:
-      "Bachelor Applied Informatics Engineering students who are enthusiastic about learning continuously and are always eager to explore new technology.",
-    image: "/images/testimonials/marlina.png",
-    contact: "@marlina_lubis7",
-  },
+  // {
+  //   id: 2,
+  //   name: "Marlina M Lubis",
+  //   designation: "1214040",
+  //   content:
+  //     "Bachelor Applied Informatics Engineering students who are enthusiastic about learning continuously and are always eager to explore new technology.",
+  //   image: "/images/testimonials/marlina.png",
+  //   contact: "@marlina_lubis7",
+  // },
   {
     id: 3,
     name: "Agita Nurfadillah",
