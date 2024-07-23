@@ -122,10 +122,10 @@ const About = () => {
                     Accessing the Website or Application:
                   </h3>
                   <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Buka browser favorit Anda dan kunjungi resmi Barokah-AI
-                  situs web di barokah-ai.vercel.app. Di halaman utama
-                  situs web atau aplikasi, Anda akan melihat tombol Memulai untuk
-                  memulai percakapan. Cukup klik untuk mulai mengobrol.
+                  Open your favorite browser and visit the official Barokah-AI 
+                  website at barokah-ai.vercel.app. On the home page of the site 
+                  or app, you will see a 'Get Started' button to start a conversation. 
+                  Just click to start chatting.
                   </p>
                 </div>
                 <div className="mb-9">
@@ -133,10 +133,10 @@ const About = () => {
                     Starting Interaction:
                   </h3>
                   <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Silakan ketik pertanyaan atau perintah Anda di kotak obrolan.
-                  Barokah-AI akan merespon dengan cepat dan akurat. Kamu bisa tanya
-                  apa pun mulai dari informasi produk, bantuan teknis,
-                  nasihat pribadi, hingga obrolan santai.
+                    Please type your question or command in the chat box.
+                    Barokah-AI will respond quickly and accurately. You can ask
+                    anything from product information, technical assistance,
+                    personal advice, to casual chat.
                   </p>
                 </div>
               </div>
@@ -258,15 +258,15 @@ const About = () => {
                 <stop offset="1" stopColor="#4A6CF7" />
               </linearGradient>
               <linearGradient
-                id="paint3_linear_75:305"
-                x1="255.265"
-                y1="75.6515"
-                x2="-40.8585"
-                y2="35.1575"
+                id="paint3_linear_72:302"
+                x1="256.267"
+                y1="76.6717"
+                x2="-40.8688"
+                y2="31.1572"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="#5A5CF5" stopOpacity="0" />
-                <stop offset="1" stopColor="#5A5CF7" />
+                <stop stopColor="#4A6CF7" stopOpacity="0" />
+                <stop offset="1" stopColor="#4A6CF7" />
               </linearGradient>
             </defs>
           </svg>
