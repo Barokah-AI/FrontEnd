@@ -30,7 +30,7 @@ const About = () => {
 
   return (
     <section id="about">
-      {/* <div className="pt-16 md:pt-20 lg:pt-28">
+      <div className="pt-16 md:pt-20 lg:pt-28">
         <div className="container">
           <div className="pb-16 md:pb-20 lg:pb-28">
             <div className="-mx-4 flex flex-wrap items-center">
@@ -84,7 +84,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div> */}
+      </div>
       <div className="py-16 md:py-20 lg:py-28 relative z-10 dark:bg-bg-color-dark bg-gray-light">
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
