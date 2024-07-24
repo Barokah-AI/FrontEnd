@@ -49,7 +49,7 @@ const Hero = () => {
                   Unleash the Power of AI with{" "}
                   <span className="text-primary">BarokahAI</span>
                 </motion.h1>
-                <motion.p
+                {/* <motion.p
                   className="text-base text-center !leading-relaxed text-body-color dark:text-body-color-dark sm:text-xl lg:text-start"
                   initial={{ opacity: 0, y: -50 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -77,7 +77,7 @@ const Hero = () => {
                     className="inline-block rounded-lg bg-black px-4 py-3 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
                     Begin on Github
-                  </Link>
+                  </Link> */}
                 </motion.div>
               </motion.div>
 
