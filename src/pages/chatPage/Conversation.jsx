@@ -121,7 +121,7 @@ const Conversation = ({ conversations }) => {
                         </svg>
                       </button>
                     </div>
-                    <button
+                    {/* <button
                       type="button"
                       className="py-2 px-3 inline-flex items-center gap-x-2 text-sm rounded-full border border-transparent text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-800"
                     >
@@ -138,7 +138,7 @@ const Conversation = ({ conversations }) => {
                         <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
                       </svg>
                       Copy
-                    </button>
+                    </button> */}
                     <button
                       type="button"
                       className="py-2 px-3 inline-flex items-center gap-x-2 text-sm rounded-full border border-transparent text-gray-500 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:text-neutral-400 dark:hover:bg-neutral-800"
