@@ -179,7 +179,7 @@ const NotFoundPage = () => {
                     </defs>
                   </svg>
                 </motion.div>
-                <motion.h3
+                {/* <motion.h3
                   className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl"
                   initial="hidden"
                   animate="visible"
@@ -204,7 +204,7 @@ const NotFoundPage = () => {
                   variants={buttonVariants}
                 >
                   Back to Previous Page
-                </motion.button>
+                </motion.button> */}
               </div>
             </div>
           </div>
