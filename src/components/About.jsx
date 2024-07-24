@@ -65,7 +65,7 @@ const About = () => {
                 </div>
               </motion.div>
 
-              {/* <motion.div
+              <motion.div
                 className="w-full px-4 lg:w-1/2"
                 initial="hidden"
                 whileInView="visible"
@@ -80,7 +80,7 @@ const About = () => {
                     className="mx-auto max-w-full drop-shadow-three dark:drop-shadow-none lg:mr-0"
                   />
                 </div>
-              </motion.div> */}
+              </motion.div>
             </div>
           </div>
         </div>
