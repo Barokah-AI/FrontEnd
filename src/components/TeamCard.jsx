@@ -27,29 +27,29 @@ const TeamCard = ({ team }) => {
           "{content}"
         </p>
         {contact && (
-          <div className="flex items-center justify-center mt-2">
-            <a
-              href={`https://instagram.com/${contact.replace(/\s/g, "")}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-pink-500 dark:text-pink-400 flex items-center mr-2 hover:text-pink-600 dark:hover:text-pink-500"
-              style={{ color: "#E4405F" }} // Customize Instagram icon color
-            >
-              <FaInstagram className="text-xl" />
-            </a>
-            <a
-              href={`https://linkedin.com/${contact.replace(/\s/g, "")}`} // Adjust LinkedIn URL accordingly
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 dark:text-blue-400 flex items-center mr-2 hover:text-blue-600 dark:hover:text-blue-500"
-            >
-              <FaLinkedin className="text-xl" />
-            </a>
-            <span className="text-sm text-gray-700 dark:text-gray-300">
-              {contact}
-            </span>
-          </div>
-        )}
+        //   <div className="flex items-center justify-center mt-2">
+        //     <a
+        //       href={`https://instagram.com/${contact.replace(/\s/g, "")}`}
+        //       target="_blank"
+        //       rel="noopener noreferrer"
+        //       className="text-pink-500 dark:text-pink-400 flex items-center mr-2 hover:text-pink-600 dark:hover:text-pink-500"
+        //       style={{ color: "#E4405F" }} // Customize Instagram icon color
+        //     >
+        //       <FaInstagram className="text-xl" />
+        //     </a>
+        //     <a
+        //       href={`https://linkedin.com/${contact.replace(/\s/g, "")}`} // Adjust LinkedIn URL accordingly
+        //       target="_blank"
+        //       rel="noopener noreferrer"
+        //       className="text-blue-500 dark:text-blue-400 flex items-center mr-2 hover:text-blue-600 dark:hover:text-blue-500"
+        //     >
+        //       <FaLinkedin className="text-xl" />
+        //     </a>
+        //     <span className="text-sm text-gray-700 dark:text-gray-300">
+        //       {contact}
+        //     </span>
+        //   </div>
+        // )}
       </div>
     </div>
   );
