@@ -141,7 +141,7 @@ const Team = () => {
               <stop stopColor="#4A6CF7" stopOpacity="0" />
               <stop offset="1" stopColor="#4A6CF7" />
             </linearGradient>
-            {/* <linearGradient
+            <linearGradient
               id="paint1_linear_72:302"
               x1="256.267"
               y1="42.6717"
@@ -162,7 +162,7 @@ const Team = () => {
             >
               <stop stopColor="#4A6CF7" stopOpacity="0" />
               <stop offset="1" stopColor="#4A6CF7" />
-            </linearGradient> */}
+            </linearGradient>
             <linearGradient
               id="paint3_linear_72:302"
               x1="256.267"
