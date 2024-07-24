@@ -5,13 +5,13 @@ export const signupUser = async (namalengkap, email, password, confirmpass) => {
   try {
     const response = await fetch(
       "https://asia-southeast2-erditona-dev.cloudfunctions.net/barokahai/signup",
-      // {
-      //   method: "POST",
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //   },
-      //   body: JSON.stringify({ namalengkap, email, password, confirmpass }),
-      // }
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ namalengkap, email, password, confirmpass }),
+      }
     );
 
     const data = await response.json();
