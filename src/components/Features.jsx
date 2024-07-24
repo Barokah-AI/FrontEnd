@@ -32,7 +32,7 @@ const Features = () => {
               center
             />
           </motion.div>
-          {/* <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
             {featuresData.map((feature, index) => (
               <motion.div
                 key={feature.id}
@@ -45,7 +45,7 @@ const Features = () => {
                 <SingleFeature feature={feature} />
               </motion.div>
             ))}
-          </div> */}
+          </div>
         </div>
       </section>
     </>
