@@ -146,7 +146,7 @@ const Header = () => {
                         </a>
                       </li>
                     ))}
-                    <li className="group relative lg:hidden">
+                    {/* <li className="group relative lg:hidden">
                       <Link
                         to="/signin"
                         className="flex py-2 text-base text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
@@ -161,7 +161,7 @@ const Header = () => {
                       >
                         Sign Up
                       </Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </nav>
               </div>
