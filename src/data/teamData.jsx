@@ -17,15 +17,15 @@ const teamData = [
     image: "/images/testimonials/marlina.png",
     contact: "@marlina_lubis7",
   },
-  // {
-  //   id: 3,
-  //   name: "Agita Nurfadillah",
-  //   designation: "1214029",
-  //   content:
-  //     "Bachelor Applied Informatics Engineering, with a deep interest in continuous learning and exploration of the latest technologies.",
-  //   image: "/images/testimonials/agita.png",
-  //   contact: "@agitanurfd",
-  // },
+  {
+    id: 3,
+    name: "Agita Nurfadillah",
+    designation: "1214029",
+    content:
+      "Bachelor Applied Informatics Engineering, with a deep interest in continuous learning and exploration of the latest technologies.",
+    image: "/images/testimonials/agita.png",
+    contact: "@agitanurfd",
+  },
   {
     id: 4,
     name: "Dimas Ardianto",
