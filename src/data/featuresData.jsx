@@ -29,21 +29,21 @@ const featuresData = [
     paragraph:
       "Utilizes AI technology to deliver the necessary information.",
   },
-  // {
-  //   id: 3,
-  //   icon: (
-  //     <svg width="40" height="41" viewBox="0 0 40 41" className="fill-current">
-  //     <path
-  //       opacity="0.5"
-  //       d="M20 2C11.163 2 4 9.163 4 18v14c0 1.105.895 2 2 2h28c1.105 0 2-.895 2-2V18c0-8.837-7.163-16-16-16zM8 18c0-6.627 5.373-12 12-12s12 5.373 12 12v10H8V18z"
-  //     />
-  //     <path d="M20 10c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm0 14c-3.313 0-6-2.687-6-6s2.687-6 6-6 6 2.687 6 6-2.687 6-6 6z" />
-  //   </svg>
-  //   ),
-  //   title: "Advanced Features",
-  //   paragraph:
-  //     "Includes sophisticated functionalities designed to enhance user experience.",
-  // },
+  {
+    id: 3,
+    icon: (
+      <svg width="40" height="41" viewBox="0 0 40 41" className="fill-current">
+      <path
+        opacity="0.5"
+        d="M20 2C11.163 2 4 9.163 4 18v14c0 1.105.895 2 2 2h28c1.105 0 2-.895 2-2V18c0-8.837-7.163-16-16-16zM8 18c0-6.627 5.373-12 12-12s12 5.373 12 12v10H8V18z"
+      />
+      <path d="M20 10c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm0 14c-3.313 0-6-2.687-6-6s2.687-6 6-6 6 2.687 6 6-2.687 6-6 6z" />
+    </svg>
+    ),
+    title: "Advanced Features",
+    paragraph:
+      "Includes sophisticated functionalities designed to enhance user experience.",
+  },
   {
     id: 4,
     icon: (
