@@ -103,7 +103,7 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-{/* 
+
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
               <div className="mb-10 w-full">
                 <h4 className="mb-9 text-lg font-semibold text-dark dark:text-dark">
@@ -122,7 +122,7 @@ const Footer = () => {
                   ))}
                 </ul>
               </div>
-            </div> */}
+            </div>
 
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
