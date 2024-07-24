@@ -40,18 +40,18 @@ const useHandleSignin = () => {
     setLoading(true);
     setError("");
 
-    try {
-      await loginUser(email, password);
-      setShowModal(true);
-      setTimeout(() => {
-        setShowModal(false);
-        navigate("/chat");
-      }, 2000);
-    } catch (error) {
-      setError(error.message);
-    } finally {
-      setLoading(false);
-    }
+    // try {
+    //   await loginUser(email, password);
+    //   setShowModal(true);
+    //   setTimeout(() => {
+    //     setShowModal(false);
+    //     navigate("/chat");
+    //   }, 2000);
+    // } catch (error) {
+    //   setError(error.message);
+    // } finally {
+    //   setLoading(false);
+    // }
   };
 
   return { handleSignin, loading, error, showModal };
