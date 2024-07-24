@@ -14,21 +14,21 @@ const featuresData = [
     paragraph:
       "BarokahAI provides rapid and accurate responses to user inquiries.",
   },
-  // {
-  //   id: 2,
-  //   icon: (
-  //     <svg width="40" height="41" viewBox="0 0 40 41" className="fill-current">
-  //     <path
-  //       opacity="0.5"
-  //       d="M32 2H8C6.895 2 6 2.895 6 4v32c0 1.105.895 2 2 2h24c1.105 0 2-.895 2-2V4c0-1.105-.895-2-2-2zM8 4h24c.553 0 1 .447 1 1v30c0 .553-.447 1-1 1H8c-.553 0-1-.447-1-1V5c0-.553.447-1 1-1z"
-  //     />
-  //     <path d="M20 8c-3.313 0-6 2.687-6 6s2.687 6 6 6 6-2.687 6-6-2.687-6-6-6zM20 14c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2z" />
-  //   </svg>
-  //   ),
-  //   title: "Atificial Intelligence",
-  //   paragraph:
-  //     "Utilizes AI technology to deliver the necessary information.",
-  // },
+  {
+    id: 2,
+    icon: (
+      <svg width="40" height="41" viewBox="0 0 40 41" className="fill-current">
+      <path
+        opacity="0.5"
+        d="M32 2H8C6.895 2 6 2.895 6 4v32c0 1.105.895 2 2 2h24c1.105 0 2-.895 2-2V4c0-1.105-.895-2-2-2zM8 4h24c.553 0 1 .447 1 1v30c0 .553-.447 1-1 1H8c-.553 0-1-.447-1-1V5c0-.553.447-1 1-1z"
+      />
+      <path d="M20 8c-3.313 0-6 2.687-6 6s2.687 6 6 6 6-2.687 6-6-2.687-6-6-6zM20 14c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2z" />
+    </svg>
+    ),
+    title: "Atificial Intelligence",
+    paragraph:
+      "Utilizes AI technology to deliver the necessary information.",
+  },
   {
     id: 3,
     icon: (
