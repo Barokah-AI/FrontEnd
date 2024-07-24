@@ -121,7 +121,7 @@ const NotFoundPage = () => {
                       strokeOpacity="0.08"
                       strokeWidth="2"
                     />
-                    <defs>
+                    {/* <defs>
                       <filter
                         id="filter0_f_116:1137"
                         x="175.337"
@@ -153,7 +153,7 @@ const NotFoundPage = () => {
                       >
                         <stop stopColor="#4A6CF7" stopOpacity="0" />
                         <stop offset="1" stopColor="#4A6CF7" />
-                      </linearGradient>
+                      </linearGradient> */}
                       <linearGradient
                         id="paint1_linear_116:1137"
                         x1="307"
