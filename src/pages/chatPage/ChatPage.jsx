@@ -1,29 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useLogout } from "./Logout";
 import Cookies from "js-cookie";
 import Conversation from "./Conversation";
 import useConversations from "./ConversationConfig";
+import { useLogout } from "./Logout";
 
 const ChatPage = () => {
-  const navigate = useNavigate();
-  const {
-    input,
-    isLoading,
-    setInput,
-    conversations,
-    handleKeyPress,
-    handleSubmit,
-  } = useConversations();
-
-  const authToken = Cookies.get("authToken");
-
-  if (!authToken) {
-    navigate("/signin");
-    return <div>Redirecting...</div>;
-  }
-
   const logout = useLogout();
+  const navigate = useNavigate();
+  const [responseCount, setResponseCount] = useState(0);
+  const isLoggedIn = !!Cookies.get("authToken");
+  const { input, isLoading, setInput, conversations, handleSubmit } =
+    useConversations();
+
+  const handleKeyPress = (event) => {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      handleSend();
+    }
+  };
+
+  const handleSend = () => {
+    if (responseCount < 3 || isLoggedIn) {
+      handleSubmit(input);
+      setResponseCount(responseCount + 1);
+    } else {
+      alert("Harus login untuk melanjutkan percakapan.");
+      navigate("/signin");
+    }
+  };
 
   return (
     <>
@@ -294,7 +299,6 @@ const ChatPage = () => {
             Are you sure you want to sign out?
           </p>
           <div className="modal-action flex justify-center">
-            {/* button logout warna merah */}
             <button
               onClick={logout}
               className="btn bg-red-500 hover:bg-red-600 text-white"
@@ -310,10 +314,10 @@ const ChatPage = () => {
       </div>
       {/* End Modal Logout */}
 
-      {/* content */}
+      {/* Content */}
       <div className="relative w-full lg:ps-64">
         <div className="pt-10 pb-24 sm:pb-0 sm:min-h-screen sm:pt-14">
-          {/* title */}
+          {/* Title */}
           <div className="max-w-4xl px-4 sm:px-6 lg:px-8 mx-auto text-center">
             <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white">
               Welcome to Barokah AI
@@ -333,7 +337,41 @@ const ChatPage = () => {
 
         {/* Input area */}
         <footer className="fixed bottom-0 w-full px-4 mx-auto z-10 p-3 sm:sticky sm:py-6 sm:px-10">
-          {/* Input */}
+          {/* Alert Modal */}
+          {!isLoggedIn && responseCount >= 3 && (
+            <div role="alert" className="alert mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                className="stroke-info h-6 w-6 shrink-0"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+              </svg>
+              <div>
+                <h3 className="font-bold">You Reach Limit!</h3>
+                <div className="text-xs">
+                  {" "}
+                  You have reached the limit of 3 questions. Please login to
+                  continue the conversation.
+                </div>
+              </div>
+              <div>
+                <button
+                  className="btn btn-sm btn-primary"
+                  onClick={() => navigate("/signin")}
+                >
+                  Login
+                </button>
+              </div>
+            </div>
+          )}
+          {/* End Alert Modal */}
           <div className="relative">
             <input
               className="p-4 pb-12 block w-full bg-gray-100 border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
@@ -341,15 +379,13 @@ const ChatPage = () => {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyPress}
-              disabled={isLoading}
-            ></input>
+              disabled={responseCount >= 3 && !isLoggedIn}
+            />
 
-            {/*  Toolbar */}
+            {/* Toolbar */}
             <div className="absolute bottom-px inset-x-px p-2 rounded-b-lg bg-gray-100 dark:bg-neutral-800">
               <div className="flex justify-between items-center">
-                {/*  Button Group */}
                 <div className="flex items-center">
-                  {/*  Attach Button */}
                   <button
                     type="button"
                     className="inline-flex flex-shrink-0 justify-center items-center size-8 rounded-lg text-gray-500 hover:text-blue-600 focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:text-neutral-500 dark:hover:text-blue-500"
@@ -366,17 +402,12 @@ const ChatPage = () => {
                       <path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48" />
                     </svg>
                   </button>
-                  {/*  End Attach Button  */}
                 </div>
-                {/*  End Button Group */}
-
-                {/*  Button Group */}
                 <div className="flex items-center gap-x-1">
-                  {/*  Send Button */}
                   <button
-                    onClick={() => handleSubmit(input)}
+                    onClick={handleSend}
                     type="submit"
-                    disabled={isLoading}
+                    disabled={isLoading || (responseCount >= 3 && !isLoggedIn)}
                     className="inline-flex flex-shrink-0 justify-center items-center size-8 rounded-lg text-white bg-blue-600 hover:bg-blue-500 focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   >
                     <svg
@@ -390,18 +421,13 @@ const ChatPage = () => {
                       <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z" />
                     </svg>
                   </button>
-                  {/*  End Send Button */}
                 </div>
-                {/*  End Button Group */}
               </div>
             </div>
-            {/*  End Toolbar */}
           </div>
-          {/*  Input */}
         </footer>
-        {/*  End Input area */}
       </div>
-      {/*  End Content */}
+      {/* End Chat */}
     </>
   );
 };
