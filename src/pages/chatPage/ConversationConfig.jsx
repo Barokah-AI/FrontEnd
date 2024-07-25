@@ -7,15 +7,14 @@ const useConversations = () => {
   const [input, setInput] = useState("");
   const [conversations, setConversations] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-
-  const handleKeyPress = (event) => {
-    const question = input.trim();
-    if (event.key === "Enter" && question) {
-      handleSubmit(question);
-    }
-  };
+  const [questionCount, setQuestionCount] = useState(0);
 
   const handleSubmit = async (question) => {
+    if (questionCount >= 3) {
+      console.warn("Sudah mencapai batas pertanyaan");
+      return;
+    }
+
     setConversations((prev) => [...prev, { question, answer: null }]);
     setIsLoading(true);
     setInput("");
@@ -39,6 +38,7 @@ const useConversations = () => {
             )
           );
         }, 1000);
+        setQuestionCount((prev) => prev + 1);
       } else {
         throw new Error("Network response was not ok");
       }
@@ -74,8 +74,8 @@ const useConversations = () => {
     isLoading,
     setInput,
     conversations,
-    handleKeyPress,
     handleSubmit,
+    questionCount,
   };
 };
 
