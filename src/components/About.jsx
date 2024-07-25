@@ -122,10 +122,10 @@ const About = () => {
                     Accessing the Website or Application:
                   </h3>
                   <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                    Open your favorite browser and visit the official Barokah-AI
-                    website at barokah-ai.vercel.app. On the main page of the
-                    website or application, you will see a Get Started button to
-                    start a conversation. Just click to start chatting.
+                  Open your favorite browser and visit the official Barokah-AI 
+                  website at barokah-ai.vercel.app. On the home page of the site 
+                  or app, you will see a 'Get Started' button to start a conversation. 
+                  Just click to start chatting.
                   </p>
                 </div>
                 <div className="mb-9">

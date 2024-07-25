@@ -57,7 +57,7 @@ const featuresData = [
     ),
     title: "User Friendly Interface",
     paragraph:
-      "Offers an easy-to-navogate and intuitive platform",
+      "Offers an easy-to-navogate and intuitive platform.",
   },
   {
     id: 5,

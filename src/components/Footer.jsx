@@ -22,7 +22,7 @@ const Footer = () => {
                   </div>
                 </div>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                Follow Us on Social Media To get the latest updates, news and interesting content from Barokah AI, don't forget to follow us on social media!
+                For the latest updates, latest news, and interesting content from Barokah AI, don't forget to follow us on social media!
 
                 </p>
                 <div className="flex items-center">
@@ -107,7 +107,7 @@ const Footer = () => {
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-3/12 xl:w-2/12">
               <div className="mb-10 w-full">
                 <h4 className="mb-9 text-lg font-semibold text-dark dark:text-dark">
-                  Useful Links
+                Relevant Links
                 </h4>
                 <ul>
                   {menuData.map((menuItem) => (
