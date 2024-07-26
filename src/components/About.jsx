@@ -80,7 +80,9 @@ const About = () => {
       <div className="container">
   <div className="-mx-4 flex flex-wrap items-center">
     <motion.div className="w-full px-4 lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} variants={imageVariants}>
-
+      <div className="relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0">
+        <img src="https://github.com/Barokah-AI/FrontEnd/assets/104063079/cf74a9a2-5084-4310-9817-b201af54cec8" alt="about image" className="drop-shadow-three dark:drop-shadow-none" />
+      </div>
     </motion.div>
 
     <motion.div className="w-full px-4 lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} variants={textVariants}>
