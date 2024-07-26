@@ -75,7 +75,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a href="#" className="mb-2 inline-block text-base leading-loose text-body-color hover:text-primary dark:text-body-color-dark dark:hover:text-primary">
-                      Privacy Policy
+                      Privacy Policy.
                     </a>
                   </li>
                   <li>
