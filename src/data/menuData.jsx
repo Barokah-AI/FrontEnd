@@ -23,5 +23,11 @@ const menuData = [
     path: "#team",
     newTab: false,
   },
+  {
+    id: 4,
+    title: "Contact",
+    path: "#contact",
+    newTab: false,
+  },
 ];
 export default menuData;
