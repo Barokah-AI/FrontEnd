@@ -12,14 +12,12 @@ const About = () => {
   const List = ({ text }) => {
     return (
       <p className="mb-5 flex items-center text-lg font-medium text-body-color">
-        <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
-          {checkIcon}
-        </span>
+        <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">{checkIcon}</span>
         {text}
       </p>
     );
   };
-  
+
   List.propTypes = {
     text: PropTypes.string.isRequired,
   };
@@ -39,52 +37,34 @@ const About = () => {
       <div className="pt-16 md:pt-20 lg:pt-28">
         <div className="container">
           <div className="pb-16 md:pb-20 lg:pb-28">
-            <div className="-mx-4 flex flex-wrap items-center">
-              <motion.div
-                className="w-full px-4 lg:w-1/2"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                transition={{ delay: 0.5, duration: 1 }}
-                variants={textVariants}
-              >
+            <div className="-mx-4 flex flex-wrap items-center text-justify">
+              <motion.div className="w-full px-4 lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} variants={textVariants}>
                 <SectionTitle
                   title="Barokah-AI"
-                  paragraph="Barokah-AI is a digital friend who is here to answer all your questions quickly and precisely. Using artificial intelligence, Barokah-AI provides the information you need. With advanced features and a user-friendly interface, Barokah-AI is here to provide safe and reliable support. Let's explore new knowledge and find ease in every interaction with Barokah-AI!"
+                  paragraph="Barokah-AI is your digital companion, ready to answer all your questions swiftly and accurately. Powered by artificial intelligence, Barokah-AI delivers the information you seek. With its advanced features and intuitive interface, Barokah-AI offers secure and dependable support. Let's discover new knowledge and enjoy seamless interactions with Barokah-AI!"
                   mb="44px"
                 />
 
                 <div className="mb-12 max-w-[570px] lg:mb-0">
                   <div className="mx-[-12px] flex flex-wrap">
                     <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                      <List text="Natural Language Processing" />
-                      <List text="Machine Learning" />
-                      <List text="Multi Language" />
+                      <List text="Language Understanding" />
+                      <List text="Intelligent Systems" />
+                      <List text="Multilingual Support" />
                     </div>
 
                     <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
-                      <List text="Personalization" />
-                      <List text="Easy Integration" />
-                      <List text="Security and Privacy" />
+                      <List text="Customization" />
+                      <List text="Seamless Integration" />
+                      <List text="Safe and Secure" />
                     </div>
                   </div>
                 </div>
               </motion.div>
 
-              <motion.div
-                className="w-full px-4 lg:w-1/2"
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                transition={{ delay: 0.5, duration: 1 }}
-                variants={imageVariants}
-              >
+              <motion.div className="w-full px-4 lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} variants={imageVariants}>
                 <div className="relative mx-auto aspect-w-25 aspect-h-24 max-w-[500px] lg:mr-0">
-                  <img
-                    src="/images/about/pic-about.svg"
-                    alt="about-image"
-                    className="mx-auto max-w-full drop-shadow-three dark:drop-shadow-none lg:mr-0"
-                  />
+                  <img src="/images/about/pic-about.svg" alt="about-image" className="mx-auto max-w-full drop-shadow-three dark:drop-shadow-none lg:mr-0" />
                 </div>
               </motion.div>
             </div>
@@ -94,54 +74,25 @@ const About = () => {
       <div className="py-16 md:py-20 lg:py-28 relative z-10 dark:bg-bg-color-dark bg-gray-light">
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
-            <motion.div
-              className="w-full px-4 lg:w-1/2"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ delay: 0.5, duration: 1 }}
-              variants={imageVariants}
-            >
+            <motion.div className="w-full px-4 lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} variants={imageVariants}>
               <div className="relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0">
-                <img
-                  src="https://github.com/Barokah-AI/FrontEnd/assets/104063079/cf74a9a2-5084-4310-9817-b201af54cec8"
-                  alt="about image"
-                  className="drop-shadow-three dark:drop-shadow-none"
-                />
+                <img src="https://github.com/Barokah-AI/FrontEnd/assets/104063079/cf74a9a2-5084-4310-9817-b201af54cec8" alt="about image" className="drop-shadow-three dark:drop-shadow-none" />
               </div>
             </motion.div>
-            <motion.div
-              className="w-full px-4 lg:w-1/2"
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              transition={{ delay: 0.5, duration: 1 }}
-              variants={textVariants}
-            >
+            <motion.div className="w-full px-4 lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} variants={textVariants}>
               <div className="max-w-[470px]">
                 <div className="mb-9">
-                  <h2 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                    Step by Step to Use Barokah-AI
-                  </h2>
-                  <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                    Accessing the Website or Application:
-                  </h3>
+                  <h2 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Step by Step to Use Barokah-AI</h2>
+                  <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Accessing the Website or Application:</h3>
                   <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Open your favorite browser and visit the official Barokah-AI 
-                  website at barokah-ai.vercel.app. On the home page of the site 
-                  or app, you will see a &apos;Get Started&apos; button to start a conversation. 
-                  Just click to start chatting.
+                    Open your favorite browser and visit the official Barokah-AI website at barokah-ai.vercel.app. On the home page of the site or app, you will see a &apos;Get Started&apos; button to start a conversation. Just click to
+                    start chatting.
                   </p>
                 </div>
                 <div className="mb-9">
-                  <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                    Starting Interaction...
-                  </h3>
+                  <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Starting Interaction...</h3>
                   <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                    Please type your question or command in the chat box.
-                    Barokah-AI will respond quickly and accurately. You can ask
-                    anything from product information, technical assistance,
-                    personal advice, to casual chat.
+                    Please type your question or command in the chat box. Barokah-AI will respond quickly and accurately. You can ask anything from product information, technical assistance, personal advice, to casual chat.
                   </p>
                 </div>
               </div>
@@ -149,53 +100,15 @@ const About = () => {
           </div>
         </div>
         <div className="absolute right-0 top-5 z-[-1]">
-          <svg
-            width="238"
-            height="531"
-            viewBox="0 0 238 531"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              opacity="0.3"
-              x="422.819"
-              y="-70.8145"
-              width="196"
-              height="541.607"
-              rx="2"
-              transform="rotate(51.2997 422.819 -70.8145)"
-              fill="url(#paint0_linear_83:2)"
-            />
-            <rect
-              opacity="0.3"
-              x="426.568"
-              y="144.886"
-              width="59.7544"
-              height="541.607"
-              rx="2"
-              transform="rotate(51.2997 426.568 144.886)"
-              fill="url(#paint1_linear_83:2)"
-            />
+          <svg width="238" height="531" viewBox="0 0 238 531" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect opacity="0.3" x="422.819" y="-70.8145" width="196" height="541.607" rx="2" transform="rotate(51.2997 422.819 -70.8145)" fill="url(#paint0_linear_83:2)" />
+            <rect opacity="0.3" x="426.568" y="144.886" width="59.7544" height="541.607" rx="2" transform="rotate(51.2997 426.568 144.886)" fill="url(#paint1_linear_83:2)" />
             <defs>
-              <linearGradient
-                id="paint0_linear_83:2"
-                x1="517.152"
-                y1="-251.373"
-                x2="517.152"
-                y2="459.865"
-                gradientUnits="userSpaceOnUse"
-              >
+              <linearGradient id="paint0_linear_83:2" x1="517.152" y1="-251.373" x2="517.152" y2="459.865" gradientUnits="userSpaceOnUse">
                 <stop stopColor="#4A6CF7" />
                 <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
               </linearGradient>
-              <linearGradient
-                id="paint1_linear_83:2"
-                x1="455.327"
-                y1="-35.673"
-                x2="455.327"
-                y2="675.565"
-                gradientUnits="userSpaceOnUse"
-              >
+              <linearGradient id="paint1_linear_83:2" x1="455.327" y1="-35.673" x2="455.327" y2="675.565" gradientUnits="userSpaceOnUse">
                 <stop stopColor="#4A6CF7" />
                 <stop offset="1" stopColor="#4A6CF7" stopOpacity="0" />
               </linearGradient>
@@ -203,13 +116,7 @@ const About = () => {
           </svg>
         </div>
         <div className="absolute bottom-5 left-0 z-[-1]">
-          <svg
-            width="279"
-            height="106"
-            viewBox="0 0 279 106"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
+          <svg width="279" height="106" viewBox="0 0 279 106" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.5">
               <path
                 d="M-57 12L50.0728 74.8548C55.5501 79.0219 70.8513 85.7589 88.2373 79.3692C109.97 71.3821 116.861 60.9642 156.615 63.7423C178.778 65.291 195.31 69.2985 205.911 62.3533C216.513 55.408 224.994 47.7682 243.016 49.1572C255.835 50.1453 265.278 50.8936 278 45.3373"
@@ -229,47 +136,19 @@ const About = () => {
               />
             </g>
             <defs>
-              <linearGradient
-                id="paint0_linear_72:302"
-                x1="256.267"
-                y1="53.6717"
-                x2="-40.8688"
-                y2="8.15715"
-                gradientUnits="userSpaceOnUse"
-              >
+              <linearGradient id="paint0_linear_72:302" x1="256.267" y1="53.6717" x2="-40.8688" y2="8.15715" gradientUnits="userSpaceOnUse">
                 <stop stopColor="#4A6CF7" stopOpacity="0" />
                 <stop offset="1" stopColor="#4A6CF7" />
               </linearGradient>
-              <linearGradient
-                id="paint1_linear_72:302"
-                x1="256.267"
-                y1="42.6717"
-                x2="-40.8688"
-                y2="-2.84285"
-                gradientUnits="userSpaceOnUse"
-              >
+              <linearGradient id="paint1_linear_72:302" x1="256.267" y1="42.6717" x2="-40.8688" y2="-2.84285" gradientUnits="userSpaceOnUse">
                 <stop stopColor="#4A6CF7" stopOpacity="0" />
                 <stop offset="1" stopColor="#4A6CF7" />
               </linearGradient>
-              <linearGradient
-                id="paint2_linear_72:302"
-                x1="256.267"
-                y1="64.6717"
-                x2="-40.8688"
-                y2="19.1572"
-                gradientUnits="userSpaceOnUse"
-              >
+              <linearGradient id="paint2_linear_72:302" x1="256.267" y1="64.6717" x2="-40.8688" y2="19.1572" gradientUnits="userSpaceOnUse">
                 <stop stopColor="#4A6CF7" stopOpacity="0" />
                 <stop offset="1" stopColor="#4A6CF7" />
               </linearGradient>
-              <linearGradient
-                id="paint3_linear_72:302"
-                x1="256.267"
-                y1="76.6717"
-                x2="-40.8688"
-                y2="31.1572"
-                gradientUnits="userSpaceOnUse"
-              >
+              <linearGradient id="paint3_linear_72:302" x1="256.267" y1="76.6717" x2="-40.8688" y2="31.1572" gradientUnits="userSpaceOnUse">
                 <stop stopColor="#4A6CF7" stopOpacity="0" />
                 <stop offset="1" stopColor="#4A6CF7" />
               </linearGradient>
