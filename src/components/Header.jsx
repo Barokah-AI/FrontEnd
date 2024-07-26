@@ -88,7 +88,7 @@ const Header = () => {
                 <div className="flex gap-2">
                   <img
                     src="/images/logo/logo.png"
-                    alt="Image Description"
+                    alt="Image Description."
                     className="w-10 h-auto"
                   />
                   <div>
