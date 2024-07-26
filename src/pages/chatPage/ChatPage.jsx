@@ -47,7 +47,7 @@ const ChatPage = () => {
               />
               <div>
                 <h1 className="mt-1 text-2xl font-bold text-blue-600">
-                  BarokahAI
+                  BAROKAH - AI
                 </h1>
               </div>
             </div>
