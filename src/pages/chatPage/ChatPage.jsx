@@ -200,7 +200,7 @@ const ChatPage = () => {
           <div className="max-w-4xl px-4 sm:px-6 lg:px-8 mx-auto text-center">
             <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white">Welcome to Barokah AI</h1>
             <p className="mt-3 text-gray-600 dark:text-neutral-400">There is nothing hidden in this world</p>
-            <p className="mt-3 text-gray-600 dark:text-neutral-400">There is nothing hidden in this world. BarokahAi is here to help you know everything</p>
+            <p className="mt-3 text-gray-600 dark:text-neutral-400">BarokahAi is here to help you know everything</p>
           </div>
           {/* End Title */}
 
