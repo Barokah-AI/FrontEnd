@@ -10,7 +10,9 @@ const Hero = () => {
       await controls.start({
         opacity: 1,
         y: 0,
-        transition: { duration: 1 },
+        transition: { 
+          duration: 1 
+        },
       });
       await controls.start({
         y: [0, -20, 0],
