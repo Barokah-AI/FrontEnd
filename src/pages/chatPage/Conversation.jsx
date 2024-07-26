@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Conversation = ({ conversations }) => {
   return (
@@ -14,7 +15,7 @@ const Conversation = ({ conversations }) => {
           {/* Card --> */}
           <div className="bg-white border border-gray-200 rounded-lg p-4 space-y-3 dark:bg-neutral-900 dark:border-neutral-700">
             <h2 className="font-medium text-gray-800 dark:text-white">
-              How can we help?
+              How can we help you?
             </h2>
             <div className="space-y-1.5">
               <p className="mb-1.5 text-sm text-gray-800 dark:text-white">
@@ -22,7 +23,7 @@ const Conversation = ({ conversations }) => {
               </p>
               <ul className="list-disc list-outside space-y-1.5 ps-3.5">
                 <li className="text-sm text-gray-800 dark:text-white">
-                  What's Barokah AI?
+                  What&apos;s Barokah AI?
                 </li>
 
                 <li className="text-sm text-gray-800 dark:text-white">
@@ -49,7 +50,7 @@ const Conversation = ({ conversations }) => {
 
               <span className="flex-shrink-0 inline-flex items-center justify-center size-[38px] rounded-full bg-gray-600">
                 <span className="text-sm font-medium text-white leading-none">
-                  B
+                  P
                 </span>
               </span>
             </li>
@@ -59,18 +60,18 @@ const Conversation = ({ conversations }) => {
             <li className="w-full py-2 px-4 mx-auto gap-x-5 sm:gap-x-4 sm:py-4 sm:px-10">
               <div className="flex space-x-5">
                 <img
-                  className="flex-shrink-0 w-[2.375rem] h-[2.375rem] rounded-full"
+                  className="flex-shrink-0 w-[2.370rem] h-[2.375rem] rounded-full"
                   src="https://github.com/Barokah-AI/BackEnd/assets/94734096/0bf32c79-e402-4565-9868-8a21c84d8b33"
                   alt="avatar"
                 />
                 {/* Card */}
-                <div className="bg-white border border-gray-200 rounded-lg p-4 space-y-3 dark:bg-neutral-900 dark:border-neutral-700">
+                <div className="bg-white border border-gray-100 rounded-lg p-4 space-y-3 dark:bg-neutral-900 dark:border-neutral-700">
                   <h2 className="font-medium text-gray-800 dark:text-white">
                     Here the answer...
                   </h2>
                   <div className="grow text-start space-y-1.5">
                     {conv.answer ? (
-                      <p className="mb-1.5 text-sm text-gray-800 dark:text-white">
+                      <p className="mb-1.8 text-sm text-gray-800 dark:text-white">
                         {conv.answer}
                       </p>
                     ) : (
@@ -82,13 +83,13 @@ const Conversation = ({ conversations }) => {
               </div>
 
               {/* Button Group */}
-              <div className="w-full ml-5 py-2 px-4 mx-auto gap-x-2 sm:gap-x-4 sm:py-4 sm:px-10">
+              <div className="w-full ml-4 py-2 px-4 mx-auto gap-x-2 sm:gap-x-4 sm:py-4 sm:px-10">
                 <div className="sm:flex sm:justify-between">
                   <div>
                     <div className="inline-flex border border-gray-200 rounded-full p-0.5 dark:border-neutral-700">
                       <button
                         type="button"
-                        className="inline-flex flex-shrink-0 justify-center items-center size-8 rounded-full text-gray-500 hover:bg-blue-100 hover:text-blue-800 focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:text-neutral-500 dark:hover:bg-blue-900 dark:hover:text-blue-200"
+                        className="inline-flex flex-shrink-0 justify-center items-center size-8 rounded-full text-gray-500 hover:bg-blue-200 hover:text-blue-800 focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:text-neutral-500 dark:hover:bg-blue-900 dark:hover:text-blue-200"
                       >
                         <svg
                           className="flex-shrink-0 size-4"
@@ -171,6 +172,15 @@ const Conversation = ({ conversations }) => {
       </ul>
     </>
   );
+};
+
+Conversation.propTypes = {
+  conversations: PropTypes.arrayOf(
+    PropTypes.shape({
+      question: PropTypes.string.isRequired,
+      answer: PropTypes.string,
+    })
+  ).isRequired,
 };
 
 export default Conversation;

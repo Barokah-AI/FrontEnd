@@ -10,7 +10,7 @@ const ChatPage = () => {
   const logout = useLogout();
   const navigate = useNavigate();
   const [responseCount, setResponseCount] = useState(0);
-  const isLoggedIn = !!Cookies.get("authToken");
+  const isUserLoggedIn = !!Cookies.get("authToken");
   const { input, isLoading, setInput, conversations, handleSubmit } = useConversations();
 
   const handleKeyPress = (event) => {
@@ -21,11 +21,11 @@ const ChatPage = () => {
   };
 
   const handleSend = () => {
-    if (responseCount < 3 || isLoggedIn) {
+    if (responseCount < 3 || isUserLoggedIn) {
       handleSubmit(input);
       setResponseCount(responseCount + 1);
     } else {
-      alert("Harus login untuk melanjutkan percakapan.");
+      alert("Must be logged in to continue the conversation.");
       navigate("/signin");
     }
   };
@@ -42,9 +42,7 @@ const ChatPage = () => {
             <div className="flex gap-2">
               <img src="/images/logo/logo.png" alt="Image Description" className="w-10 h-auto" />
               <div>
-                <Link to="/" className="mt-1 text-2xl font-bold text-blue-600">
-                  BAROKAH - AI
-                </Link>
+                <h1 className="mt-1 text-2xl font-bold text-blue-600">BAROKAH - AI</h1>
               </div>
             </div>
             {/* <!--Logo */}
@@ -164,7 +162,7 @@ const ChatPage = () => {
             <div className="p-4 border-t border-gray-200 dark:border-neutral-700">
               <label className="flex justify-between items-center gap-x-3 py-2 px-3 text-sm text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-300" htmlFor="my_modal_6">
                 Sign out
-                <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
                   <polyline points="10 17 15 12 10 7" />
                   <line x1="15" x2="3" y1="12" y2="12" />
@@ -221,13 +219,13 @@ const ChatPage = () => {
         {/* Input area */}
         <footer className="fixed bottom-0 w-full px-4 mx-auto z-10 p-3 sm:sticky sm:py-6 sm:px-10">
           {/* Alert Modal */}
-          {!isLoggedIn && responseCount >= 3 && (
+          {!isUserLoggedIn && responseCount >= 3 && (
             <div role="alert" className="alert mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-info h-6 w-6 shrink-0">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
               <div>
-                <h3 className="font-bold">You Reach Limit!</h3>
+                <h3 className="font-bold">You Have Reached the Limit of 3 Chats!!!</h3>
                 <div className="text-xs"> You have reached the limit of 3 questions. Please login to continue the conversation.</div>
               </div>
               <div>
@@ -241,16 +239,16 @@ const ChatPage = () => {
           <div className="relative">
             <input
               className="p-4 pb-12 block w-full bg-gray-100 border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-neutral-800 dark:border-neutral-700 dark:text-neutral-200 dark:placeholder-neutral-500 dark:focus:ring-neutral-600"
-              placeholder="Ask me anything..."
+              placeholder="Ask me anything you want..."
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyPress}
-              disabled={responseCount >= 3 && !isLoggedIn}
+              disabled={responseCount >= 3 && !isUserLoggedIn}
             />
 
             {/* Toolbar */}
             <div className="absolute bottom-px inset-x-px p-2 rounded-b-lg bg-gray-100 dark:bg-neutral-800">
-              <div className="flex justify-between items-center">
+              <div className="flex items-center justify-between">
                 <div className="flex items-center">
                   <button
                     type="button"
@@ -265,7 +263,7 @@ const ChatPage = () => {
                   <button
                     onClick={handleSend}
                     type="submit"
-                    disabled={isLoading || (responseCount >= 3 && !isLoggedIn)}
+                    disabled={isLoading || (responseCount >= 3 && !isUserLoggedIn)}
                     className="inline-flex flex-shrink-0 justify-center items-center size-8 rounded-lg text-white bg-blue-600 hover:bg-blue-500 focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   >
                     <svg className="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">

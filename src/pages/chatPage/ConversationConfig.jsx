@@ -1,23 +1,22 @@
 import { useState, useEffect } from "react";
 
 const useConversations = () => {
-  const api =
-    "https://asia-southeast2-erditona-dev.cloudfunctions.net/barokahai/chat";
+  const api = "https://asia-southeast2-erditona-dev.cloudfunctions.net/barokahai/chat";
 
-  const [input, setInput] = useState("");
+  const [inputQuestion, setInputQuestion] = useState("");
   const [conversations, setConversations] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [questionCount, setQuestionCount] = useState(0);
 
   const handleSubmit = async (question) => {
     if (questionCount >= 3) {
-      console.warn("Sudah mencapai batas pertanyaan");
+      console.warn("The question limit has been reached");
       return;
     }
 
     setConversations((prev) => [...prev, { question, answer: null }]);
     setIsLoading(true);
-    setInput("");
+    setInputQuestion("");
     try {
       const res = await fetch(api, {
         method: "POST",
@@ -32,15 +31,13 @@ const useConversations = () => {
         setTimeout(() => {
           setConversations((prev) =>
             prev.map((conv, index) =>
-              index === prev.length - 1
-                ? { ...conv, answer: data.response }
-                : conv
+              index === prev.length - 1 ? { ...conv, answer: data.response } : conv
             )
           );
         }, 1000);
         setQuestionCount((prev) => prev + 1);
       } else {
-        throw new Error("Network response was not ok");
+        throw new Error("Network response is not good");
       }
     } catch (error) {
       console.error("Error:", error);
@@ -70,9 +67,9 @@ const useConversations = () => {
   }, [conversations]);
 
   return {
-    input,
+    inputQuestion,
     isLoading,
-    setInput,
+    setInputQuestion,
     conversations,
     handleSubmit,
     questionCount,
