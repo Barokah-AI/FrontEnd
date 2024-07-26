@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Conversation = ({ conversations }) => {
   return (
@@ -171,6 +172,15 @@ const Conversation = ({ conversations }) => {
       </ul>
     </>
   );
+};
+
+Conversation.propTypes = {
+  conversations: PropTypes.map(
+    PropTypes.shape({
+      question: PropTypes.string.isRequired,
+      answer: PropTypes.string,
+    })
+  ).isRequired,
 };
 
 export default Conversation;
