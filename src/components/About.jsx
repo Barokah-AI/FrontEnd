@@ -84,6 +84,8 @@ const About = () => {
                 <img src="https://github.com/Barokah-AI/FrontEnd/assets/104063079/cf74a9a2-5084-4310-9817-b201af54cec8" alt="about image" className="drop-shadow-three dark:drop-shadow-none" />
               </div>
             </motion.div>
+
+            
             <motion.div className="w-full px-4 lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} variants={textVariants}>
               <div className="max-w-[470px]">
                 <div className="mb-9">
