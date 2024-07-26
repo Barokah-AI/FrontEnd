@@ -147,6 +147,8 @@ const About = () => {
                 stroke="url(#paint3_linear_72:302)"
               />
             </g>
+
+            // Replace the text with the following snippet
             <defs>
               <linearGradient id="paint0_linear_72:302" x1="256.267" y1="53.6717" x2="-40.8688" y2="8.15715" gradientUnits="userSpaceOnUse">
                 <stop stopColor="#4A6CF7" stopOpacity="0" />
