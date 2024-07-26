@@ -1,4 +1,5 @@
 import SectionTitle from "./SectionTittle";
+import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 
 const checkIcon = (
