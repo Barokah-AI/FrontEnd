@@ -9,7 +9,7 @@ const ChatPage = () => {
   const logout = useLogout();
   const navigate = useNavigate();
   const [responseCount, setResponseCount] = useState(0);
-  const isLoggedIn = !!Cookies.get("authToken");
+  const isUserLoggedIn = !!Cookies.get("authToken");
   const { input, isLoading, setInput, conversations, handleSubmit } = useConversations();
 
   const handleKeyPress = (event) => {
@@ -20,7 +20,7 @@ const ChatPage = () => {
   };
 
   const handleSend = () => {
-    if (responseCount < 3 || isLoggedIn) {
+    if (responseCount < 3 || isUserLoggedIn) {
       handleSubmit(input);
       setResponseCount(responseCount + 1);
     } else {
@@ -214,7 +214,7 @@ const ChatPage = () => {
         {/* Input area */}
         <footer className="fixed bottom-0 w-full px-4 mx-auto z-10 p-3 sm:sticky sm:py-6 sm:px-10">
           {/* Alert Modal */}
-          {!isLoggedIn && responseCount >= 3 && (
+          {!isUserLoggedIn && responseCount >= 3 && (
             <div role="alert" className="alert mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="stroke-info h-6 w-6 shrink-0">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -238,7 +238,7 @@ const ChatPage = () => {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyPress}
-              disabled={responseCount >= 3 && !isLoggedIn}
+              disabled={responseCount >= 3 && !isUserLoggedIn}
             />
 
             {/* Toolbar */}
@@ -258,7 +258,7 @@ const ChatPage = () => {
                   <button
                     onClick={handleSend}
                     type="submit"
-                    disabled={isLoading || (responseCount >= 3 && !isLoggedIn)}
+                    disabled={isLoading || (responseCount >= 3 && !isUserLoggedIn)}
                     className="inline-flex flex-shrink-0 justify-center items-center size-8 rounded-lg text-white bg-blue-600 hover:bg-blue-500 focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
                   >
                     <svg className="flex-shrink-0 size-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
