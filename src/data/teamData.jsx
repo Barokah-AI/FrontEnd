@@ -103,14 +103,6 @@ const teamData = [
   //   image: "/images/testimonials/dito.png",
   //   contact: "@erditona_",
   // },
-  {
-    id: 7,
-    name: "Dani Ferdinan",
-    designation: "1214050",
-    content: "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
-    image: "/images/testimonials/dani.png",
-    contact: "@daniferdinandall",
-  },
 ];
 
 export default teamData;
