@@ -4,7 +4,7 @@ const useConversations = () => {
   const api =
     "https://asia-southeast2-erditona-dev.cloudfunctions.net/barokahai/chat";
 
-  const [input, setInputPertanyaan] = useState("");
+  const [inputPertanyaan, setInputPertanyaan] = useState("");
   const [conversations, setConversations] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [questionCount, setQuestionCount] = useState(0);
@@ -70,7 +70,7 @@ const useConversations = () => {
   }, [conversations]);
 
   return {
-    input,
+    inputPertanyaan,
     isLoading,
     setInputPertanyaan,
     conversations,
