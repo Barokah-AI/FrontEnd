@@ -5,7 +5,10 @@ import { motion } from "framer-motion";
 
 const Features = () => {
   const titleVariants = {
-    hidden: { opacity: 0, y: -50 },
+    hidden: { 
+      opacity: 0, 
+      y: -50 
+    },
     visible: { opacity: 1, y: 0 },
   };
 
