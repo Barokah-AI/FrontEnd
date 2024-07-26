@@ -89,7 +89,7 @@ const Conversation = ({ conversations }) => {
                     <div className="inline-flex border border-gray-200 rounded-full p-0.5 dark:border-neutral-700">
                       <button
                         type="button"
-                        className="inline-flex flex-shrink-0 justify-center items-center size-8 rounded-full text-gray-500 hover:bg-blue-100 hover:text-blue-800 focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:text-neutral-500 dark:hover:bg-blue-900 dark:hover:text-blue-200"
+                        className="inline-flex flex-shrink-0 justify-center items-center size-8 rounded-full text-gray-500 hover:bg-blue-200 hover:text-blue-800 focus:z-10 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:text-neutral-500 dark:hover:bg-blue-900 dark:hover:text-blue-200"
                       >
                         <svg
                           className="flex-shrink-0 size-4"
