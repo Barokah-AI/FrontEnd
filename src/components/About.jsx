@@ -86,7 +86,17 @@ const About = () => {
     </motion.div>
 
     <motion.div className="w-full px-4 lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} variants={textVariants}>
-      
+      <div className="max-w-[470px]">
+        <div className="mb-9">
+          <h2 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Getting Started with Barokah-AI</h2>
+          <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Accessing Our Platform:</h3>
+          <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+            Open your favorite browser and head over to the official Barokah-AI website at barokah-ai.vercel.app. On the homepage, you'll find a 'Get Started' button. Click it, and you're ready to start chatting!
+          </p>
+        </div>
+
+
+      </div>
     </motion.div>
   </div>
 </div>
