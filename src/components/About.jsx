@@ -39,11 +39,11 @@ const About = () => {
           <div className="pb-16 md:pb-20 lg:pb-28">
             <div className="-mx-4 flex flex-wrap items-center text-justify">
               <motion.div className="w-full px-4 lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} variants={textVariants}>
-                <SectionTitle
+                {/* <SectionTitle
                   title="Barokah-AI"
                   paragraph="Barokah-AI is a digital friend who is here to answer all your questions quickly and precisely. Using artificial intelligence, Barokah-AI provides the information you need. With advanced features and a user-friendly interface, Barokah-AI is here to provide safe and reliable support. Let's explore new knowledge and find ease in every interaction with Barokah-AI!"
                   mb="44px"
-                />
+                /> */}
 
                 <div className="mb-12 max-w-[570px] lg:mb-0">
                   <div className="mx-[-12px] flex flex-wrap">
