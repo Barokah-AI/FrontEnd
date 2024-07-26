@@ -71,7 +71,7 @@ const Conversation = ({ conversations }) => {
                   </h2>
                   <div className="grow text-start space-y-1.5">
                     {conv.answer ? (
-                      <p className="mb-1.5 text-sm text-gray-800 dark:text-white">
+                      <p className="mb-1.8 text-sm text-gray-800 dark:text-white">
                         {conv.answer}
                       </p>
                     ) : (
@@ -83,7 +83,7 @@ const Conversation = ({ conversations }) => {
               </div>
 
               {/* Button Group */}
-              <div className="w-full ml-5 py-2 px-4 mx-auto gap-x-2 sm:gap-x-4 sm:py-4 sm:px-10">
+              <div className="w-full ml-4 py-2 px-4 mx-auto gap-x-2 sm:gap-x-4 sm:py-4 sm:px-10">
                 <div className="sm:flex sm:justify-between">
                   <div>
                     <div className="inline-flex border border-gray-200 rounded-full p-0.5 dark:border-neutral-700">
