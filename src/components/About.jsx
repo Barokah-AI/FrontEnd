@@ -75,7 +75,7 @@ const About = () => {
         </div>
       </div>
 
-      Replace the text with the following snippet
+      {/* Replace the text with the following snippet */}
       <div className="py-16 md:py-20 lg:py-28 relative z-10 dark:bg-bg-color-dark bg-gray-light">
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
@@ -85,7 +85,7 @@ const About = () => {
               </div>
             </motion.div>
 
-            // Replace the text with the following snippet
+            Replace the text with the following snippet
             <motion.div className="w-full px-4 lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} variants={textVariants}>
               <div className="max-w-[470px]">
                 // Replace the text with the following snippet
