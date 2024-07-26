@@ -57,6 +57,7 @@ const Header = () => {
 
   const navigate = useNavigate();
 
+  // handle for menu click
   const handleMenuClick = (path) => {
     if (path.startsWith("/")) {
       navigate(path); // Navigate to internal routes like /signin
