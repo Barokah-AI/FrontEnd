@@ -11,7 +11,7 @@ const useConversations = () => {
 
   const handleSubmit = async (question) => {
     if (questionCount >= 3) {
-      console.warn("Sudah mencapai batas pertanyaan");
+      console.warn("The question limit has been reached");
       return;
     }
 
