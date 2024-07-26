@@ -4,9 +4,9 @@ import menuData from "../data/menuData";
 
 const Header = () => {
   // Navbar toggle
-  const [navbarOpen, setNavbarOpen] = useState(false);
+  const [isNavbarOpen, setisNavbarOpen] = useState(false);
   const navbarToggleHandler = () => {
-    setNavbarOpen(!navbarOpen);
+    setisNavbarOpen(!isNavbarOpen);
   };
 
   // Sticky Navbar
@@ -64,7 +64,7 @@ const Header = () => {
         targetSection.scrollIntoView({ behavior: "smooth" });
       }
     }
-    setNavbarOpen(false); // Close the navbar on menu click
+    setisNavbarOpen(false); // Close the navbar on menu click
   };
 
   return (
@@ -109,24 +109,24 @@ const Header = () => {
                 >
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
-                      navbarOpen ? " top-[7px] rotate-45" : " "
+                      isNavbarOpen ? " top-[7px] rotate-45" : " "
                     }`}
                   />
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
-                      navbarOpen ? "opacity-0 " : " "
+                      isNavbarOpen ? "opacity-0 " : " "
                     }`}
                   />
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
-                      navbarOpen ? " top-[-8px] -rotate-45" : " "
+                      isNavbarOpen ? " top-[-8px] -rotate-45" : " "
                     }`}
                   />
                 </button>
                 <nav
                   id="navbarCollapse"
                   className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
-                    navbarOpen
+                    isNavbarOpen
                       ? "visibility top-full opacity-100"
                       : "invisible top-[120%] opacity-0"
                   }`}
