@@ -54,7 +54,10 @@ const Hero = () => {
               >
                 <motion.h1
                   className="mb-5 block text-4xl text-center font-bold text-gray-dark dark:text-white sm:text-5xl lg:text-start lg:leading-tight"
-                  initial={{ opacity: 0, x: -100 }}
+                  initial={{ 
+                    opacity: 0, 
+                    x: -100 
+                  }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 1 }}
                 >
