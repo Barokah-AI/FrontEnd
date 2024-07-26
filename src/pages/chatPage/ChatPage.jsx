@@ -80,7 +80,7 @@ const ChatPage = () => {
             aria-label="close sidebar"
             className="drawer-overlay"
           ></label>
-          <nav className="menu fixed top-0 start-0 bottom-0 z-[60] w-64 bg-white border-e border-gray-200 overflow-y-auto">
+          <nav className="menu fixed top-0 start-0 bottom-0 z-[60] w-64 bg-white border-e border-gray-200 overflow-y-auto dark:bg-gray-800 dark:border-gray-600">
             {/* Sidebar content here */}
             <div className="flex items-center justify-between pt-4 pe-4 ps-7">
               {/* Logo */}
