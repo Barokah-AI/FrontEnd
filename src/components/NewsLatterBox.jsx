@@ -52,7 +52,7 @@ const NewsLatterBox = () => {
                 y2="15.3509"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="light" stopOpacity="0.62" />
+                <stop stopColor="light" stopOpacity="0.64" />
                 <stop offset="1" stopColor="light" stopOpacity="0" />
               </linearGradient>
             </defs>
