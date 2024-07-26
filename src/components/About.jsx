@@ -110,7 +110,7 @@ const About = () => {
           </div>
         </div>
 
-        // Replace the text with the following snippet
+        Replace the text with the following snippet
         <div className="absolute right-0 top-5 z-[-1]">
           <svg width="238" height="531" viewBox="0 0 238 531" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect opacity="0.3" x="422.819" y="-70.8145" width="196" height="541.607" rx="2" transform="rotate(51.2997 422.819 -70.8145)" fill="url(#paint0_linear_83:2)" />
@@ -148,7 +148,7 @@ const About = () => {
               />
             </g>
 
-            // Replace the text with the following snippet
+            Replace the text with the following snippet
             <defs>
               <linearGradient id="paint0_linear_72:302" x1="256.267" y1="53.6717" x2="-40.8688" y2="8.15715" gradientUnits="userSpaceOnUse">
                 <stop stopColor="#4A6CF7" stopOpacity="0" />
