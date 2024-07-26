@@ -46,6 +46,7 @@ const About = () => {
                   mb="44px"
                 />
 
+                // Replace the text with the following snippet
                 <div className="mb-12 max-w-[570px] lg:mb-0">
                   <div className="mx-[-12px] flex flex-wrap">
                     <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
@@ -63,6 +64,7 @@ const About = () => {
                 </div>
               </motion.div>
 
+              //
               <motion.div className="w-full px-4 lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} variants={imageVariants}>
                 <div className="relative mx-auto aspect-w-25 aspect-h-24 max-w-[500px] lg:mr-0">
                   <img src="/images/about/pic-about.svg" alt="about-image" className="mx-auto max-w-full drop-shadow-three dark:drop-shadow-none lg:mr-0" />
