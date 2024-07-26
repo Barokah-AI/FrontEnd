@@ -15,7 +15,7 @@ const Footer = () => {
                     <h1 className="mt-1 text-2xl font-bold text-primary">BarokahAI</h1>
                   </div>
                 </div>
-                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">For the latest updates, latest news, and interesting content from Barokah AI, don&apos;t forget to follow us on social media!!! Thank you for your attention and support.
+                <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">For the latest updates, latest news, and interesting content from Barokah AI, don&apos;t forget to follow us on social media!!! /nThank you for your attention and support.
                 </p>
                 <div className="flex items-center">
                   <Link to="/" aria-label="social-link" target="_blank" rel="noopener noreferrer" className="mr-6 text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary">
