@@ -15,7 +15,7 @@ const Features = () => {
     }
   };
 
-  const itemVariants = {
+  const itemVariant = {
     hidden: { 
       opacity: 0, 
       y: 50 
@@ -35,7 +35,7 @@ const Features = () => {
           </motion.div>
           <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
             {featuresData.map((feature, index) => (
-              <motion.div key={feature.id} initial="hidden" whileInView="visible" variants={itemVariants} viewport={{ once: true }} transition={{ delay: 0.5 + index * 0.2, duration: 0.5 }}>
+              <motion.div key={feature.id} initial="hidden" whileInView="visible" variants={itemVariant} viewport={{ once: true }} transition={{ delay: 0.5 + index * 0.2, duration: 0.5 }}>
                 <SingleFeature feature={feature} />
               </motion.div>
             ))}
