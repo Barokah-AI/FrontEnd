@@ -1,4 +1,3 @@
-import React from "react";
 import featuresData from "../data/featuresData";
 import SectionTitle from "./SectionTittle";
 import SingleFeature from "./SingleFeature";
@@ -6,13 +5,25 @@ import { motion } from "framer-motion";
 
 const Features = () => {
   const titleVariants = {
-    hidden: { opacity: 0, y: -50 },
-    visible: { opacity: 1, y: 0 },
+    hidden: { 
+      opacity: 0, 
+      y: -50 
+    },
+    visible: { 
+      opacity: 1, 
+      y: 0 
+    }
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0 },
+    hidden: { 
+      opacity: 0, 
+      y: 50 
+    },
+    visible: { 
+      opacity: 1, 
+      y: 0 
+    }
   };
 
   return (
