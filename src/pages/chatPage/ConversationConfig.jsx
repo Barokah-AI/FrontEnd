@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 
 const useConversations = () => {
-  const api =
-    "https://asia-southeast2-erditona-dev.cloudfunctions.net/barokahai/chat";
+  const api = "https://asia-southeast2-erditona-dev.cloudfunctions.net/barokahai/chat";
 
   const [inputQuestion, setInputQuestion] = useState("");
   const [conversations, setConversations] = useState([]);
