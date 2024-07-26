@@ -95,14 +95,6 @@ const teamData = [
   //   image: "/images/testimonials/ade.png",
   //   contact: "@ade_candra12",
   // },
-  {
-    id: 6,
-    name: "Erdito Nausha Adam",
-    designation: "1214031",
-    content: "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
-    image: "/images/testimonials/dito.png",
-    contact: "@erditona_",
-  },
 ];
 
 export default teamData;
