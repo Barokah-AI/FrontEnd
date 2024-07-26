@@ -7,7 +7,7 @@ const useConversations = () => {
   const [inputQuestion, setInputQuestion] = useState("");
   const [conversations, setConversations] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [questionsCount, setQuestionCount] = useState(0);
+  const [questionsCount, setQuestionsCount] = useState(0);
 
   const handleSubmit = async (question) => {
     if (questionsCount >= 3) {
@@ -38,7 +38,7 @@ const useConversations = () => {
             )
           );
         }, 1000);
-        setQuestionCount((prev) => prev + 1);
+        setQuestionsCount((prev) => prev + 1);
       } else {
         throw new Error("Network response is not good");
       }
