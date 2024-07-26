@@ -36,7 +36,7 @@ const ChatPage = () => {
       {/* <!-- Sidebar Toggle --> */}
       <div className="drawer sticky top-0 inset-x-0 z-30 bg-white border-y px-4 sm:px-6 md:px-8 lg:hidden dark:bg-dark dark:border-y-neutral-700">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-        <div className="drawer-content flex items-center py-3 space-x-5 drawer-content flex items-center py-3 ">
+        <div className="drawer-content flex items-center py-3 space-x-5 drawer-content flex items-center py-3 space-x-5 ">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex gap-2">
