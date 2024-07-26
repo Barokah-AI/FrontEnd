@@ -37,7 +37,7 @@ const About = () => {
       <div className="pt-16 md:pt-20 lg:pt-28">
         <div className="container">
           <div className="pb-16 md:pb-20 lg:pb-28">
-            <div className="-mx-4 flex flex-wrap items-center">
+            <div className="-mx-4 flex flex-wrap items-center text-justify">
               <motion.div className="w-full px-4 lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} variants={textVariants}>
                 <SectionTitle
                   title="Barokah-AI"
