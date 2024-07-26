@@ -106,7 +106,6 @@ const About = () => {
                 <img
                   src="https://github.com/Barokah-AI/FrontEnd/assets/104063079/cf74a9a2-5084-4310-9817-b201af54cec8"
                   alt="about image"
-                  fill
                   className="drop-shadow-three dark:drop-shadow-none"
                 />
               </div>
