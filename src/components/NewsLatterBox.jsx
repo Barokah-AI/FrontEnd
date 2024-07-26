@@ -147,8 +147,8 @@ const NewsLatterBox = () => {
             <defs>
               <linearGradient
                 id="paint0_linear_1028_603"
-                x1="217.5"
-                y1="-43"
+                x1="216.5"
+                y1="-42"
                 x2="4"
                 y2="90"
                 gradientUnits="userSpaceOnUse"
