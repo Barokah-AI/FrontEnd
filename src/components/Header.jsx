@@ -28,6 +28,7 @@ const Header = () => {
   // Track current section
   const [currentSection, setCurrentSection] = useState("");
 
+  // handle for scroll event
   const handleScroll = () => {
     const sections = menuData.map((item) => document.querySelector(item.path));
     const scrollPosition = window.scrollY + window.innerHeight / 2;
