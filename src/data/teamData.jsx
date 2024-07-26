@@ -87,14 +87,14 @@ const teamData = [
   //   image: "/images/testimonials/dimas.png",
   //   contact: "@ardnttt",
   // },
-  // {
-  //   id: 5,
-  //   name: "Ade Candra",
-  //   designation: "1214048",
-  //   content: "Bachelor of Applied Informatics Engineering student with a deep interest in continuous learning and exploring the latest technology.",
-  //   image: "/images/testimonials/ade.png",
-  //   contact: "@ade_candra12",
-  // },
+  {
+    id: 5,
+    name: "Ade Candra",
+    designation: "1214048",
+    content: "Bachelor of Applied Informatics Engineering student with a deep interest in continuous learning and exploring the latest technology.",
+    image: "/images/testimonials/ade.png",
+    contact: "@ade_candra12",
+  },
 ];
 
 export default teamData;
