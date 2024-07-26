@@ -4,20 +4,20 @@ const Contact = () => {
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">
-        <div className="-mx-4 flex flex-wrap">
+        <div className="mx-4 flex flex-wrap">
           <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
             <div
               className="mb-12 rounded-sm bg-white px-8 py-11 shadow-three dark:bg-gray-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
-              data-wow-delay=".15s"
+              data-wow-delay=".20s"
             >
               <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
-                Need Help? Make a Request
+                Need Help? Submit a Request.
               </h2>
               <p className="mb-12 text-base font-medium text-body-color">
-                Barokah AI's support team will respond to you as soon as possible via email.
+                Barokah AI&apos;s support team will respond to you as soon as possible via email.
               </p>
               <form>
-                <div className="-mx-4 flex flex-wrap">
+                <div className="mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
                       <label
@@ -28,7 +28,7 @@ const Contact = () => {
                       </label>
                       <input
                         type="text"
-                        placeholder="Input your full name here"
+                        placeholder="Input your full name here."
                         className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       />
                     </div>
@@ -37,13 +37,13 @@ const Contact = () => {
                     <div className="mb-8">
                       <label
                         htmlFor="email"
-                        className="mb-3 block text-sm font-medium text-dark dark:text-white"
+                        className="block mb-3 text-sm font-medium text-dark dark:text-white"
                       >
                         Email Address
                       </label>
                       <input
                         type="email"
-                        placeholder="Input your email address here"
+                        placeholder="Input your email address here."
                         className="border-stroke w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       />
                     </div>
@@ -59,14 +59,14 @@ const Contact = () => {
                       <textarea
                         name="message"
                         rows={5}
-                        placeholder="Type your message here"
+                        placeholder="Type your message here."
                         className="border-stroke w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       ></textarea>
                     </div>
                   </div>
                   <div className="w-full px-4">
                     <button className="rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
-                      Send Message
+                      Submit Message
                     </button>
                   </div>
                 </div>

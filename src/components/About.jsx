@@ -1,5 +1,5 @@
-import React from "react";
 import SectionTitle from "./SectionTittle";
+import PropTypes from "prop-types";
 import { motion } from "framer-motion";
 
 const checkIcon = (
@@ -9,14 +9,20 @@ const checkIcon = (
 );
 
 const About = () => {
-  const List = ({ text }) => (
-    <p className="mb-5 flex items-center text-lg font-medium text-body-color">
-      <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
-        {checkIcon}
-      </span>
-      {text}
-    </p>
-  );
+  const List = ({ text }) => {
+    return (
+      <p className="mb-5 flex items-center text-lg font-medium text-body-color">
+        <span className="mr-4 flex h-[30px] w-[30px] items-center justify-center rounded-md bg-primary bg-opacity-10 text-primary">
+          {checkIcon}
+        </span>
+        {text}
+      </p>
+    );
+  };
+  
+  List.propTypes = {
+    text: PropTypes.string.isRequired,
+  };
 
   const textVariants = {
     hidden: { opacity: 0, x: -50 },
@@ -100,7 +106,6 @@ const About = () => {
                 <img
                   src="https://github.com/Barokah-AI/FrontEnd/assets/104063079/cf74a9a2-5084-4310-9817-b201af54cec8"
                   alt="about image"
-                  fill
                   className="drop-shadow-three dark:drop-shadow-none"
                 />
               </div>
@@ -124,13 +129,13 @@ const About = () => {
                   <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
                   Open your favorite browser and visit the official Barokah-AI 
                   website at barokah-ai.vercel.app. On the home page of the site 
-                  or app, you will see a 'Get Started' button to start a conversation. 
+                  or app, you will see a &apos;Get Started&apos; button to start a conversation. 
                   Just click to start chatting.
                   </p>
                 </div>
                 <div className="mb-9">
                   <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                    Starting Interaction:
+                    Starting Interaction...
                   </h3>
                   <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
                     Please type your question or command in the chat box.
