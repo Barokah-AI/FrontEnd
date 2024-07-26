@@ -2,16 +2,16 @@ const NewsLatterBox = () => {
   return (
     <div className="relative z-10 rounded-sm bg-white p-8 shadow-three dark:bg-gray-dark sm:p-11 lg:p-8 xl:p-11">
       <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
-        Subscribe to receive future updates
+        Subscribe to receive future updates.
       </h3>
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-        Stay informed about new features, updates, and exclusive content from Barokah AI. Subscribe now and never miss an update!
+        Stay informed about new features, updates, and exclusive content from Barokah AI. Subscribe now and never miss an update.
       </p>
       <div>
         <input
           type="text"
           name="name"
-          placeholder="Enter your name"
+          placeholder="Enter your full name"
           className="border-stroke mb-4 w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
         />
         <input
@@ -22,19 +22,19 @@ const NewsLatterBox = () => {
         />
         <input
           type="submit"
-          value="Subscribe"
+          value="Subscribe!!"
           className="mb-5 flex w-full cursor-pointer items-center justify-center rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark"
         />
         <p className="text-center text-base leading-relaxed text-body-color dark:text-body-color-dark">
-          No spam guaranteed. We value your privacy, So please don’t send any spam mail.
+          No spam guaranteed. We value your privacy, So please don&apos;t send any spam mail.
         </p>
       </div>
 
       <div>
         <span className="absolute left-2 top-7">
           <svg
-            width="57"
-            height="65"
+            width="58"
+            height="66"
             viewBox="0 0 57 65"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -52,7 +52,7 @@ const NewsLatterBox = () => {
                 y2="15.3509"
                 gradientUnits="userSpaceOnUse"
               >
-                <stop stopColor="light" stopOpacity="0.62" />
+                <stop stopColor="light" stopOpacity="0.64" />
                 <stop offset="1" stopColor="light" stopOpacity="0" />
               </linearGradient>
             </defs>
@@ -117,8 +117,8 @@ const NewsLatterBox = () => {
 
         <span className="absolute right-0 top-0">
           <svg
-            width="162"
-            height="91"
+            width="160"
+            height="92"
             viewBox="0 0 162 91"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -147,8 +147,8 @@ const NewsLatterBox = () => {
             <defs>
               <linearGradient
                 id="paint0_linear_1028_603"
-                x1="217.5"
-                y1="-43"
+                x1="216.5"
+                y1="-42"
                 x2="4"
                 y2="90"
                 gradientUnits="userSpaceOnUse"
@@ -169,8 +169,8 @@ const NewsLatterBox = () => {
               </linearGradient>
               <linearGradient
                 id="paint2_linear_1028_603"
-                x1="222.5"
-                y1="-59"
+                x1="222"
+                y1="-58"
                 x2="9"
                 y2="74"
                 gradientUnits="userSpaceOnUse"
@@ -180,8 +180,8 @@ const NewsLatterBox = () => {
               </linearGradient>
               <linearGradient
                 id="paint3_linear_1028_603"
-                x1="261.5"
-                y1="-84"
+                x1="262"
+                y1="-85"
                 x2="48"
                 y2="49"
                 gradientUnits="userSpaceOnUse"
