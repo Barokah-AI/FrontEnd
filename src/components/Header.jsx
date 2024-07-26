@@ -5,6 +5,8 @@ import menuData from "../data/menuData";
 const Header = () => {
   // Navbar toggle
   const [isNavbarOpen, setisNavbarOpen] = useState(false);
+
+  // Navbar toggle handler
   const navbarToggleHandler = () => {
     setisNavbarOpen(!isNavbarOpen);
   };
