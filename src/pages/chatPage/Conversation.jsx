@@ -50,7 +50,7 @@ const Conversation = ({ conversations }) => {
 
               <span className="flex-shrink-0 inline-flex items-center justify-center size-[38px] rounded-full bg-gray-600">
                 <span className="text-sm font-medium text-white leading-none">
-                  B
+                  P
                 </span>
               </span>
             </li>
