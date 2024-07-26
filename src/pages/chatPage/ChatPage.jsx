@@ -41,7 +41,7 @@ const ChatPage = () => {
             <div className="flex gap-2">
               <img src="/images/logo/logo.png" alt="Image Description" className="w-10 h-auto" />
               <div>
-                <h1 className="mt-1 text-2xl font-bold text-blue-600">BAROKAH - AI</h1>
+                <h1 className="mt-1 text-2xl font-bold text-blue-600">BAROKAH-AI</h1>
               </div>
             </div>
             {/* <!--Logo */}
