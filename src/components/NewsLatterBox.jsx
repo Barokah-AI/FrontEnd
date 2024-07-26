@@ -26,15 +26,15 @@ const NewsLatterBox = () => {
           className="mb-5 flex w-full cursor-pointer items-center justify-center rounded-sm bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark"
         />
         <p className="text-center text-base leading-relaxed text-body-color dark:text-body-color-dark">
-          No spam guaranteed. We value your privacy, So please don’t send any spam mail.
+          No spam guaranteed. We value your privacy, So please don&apos;t send any spam mail.
         </p>
       </div>
 
       <div>
         <span className="absolute left-2 top-7">
           <svg
-            width="57"
-            height="65"
+            width="58"
+            height="66"
             viewBox="0 0 57 65"
             xmlns="http://www.w3.org/2000/svg"
           >
