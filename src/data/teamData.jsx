@@ -40,7 +40,7 @@ const teamData = [
     name: "Ade Candra",
     designation: "1214048",
     content:
-      "Bachelor Applied Informatics Engineering student with a deep interest in continuous learning and exploring the latest technology.",
+      "Bachelor of Applied Informatics Engineering student with a deep interest in continuous learning and exploring the latest technology.",
     image: "/images/testimonials/ade.png",
     contact: "@ade_candra12",
   },
