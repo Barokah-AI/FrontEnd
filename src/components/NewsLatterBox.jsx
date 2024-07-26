@@ -5,7 +5,7 @@ const NewsLatterBox = () => {
         Subscribe to receive future updates.
       </h3>
       <p className="mb-11 border-b border-body-color border-opacity-25 pb-11 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-25">
-        Stay informed about new features, updates, and exclusive content from Barokah AI. Subscribe now and never miss an update!
+        Stay informed about new features, updates, and exclusive content from Barokah AI. Subscribe now and never miss an update.
       </p>
       <div>
         <input
