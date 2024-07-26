@@ -220,7 +220,7 @@ const ChatPage = () => {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
               </svg>
               <div>
-                <h3 className="font-bold">You Reach Limit!!!</h3>
+                <h3 className="font-bold">You Have Reached Your Limit!!!</h3>
                 <div className="text-xs"> You have reached the limit of 3 questions. Please login to continue the conversation.</div>
               </div>
               <div>
