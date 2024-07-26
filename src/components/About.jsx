@@ -49,7 +49,7 @@ const About = () => {
                   <div className="mx-[-12px] flex flex-wrap">
                     <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
                       <List text="Language Understanding" />
-                      <List text="Machine Learning" />
+                      <List text="Intelligent Systems" />
                       <List text="Multi Language" />
                     </div>
 
