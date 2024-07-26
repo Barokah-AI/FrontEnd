@@ -18,6 +18,10 @@ const About = () => {
       </p>
     );
   };
+  
+  List.propTypes = {
+    text: PropTypes.string.isRequired,
+  };
 
   const textVariants = {
     hidden: { opacity: 0, x: -50 },
