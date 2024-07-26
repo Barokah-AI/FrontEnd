@@ -60,13 +60,13 @@ const Conversation = ({ conversations }) => {
             <li className="w-full py-2 px-4 mx-auto gap-x-5 sm:gap-x-4 sm:py-4 sm:px-10">
               <div className="flex space-x-5">
                 <img
-                  className="flex-shrink-0 w-[2.375rem] h-[2.375rem] rounded-full"
+                  className="flex-shrink-0 w-[2.370rem] h-[2.375rem] rounded-full"
                   src="https://github.com/Barokah-AI/BackEnd/assets/94734096/0bf32c79-e402-4565-9868-8a21c84d8b33"
                   alt="avatar"
                 />
                 {/* Card */}
                 <div className="bg-white border border-gray-100 rounded-lg p-4 space-y-3 dark:bg-neutral-900 dark:border-neutral-700">
-                  <h2 className="font-medium text-gray-900 dark:text-white">
+                  <h2 className="font-medium text-gray-800 dark:text-white">
                     Here the answer...
                   </h2>
                   <div className="grow text-start space-y-1.5">
