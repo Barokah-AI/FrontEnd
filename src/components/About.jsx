@@ -55,7 +55,7 @@ const About = () => {
 
                     <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
                       <List text="Customization" />
-                      <List text="Easy Integration" />
+                      <List text="Seamless Integration" />
                       <List text="Security and Privacy" />
                     </div>
                   </div>
