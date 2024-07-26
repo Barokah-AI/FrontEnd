@@ -175,7 +175,7 @@ const Conversation = ({ conversations }) => {
 };
 
 Conversation.propTypes = {
-  conversations: PropTypes.map(
+  conversations: PropTypes.arrayOf(
     PropTypes.shape({
       question: PropTypes.string.isRequired,
       answer: PropTypes.string,
