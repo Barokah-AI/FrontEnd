@@ -40,7 +40,10 @@ const Hero = () => {
             <div className="grid lg:grid-cols-12 items-center lg:gap-x-8 xl:gap-x-12">
               <motion.div
                 className="lg:col-span-6"
-                initial={{ opacity: 0, x: -100 }}
+                initial={{ 
+                  opacity: 0,
+                  x: -100 
+                }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
               >
