@@ -19,7 +19,7 @@ const Header = () => {
     if (window.scrollY >= 80) {
       setSticky(true); // if user scroll down more than 80px, set sticky to true
     } else {
-      setSticky(false);
+      setSticky(false); // if user scroll up to less than 80px, set sticky to false
     }
   };
   useEffect(() => {
