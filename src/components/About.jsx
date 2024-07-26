@@ -39,6 +39,7 @@ const About = () => {
           <div className="pb-16 md:pb-20 lg:pb-28">
             <div className="-mx-4 flex flex-wrap items-center text-justify">
               <motion.div className="w-full px-4 lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} variants={textVariants}>
+                // Replace the text with the following snippet
                 <SectionTitle
                   title="Barokah-AI"
                   paragraph="Barokah-AI is your digital companion, ready to answer all your questions swiftly and accurately. Powered by artificial intelligence, Barokah-AI delivers the information you seek. With its advanced features and intuitive interface, Barokah-AI offers secure and dependable support. Let's discover new knowledge and enjoy seamless interactions with Barokah-AI!"
