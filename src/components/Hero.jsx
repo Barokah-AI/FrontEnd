@@ -61,7 +61,9 @@ const Hero = () => {
                   animate={{ 
                     opacity: 1, x: 0 
                   }}
-                  transition={{ duration: 1 }}
+                  transition={{ 
+                    duration: 1 
+                  }}
                 >
                   Unleash the Power of AI with{" "}
                   <span className="text-primary">BarokahAI</span>
