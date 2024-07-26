@@ -14,7 +14,10 @@ const Features = () => {
       opacity: 0, 
       y: 50 
     },
-    visible: { opacity: 1, y: 0 },
+    visible: { 
+      opacity: 1, 
+      y: 0 
+    },
   };
 
   return (
