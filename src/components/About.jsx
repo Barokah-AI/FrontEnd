@@ -130,7 +130,7 @@ const About = () => {
                   Open your favorite browser and visit the official Barokah-AI 
                   website at barokah-ai.vercel.app. On the home page of the site 
                   or app, you will see a &apos;Get Started&apos; button to start a conversation. 
-                  Just click to start chatting...
+                  Just click to start chatting.
                   </p>
                 </div>
                 <div className="mb-9">
