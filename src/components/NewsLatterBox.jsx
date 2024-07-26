@@ -117,8 +117,8 @@ const NewsLatterBox = () => {
 
         <span className="absolute right-0 top-0">
           <svg
-            width="162"
-            height="91"
+            width="160"
+            height="92"
             viewBox="0 0 162 91"
             xmlns="http://www.w3.org/2000/svg"
           >
