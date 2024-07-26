@@ -39,12 +39,14 @@ const About = () => {
           <div className="pb-16 md:pb-20 lg:pb-28">
             <div className="-mx-4 flex flex-wrap items-center text-justify">
               <motion.div className="w-full px-4 lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} variants={textVariants}>
+                // Replace the text with the following snippet
                 <SectionTitle
                   title="Barokah-AI"
                   paragraph="Barokah-AI is your digital companion, ready to answer all your questions swiftly and accurately. Powered by artificial intelligence, Barokah-AI delivers the information you seek. With its advanced features and intuitive interface, Barokah-AI offers secure and dependable support. Let's discover new knowledge and enjoy seamless interactions with Barokah-AI!"
                   mb="44px"
                 />
 
+                // Replace the text with the following snippet
                 <div className="mb-12 max-w-[570px] lg:mb-0">
                   <div className="mx-[-12px] flex flex-wrap">
                     <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
@@ -62,6 +64,7 @@ const About = () => {
                 </div>
               </motion.div>
 
+              // Replace the text with the following snippet 
               <motion.div className="w-full px-4 lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} variants={imageVariants}>
                 <div className="relative mx-auto aspect-w-25 aspect-h-24 max-w-[500px] lg:mr-0">
                   <img src="/images/about/pic-about.svg" alt="about-image" className="mx-auto max-w-full drop-shadow-three dark:drop-shadow-none lg:mr-0" />
@@ -71,6 +74,8 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      // Replace the text with the following snippet
       <div className="py-16 md:py-20 lg:py-28 relative z-10 dark:bg-bg-color-dark bg-gray-light">
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
@@ -79,8 +84,11 @@ const About = () => {
                 <img src="https://github.com/Barokah-AI/FrontEnd/assets/104063079/cf74a9a2-5084-4310-9817-b201af54cec8" alt="about image" className="drop-shadow-three dark:drop-shadow-none" />
               </div>
             </motion.div>
+
+            // Replace the text with the following snippet
             <motion.div className="w-full px-4 lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} variants={textVariants}>
               <div className="max-w-[470px]">
+                // Replace the text with the following snippet
                 <div className="mb-9">
                   <h2 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Step by Step to Use Barokah-AI</h2>
                   <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Accessing the Website or Application:</h3>
@@ -89,6 +97,8 @@ const About = () => {
                     start chatting.
                   </p>
                 </div>
+
+                // Replace the text with the following snippet
                 <div className="mb-9">
                   <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Starting Interaction...</h3>
                   <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
@@ -99,6 +109,8 @@ const About = () => {
             </motion.div>
           </div>
         </div>
+
+        // Replace the text with the following snippet
         <div className="absolute right-0 top-5 z-[-1]">
           <svg width="238" height="531" viewBox="0 0 238 531" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect opacity="0.3" x="422.819" y="-70.8145" width="196" height="541.607" rx="2" transform="rotate(51.2997 422.819 -70.8145)" fill="url(#paint0_linear_83:2)" />
