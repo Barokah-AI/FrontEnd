@@ -12,5 +12,3 @@ import Cookies from "js-cookie";
 
 //   return children;
 // };
-
-// export default PrivateRoute;
