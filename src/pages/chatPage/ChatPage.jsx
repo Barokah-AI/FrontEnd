@@ -24,7 +24,7 @@ const ChatPage = () => {
       handleSubmit(input);
       setResponseCount(responseCount + 1);
     } else {
-      alert("Harus login untuk melanjutkan percakapan.");
+      alert("Must be logged in to continue the conversation.");
       navigate("/signin");
     }
   };
