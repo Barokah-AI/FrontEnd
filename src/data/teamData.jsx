@@ -79,14 +79,14 @@ const teamData = [
   //   image: "/images/testimonials/agita.png",
   //   contact: "@agitanurfd",
   // },
-  // {
-  //   id: 4,
-  //   name: "Dimas Ardianto",
-  //   designation: "1214054",
-  //   content: "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
-  //   image: "/images/testimonials/dimas.png",
-  //   contact: "@ardnttt",
-  // },
+  {
+    id: 4,
+    name: "Dimas Ardianto",
+    designation: "1214054",
+    content: "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
+    image: "/images/testimonials/dimas.png",
+    contact: "@ardnttt",
+  },
 ];
 
 export default teamData;
