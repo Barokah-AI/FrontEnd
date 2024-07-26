@@ -243,7 +243,7 @@ const ChatPage = () => {
 
             {/* Toolbar */}
             <div className="absolute bottom-px inset-x-px p-2 rounded-b-lg bg-gray-100 dark:bg-neutral-800">
-              <div className="flex justify-between items-center">
+              <div className="flex items-center justify-between">
                 <div className="flex items-center">
                   <button
                     type="button"
