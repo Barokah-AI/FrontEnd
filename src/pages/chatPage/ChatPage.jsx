@@ -4,6 +4,7 @@ import Cookies from "js-cookie";
 import Conversation from "./Conversation";
 import useConversations from "./ConversationConfig";
 import { useLogout } from "./Logout";
+import { Link } from "react-router-dom";
 
 const ChatPage = () => {
   const logout = useLogout();
@@ -41,7 +42,7 @@ const ChatPage = () => {
             <div className="flex gap-2">
               <img src="/images/logo/logo.png" alt="Image Description" className="w-10 h-auto" />
               <div>
-                <h1 className="mt-1 text-2xl font-bold text-blue-600">BAROKAH-AI</h1>
+                <h1 className="mt-1 text-2xl font-bold text-blue-600">BAROKAH - AI</h1>
               </div>
             </div>
             {/* <!--Logo */}
@@ -63,7 +64,9 @@ const ChatPage = () => {
               <div className="flex gap-2">
                 <img src="/images/logo/logo.png" alt="Image Description" className="w-10 h-auto" />
                 <div>
-                  <h1 className="mt-1 text-2xl font-bold text-blue-600">BarokahAI</h1>
+                  <Link to="/" className="mt-1 text-2xl font-bold text-blue-600">
+                    BarokahAI
+                  </Link>
                 </div>
               </div>
               {/* <!--Logo */}
@@ -120,7 +123,9 @@ const ChatPage = () => {
             <div className="flex gap-2">
               <img src="/images/logo/logo.png" alt="Image Description" className="w-10 h-auto" />
               <div>
-                <h1 className="mt-1 text-2xl font-bold text-blue-600">BarokahAI</h1>
+                <Link to="/" className="mt-1 text-2xl font-bold text-blue-600">
+                  BarokahAI
+                </Link>
               </div>
             </div>
             {/* <!--Logo */}
@@ -199,8 +204,8 @@ const ChatPage = () => {
           {/* Title */}
           <div className="max-w-4xl px-4 sm:px-6 lg:px-8 mx-auto text-center">
             <h1 className="text-3xl font-bold text-gray-800 sm:text-4xl dark:text-white">Welcome to Barokah AI</h1>
-            <p className="mt-3 text-gray-600 dark:text-neutral-400">There is nothing hidden in this world</p>
-            <p className="mt-3 text-gray-600 dark:text-neutral-400">BarokahAi is here to help you know everything</p>
+            <p className="text-sm mt-3 text-gray-600 dark:text-neutral-400">There is nothing hidden in this world</p>
+            <p className="text-sm mt-3 text-gray-600 dark:text-neutral-400">BarokahAi is here to help you know everything</p>
           </div>
           {/* End Title */}
 
