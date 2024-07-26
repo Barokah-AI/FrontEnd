@@ -17,7 +17,7 @@ const Header = () => {
   // Handle for sticky navbar
   const handleStickyNavbar = () => {
     if (window.scrollY >= 80) {
-      setSticky(true);
+      setSticky(true); // if user scroll down more than 80px, set sticky to true
     } else {
       setSticky(false);
     }
