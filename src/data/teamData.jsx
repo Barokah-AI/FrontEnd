@@ -55,14 +55,14 @@ const teamData = [
     image: "/images/testimonials/dani.png",
     contact: "@daniferdinandall",
   },
-  // {
-  //   id: 1,
-  //   name: "Juwita Stefany H",
-  //   designation: "1214026",
-  //   content: "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
-  //   image: "/images/testimonials/juwi.png",
-  //   contact: "@wops1e_",
-  // },
+  {
+    id: 1,
+    name: "Juwita Stefany H",
+    designation: "1214026",
+    content: "Bachelor of Applied Informatics Engineering student, passionate about continuous learning and always eager to explore new technologies.",
+    image: "/images/testimonials/juwi.png",
+    contact: "@wops1e_",
+  },
 ];
 
 export default teamData;
