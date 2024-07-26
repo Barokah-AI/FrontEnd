@@ -80,28 +80,11 @@ const About = () => {
       <div className="container">
   <div className="-mx-4 flex flex-wrap items-center">
     <motion.div className="w-full px-4 lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} variants={imageVariants}>
-      <div className="relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0">
-        <img src="https://github.com/Barokah-AI/FrontEnd/assets/104063079/cf74a9a2-5084-4310-9817-b201af54cec8" alt="about image" className="drop-shadow-three dark:drop-shadow-none" />
-      </div>
+
     </motion.div>
 
     <motion.div className="w-full px-4 lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} variants={textVariants}>
-      <div className="max-w-[470px]">
-        <div className="mb-9">
-          <h2 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Getting Started with Barokah-AI</h2>
-          <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Accessing Our Platform:</h3>
-          <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-            Open your favorite browser and head over to the official Barokah-AI website at barokah-ai.vercel.app. On the homepage, you'll find a 'Get Started' button. Click it, and you're ready to start chatting!
-          </p>
-        </div>
-
-        <div className="mb-9">
-          <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Start Interacting...</h3>
-          <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-            Simply type your question or command in the chat box. Barokah-AI will respond promptly and accurately. Feel free to ask anything—from product details and tech support to personal advice or a casual chat.
-          </p>
-        </div>
-      </div>
+      
     </motion.div>
   </div>
 </div>
