@@ -22,7 +22,7 @@ const Conversation = ({ conversations }) => {
               </p>
               <ul className="list-disc list-outside space-y-1.5 ps-3.5">
                 <li className="text-sm text-gray-800 dark:text-white">
-                  What's Barokah AI?
+                  What&apos;s Barokah AI?
                 </li>
 
                 <li className="text-sm text-gray-800 dark:text-white">
