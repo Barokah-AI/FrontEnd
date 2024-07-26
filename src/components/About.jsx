@@ -85,7 +85,7 @@ const About = () => {
               </div>
             </motion.div>
 
-            
+            // Replace the text with the following snippet
             <motion.div className="w-full px-4 lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} variants={textVariants}>
               <div className="max-w-[470px]">
                 <div className="mb-9">
