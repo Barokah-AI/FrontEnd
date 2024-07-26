@@ -65,8 +65,8 @@ const Conversation = ({ conversations }) => {
                   alt="avatar"
                 />
                 {/* Card */}
-                <div className="bg-white border border-gray-200 rounded-lg p-4 space-y-3 dark:bg-neutral-900 dark:border-neutral-700">
-                  <h2 className="font-medium text-gray-800 dark:text-white">
+                <div className="bg-white border border-gray-100 rounded-lg p-4 space-y-3 dark:bg-neutral-900 dark:border-neutral-700">
+                  <h2 className="font-medium text-gray-900 dark:text-white">
                     Here the answer...
                   </h2>
                   <div className="grow text-start space-y-1.5">
