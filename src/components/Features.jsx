@@ -12,7 +12,7 @@ const Features = () => {
     visible: { 
       opacity: 1, 
       y: 0 
-    },
+    }
   };
 
   const itemVariants = {
