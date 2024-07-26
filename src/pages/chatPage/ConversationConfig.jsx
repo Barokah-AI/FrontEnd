@@ -4,7 +4,7 @@ const useConversations = () => {
   const api =
     "https://asia-southeast2-erditona-dev.cloudfunctions.net/barokahai/chat";
 
-  const [inputPertanyaan, setInputPertanyaan] = useState("");
+  const [inputQuestion, setInputQuestion] = useState("");
   const [conversations, setConversations] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [questionCount, setQuestionCount] = useState(0);
@@ -17,7 +17,7 @@ const useConversations = () => {
 
     setConversations((prev) => [...prev, { question, answer: null }]);
     setIsLoading(true);
-    setInputPertanyaan("");
+    setInputQuestion("");
     try {
       const res = await fetch(api, {
         method: "POST",
@@ -70,9 +70,9 @@ const useConversations = () => {
   }, [conversations]);
 
   return {
-    inputPertanyaan,
+    inputQuestion,
     isLoading,
-    setInputPertanyaan,
+    setInputQuestion,
     conversations,
     handleSubmit,
     questionCount,
