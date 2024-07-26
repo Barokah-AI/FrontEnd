@@ -132,17 +132,17 @@ const Header = () => {
                   }`}
                 >
                   <ul className="block lg:flex lg:space-x-12">
-                    {menuData.map((menuItem, index) => (
+                    {menuData.map((item, index) => (
                       <li key={index} className="group relative">
                         <a
-                          onClick={() => handleMenuClick(menuItem.path)}
+                          onClick={() => handleMenuClick(item.path)}
                           className={`cursor-pointer flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                            currentSection === menuItem.path.substring(1)
+                            currentSection === item.path.substring(1)
                               ? "text-primary dark:text-blue-500"
                               : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
                           }`}
                         >
-                          {menuItem.title}
+                          {item.title}
                         </a>
                       </li>
                     ))}
