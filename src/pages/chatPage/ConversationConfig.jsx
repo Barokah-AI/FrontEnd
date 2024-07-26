@@ -31,9 +31,7 @@ const useConversations = () => {
         setTimeout(() => {
           setConversations((prev) =>
             prev.map((conv, index) =>
-              index === prev.length - 1
-                ? { ...conv, answer: data.response }
-                : conv
+              index === prev.length - 1 ? { ...conv, answer: data.response } : conv
             )
           );
         }, 1000);
