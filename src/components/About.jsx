@@ -95,7 +95,12 @@ const About = () => {
           </p>
         </div>
 
-
+        <div className="mb-9">
+          <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Start Interacting...</h3>
+          <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
+            Simply type your question or command in the chat box. Barokah-AI will respond promptly and accurately. Feel free to ask anything—from product details and tech support to personal advice or a casual chat.
+          </p>
+        </div>
       </div>
     </motion.div>
   </div>
