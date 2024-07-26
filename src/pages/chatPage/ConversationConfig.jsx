@@ -40,7 +40,7 @@ const useConversations = () => {
         }, 1000);
         setQuestionCount((prev) => prev + 1);
       } else {
-        throw new Error("Network response was not ok");
+        throw new Error("Network response is not good");
       }
     } catch (error) {
       console.error("Error:", error);
