@@ -169,8 +169,8 @@ const NewsLatterBox = () => {
               </linearGradient>
               <linearGradient
                 id="paint2_linear_1028_603"
-                x1="222.5"
-                y1="-59"
+                x1="222"
+                y1="-58"
                 x2="9"
                 y2="74"
                 gradientUnits="userSpaceOnUse"
