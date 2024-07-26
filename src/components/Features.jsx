@@ -1,4 +1,3 @@
-import React from "react";
 import featuresData from "../data/featuresData";
 import SectionTitle from "./SectionTittle";
 import SingleFeature from "./SingleFeature";
