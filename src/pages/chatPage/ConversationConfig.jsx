@@ -7,10 +7,10 @@ const useConversations = () => {
   const [inputQuestion, setInputQuestion] = useState("");
   const [conversations, setConversations] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [questionsCount, setQuestionsCount] = useState(0);
+  const [questionCount, setQuestionCount] = useState(0);
 
   const handleSubmit = async (question) => {
-    if (questionsCount >= 3) {
+    if (questionCount >= 3) {
       console.warn("The question limit has been reached");
       return;
     }
@@ -38,7 +38,7 @@ const useConversations = () => {
             )
           );
         }, 1000);
-        setQuestionsCount((prev) => prev + 1);
+        setQuestionCount((prev) => prev + 1);
       } else {
         throw new Error("Network response is not good");
       }
@@ -75,7 +75,7 @@ const useConversations = () => {
     setInputQuestion,
     conversations,
     handleSubmit,
-    questionsCount,
+    questionCount,
   };
 };
 
