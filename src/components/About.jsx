@@ -75,7 +75,7 @@ const About = () => {
         </div>
       </div>
 
-      
+      // 
       <div className="py-16 md:py-20 lg:py-28 relative z-10 dark:bg-bg-color-dark bg-gray-light">
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
