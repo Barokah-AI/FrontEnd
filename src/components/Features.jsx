@@ -10,7 +10,10 @@ const Features = () => {
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 50 },
+    hidden: { 
+      opacity: 0, 
+      y: 50 
+    },
     visible: { opacity: 1, y: 0 },
   };
 
