@@ -1,21 +1,25 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import menuData from "../data/menuData";
 
 const Header = () => {
   // Navbar toggle
-  const [navbarOpen, setNavbarOpen] = useState(false);
+  const [isNavbarOpen, setisNavbarOpen] = useState(false);
+
+  // Navbar toggle handler
   const navbarToggleHandler = () => {
-    setNavbarOpen(!navbarOpen);
+    setisNavbarOpen(!isNavbarOpen);
   };
 
   // Sticky Navbar
   const [sticky, setSticky] = useState(false);
+
+  // Handle for sticky navbar
   const handleStickyNavbar = () => {
     if (window.scrollY >= 80) {
-      setSticky(true);
+      setSticky(true); // if user scroll down more than 80px, set sticky to true
     } else {
-      setSticky(false);
+      setSticky(false); // if user scroll up to less than 80px, set sticky to false
     }
   };
   useEffect(() => {
@@ -28,6 +32,7 @@ const Header = () => {
   // Track current section
   const [currentSection, setCurrentSection] = useState("");
 
+  // handle for scroll event
   const handleScroll = () => {
     const sections = menuData.map((item) => document.querySelector(item.path));
     const scrollPosition = window.scrollY + window.innerHeight / 2;
@@ -46,6 +51,7 @@ const Header = () => {
     }
   };
 
+  // use effect for scroll event
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -55,6 +61,7 @@ const Header = () => {
 
   const navigate = useNavigate();
 
+  // handle for menu click
   const handleMenuClick = (path) => {
     if (path.startsWith("/")) {
       navigate(path); // Navigate to internal routes like /signin
@@ -64,7 +71,7 @@ const Header = () => {
         targetSection.scrollIntoView({ behavior: "smooth" });
       }
     }
-    setNavbarOpen(false); // Close the navbar on menu click
+    setisNavbarOpen(false); // Close the navbar on menu click
   };
 
   return (
@@ -88,7 +95,7 @@ const Header = () => {
                 <div className="flex gap-2">
                   <img
                     src="/images/logo/logo.png"
-                    alt="Image Description"
+                    alt="Image Description."
                     className="w-10 h-auto"
                   />
                   <div>
@@ -109,40 +116,40 @@ const Header = () => {
                 >
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
-                      navbarOpen ? " top-[7px] rotate-45" : " "
+                      isNavbarOpen ? " top-[7px] rotate-45" : " "
                     }`}
                   />
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
-                      navbarOpen ? "opacity-0 " : " "
+                      isNavbarOpen ? "opacity-0 " : " "
                     }`}
                   />
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
-                      navbarOpen ? " top-[-8px] -rotate-45" : " "
+                      isNavbarOpen ? " top-[-8px] -rotate-45" : " "
                     }`}
                   />
                 </button>
                 <nav
                   id="navbarCollapse"
                   className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
-                    navbarOpen
+                    isNavbarOpen
                       ? "visibility top-full opacity-100"
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
                   <ul className="block lg:flex lg:space-x-12">
-                    {menuData.map((menuItem, index) => (
+                    {menuData.map((item, index) => (
                       <li key={index} className="group relative">
                         <a
-                          onClick={() => handleMenuClick(menuItem.path)}
+                          onClick={() => handleMenuClick(item.path)}
                           className={`cursor-pointer flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                            currentSection === menuItem.path.substring(1)
+                            currentSection === item.path.substring(1)
                               ? "text-primary dark:text-blue-500"
                               : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
                           }`}
                         >
-                          {menuItem.title}
+                          {item.title}
                         </a>
                       </li>
                     ))}

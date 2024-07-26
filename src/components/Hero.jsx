@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, useAnimation } from "framer-motion";
 
@@ -10,7 +10,9 @@ const Hero = () => {
       await controls.start({
         opacity: 1,
         y: 0,
-        transition: { duration: 1 },
+        transition: {
+          duration: 1
+        }
       });
       await controls.start({
         y: [0, -20, 0],
@@ -24,7 +26,9 @@ const Hero = () => {
     };
 
     sequence();
-  }, [controls]);
+  },
+    [controls]
+  );
   return (
     <>
       <div
@@ -36,15 +40,30 @@ const Hero = () => {
             <div className="grid lg:grid-cols-12 items-center lg:gap-x-8 xl:gap-x-12">
               <motion.div
                 className="lg:col-span-6"
-                initial={{ opacity: 0, x: -100 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1 }}
+                initial={{ 
+                  opacity: 0,
+                  x: -100 
+                }}
+                animate={{ 
+                  opacity: 1, 
+                  x: 0 
+                }}
+                transition={{ 
+                  duration: 1 
+                }}
               >
                 <motion.h1
                   className="mb-5 block text-4xl text-center font-bold text-gray-dark dark:text-white sm:text-5xl lg:text-start lg:leading-tight"
-                  initial={{ opacity: 0, x: -100 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 1 }}
+                  initial={{ 
+                    opacity: 0, 
+                    x: -100 
+                  }}
+                  animate={{ 
+                    opacity: 1, x: 0 
+                  }}
+                  transition={{ 
+                    duration: 1 
+                  }}
                 >
                   Unleash the Power of AI with{" "}
                   <span className="text-primary">BarokahAI</span>
