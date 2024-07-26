@@ -1,4 +1,3 @@
-import React from "react";
 import SectionTitle from "./SectionTittle";
 import { motion } from "framer-motion";
 
