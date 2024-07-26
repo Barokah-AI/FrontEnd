@@ -88,6 +88,7 @@ const About = () => {
             // Replace the text with the following snippet
             <motion.div className="w-full px-4 lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} variants={textVariants}>
               <div className="max-w-[470px]">
+                // Replace the text with the following snippet
                 <div className="mb-9">
                   <h2 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Step by Step to Use Barokah-AI</h2>
                   <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Accessing the Website or Application:</h3>
@@ -96,6 +97,8 @@ const About = () => {
                     start chatting.
                   </p>
                 </div>
+
+                
                 <div className="mb-9">
                   <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Starting Interaction...</h3>
                   <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
