@@ -77,38 +77,7 @@ const About = () => {
 
       {/* Replace the text with the following snippet */}
       <div className="py-16 md:py-20 lg:py-28 relative z-10 dark:bg-bg-color-dark bg-gray-light">
-        <div className="container">
-          <div className="-mx-4 flex flex-wrap items-center">
-            <motion.div className="w-full px-4 lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} variants={imageVariants}>
-              <div className="relative mx-auto mb-12 aspect-[25/24] max-w-[500px] text-center lg:m-0">
-                <img src="https://github.com/Barokah-AI/FrontEnd/assets/104063079/cf74a9a2-5084-4310-9817-b201af54cec8" alt="about image" className="drop-shadow-three dark:drop-shadow-none" />
-              </div>
-            </motion.div>
-
-            {/* Replace the text with the following snippet */}
-            <motion.div className="w-full px-4 lg:w-1/2" initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.5, duration: 1 }} variants={textVariants}>
-              <div className="max-w-[470px]">
-                {/* Replace the text with the following snippet */}
-                <div className="mb-9">
-                  <h2 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Step by Step to Use Barokah-AI</h2>
-                  <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Accessing the Website or Application:</h3>
-                  <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                    Open your favorite browser and visit the official Barokah-AI website at barokah-ai.vercel.app. On the home page of the site or app, you will see a &apos;Get Started&apos; button to start a conversation. Just click to
-                    start chatting.
-                  </p>
-                </div>
-
-                {/* Replace the text with the following snippet */}
-                <div className="mb-9">
-                  <h3 className="mb-4 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">Starting Interaction...</h3>
-                  <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                    Please type your question or command in the chat box. Barokah-AI will respond quickly and accurately. You can ask anything from product information, technical assistance, personal advice, to casual chat.
-                  </p>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
+        
 
         {/* Replace the text with the following snippet */}
         <div className="absolute right-0 top-5 z-[-1]">
