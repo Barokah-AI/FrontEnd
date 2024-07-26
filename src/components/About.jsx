@@ -46,7 +46,7 @@ const About = () => {
                   mb="44px"
                 />
 
-                Replace the text with the following snippet
+                {/* Replace the text with the following snippet */}
                 <div className="mb-12 max-w-[570px] lg:mb-0">
                   <div className="mx-[-12px] flex flex-wrap">
                     <div className="w-full px-3 sm:w-1/2 lg:w-full xl:w-1/2">
