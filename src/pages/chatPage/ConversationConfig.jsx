@@ -7,10 +7,10 @@ const useConversations = () => {
   const [inputQuestion, setInputQuestion] = useState("");
   const [conversations, setConversations] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [questionCount, setQuestionCount] = useState(0);
+  const [questionsCount, setQuestionCount] = useState(0);
 
   const handleSubmit = async (question) => {
-    if (questionCount >= 3) {
+    if (questionsCount >= 3) {
       console.warn("The question limit has been reached");
       return;
     }
@@ -75,7 +75,7 @@ const useConversations = () => {
     setInputQuestion,
     conversations,
     handleSubmit,
-    questionCount,
+    questionsCount,
   };
 };
 
