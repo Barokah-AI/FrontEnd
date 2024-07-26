@@ -47,6 +47,7 @@ const Header = () => {
     }
   };
 
+  // use effect for scroll event
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
