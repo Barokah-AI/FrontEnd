@@ -19,7 +19,9 @@ const Index = () => {
       <Team />
       <Contact />
       <Footer />
-      <ScrollToTop />
+      <div className="fixed bottom-8 right-8 z-[99]">
+        <ScrollToTop />
+      </div>
     </div>
   );
 };
