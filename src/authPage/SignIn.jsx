@@ -123,31 +123,33 @@ const SigninPage = () => {
           transition={{ duration: 0.5 }}
           className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50"
         >
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.8 }}
-            transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="text-center bg-white rounded-lg shadow-lg p-10"
-          >
-            {/* icon */}
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="mb-4 inline-flex justify-center items-center size-[46px] rounded-full border-4 border-green-50 bg-green-100 text-green-500 dark:bg-green-700 dark:border-green-600 dark:text-green-100"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
+          <div className="px-5">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.8 }}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
+              className="text-center bg-white rounded-lg shadow-lg p-10"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M5 13l4 4L19 7"
-              />
-            </svg>
-            <h2 className="text-2xl font-bold mb-4">Login Successful!</h2>
-            <p>You will be redirected to the chat page shortly.</p>
-          </motion.div>
+              {/* icon */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="mb-4 inline-flex justify-center items-center size-[46px] rounded-full border-4 border-green-50 bg-green-100 text-green-500 dark:bg-green-700 dark:border-green-600 dark:text-green-100"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M5 13l4 4L19 7"
+                />
+              </svg>
+              <h2 className="text-2xl font-bold mb-4">Login Successful!</h2>
+              <p>You will be redirected to the chat page shortly.</p>
+            </motion.div>
+          </div>
         </motion.div>
       )}
       <Footer />

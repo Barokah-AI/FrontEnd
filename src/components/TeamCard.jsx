@@ -5,7 +5,7 @@ const TeamCard = ({ team }) => {
 
   return (
     <div className="w-full">
-      <div className="rounded-lg bg-white p-6 shadow-md duration-300 hover:shadow-lg dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark lg:px-8 xl:px-10">
+      <div className="h-full rounded-lg bg-white p-6 shadow-md duration-300 hover:shadow-lg dark:bg-dark dark:shadow-three dark:hover:shadow-gray-dark lg:px-8 xl:px-10">
         <div className="flex items-center mb-4">
           <div className="relative mr-4 h-20 w-20 overflow-hidden rounded-full">
             <img

@@ -1,27 +1,32 @@
 import { useState, useEffect } from "react";
+import Cookies from "js-cookie";
 
 const useConversations = () => {
-  const api = "https://asia-southeast2-erditona-dev.cloudfunctions.net/barokahai/chat";
+  const api =
+    "https://asia-southeast2-erditona-dev.cloudfunctions.net/barokahai/chat";
 
-  const [inputQuestion, setInputQuestion] = useState("");
+  const [input, setInput] = useState("");
   const [conversations, setConversations] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [questionCount, setQuestionCount] = useState(0);
 
+  const authToken = Cookies.get("authToken");
+
   const handleSubmit = async (question) => {
-    if (questionCount >= 3) {
-      console.warn("The question limit has been reached");
+    if (!authToken && questionCount >= 3) {
+      console.warn("Sudah mencapai batas pertanyaan");
       return;
     }
 
     setConversations((prev) => [...prev, { question, answer: null }]);
     setIsLoading(true);
-    setInputQuestion("");
+    setInput("");
     try {
       const res = await fetch(api, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          Authorization: `Bearer ${authToken}`, // Add auth token to headers if available
         },
         body: JSON.stringify({ prompt: question }),
       });
@@ -31,13 +36,15 @@ const useConversations = () => {
         setTimeout(() => {
           setConversations((prev) =>
             prev.map((conv, index) =>
-              index === prev.length - 1 ? { ...conv, answer: data.response } : conv
+              index === prev.length - 1
+                ? { ...conv, answer: data.response }
+                : conv
             )
           );
         }, 1000);
         setQuestionCount((prev) => prev + 1);
       } else {
-        throw new Error("Network response is not good");
+        throw new Error("Network response was not ok");
       }
     } catch (error) {
       console.error("Error:", error);
@@ -67,9 +74,9 @@ const useConversations = () => {
   }, [conversations]);
 
   return {
-    inputQuestion,
+    input,
     isLoading,
-    setInputQuestion,
+    setInput,
     conversations,
     handleSubmit,
     questionCount,
