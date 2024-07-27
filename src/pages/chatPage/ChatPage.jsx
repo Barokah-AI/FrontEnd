@@ -345,6 +345,12 @@ const ChatPage = () => {
 
         {/* Input area */}
         <footer className="fixed bottom-0 w-full px-4 mx-auto z-10 p-3 sm:sticky sm:py-6 sm:px-10">
+          {/* ScrollToTop */}
+          <div className="flex justify-center mb-2">
+            <ScrollToTop />
+          </div>
+          {/* EndScrollToTop */}
+
           {/* Alert Modal */}
           {!isUserLoggedIn && responseCount >= 3 && (
             <div role="alert" className="alert mb-4">
@@ -367,8 +373,7 @@ const ChatPage = () => {
                 </h3>
                 <div className="text-xs">
                   {" "}
-                  You have reached the limit of 3 questions. Please login to
-                  continue the conversation.
+                  Please login to continue the conversation.
                 </div>
               </div>
               <div>
@@ -382,12 +387,6 @@ const ChatPage = () => {
             </div>
           )}
           {/* End Alert Modal */}
-
-          {/* ScrollToTop */}
-          <div className="flex justify-center mb-2">
-            <ScrollToTop />
-          </div>
-          {/* EndScrollToTop */}
 
           <div className="relative">
             <input
