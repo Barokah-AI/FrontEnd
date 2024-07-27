@@ -8,11 +8,22 @@ const useConversations = () => {
   const [input, setInput] = useState("");
   const [conversations, setConversations] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [questionCount, setQuestionCount] = useState(0);
+  const [questionCount, setQuestionCount] = useState(
+    parseInt(Cookies.get("questionCount")) || 0
+  );
 
   const authToken = Cookies.get("authToken");
 
+  useEffect(() => {
+    if (authToken) {
+      // Jika pengguna sudah login, reset questionCount
+      setQuestionCount(0);
+      Cookies.remove("questionCount");
+    }
+  }, [authToken]);
+
   const handleSubmit = async (question) => {
+    // Check if user is not logged in and question count is >= 3
     if (!authToken && questionCount >= 3) {
       console.warn("Sudah mencapai batas pertanyaan");
       return;
@@ -26,7 +37,6 @@ const useConversations = () => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Bearer ${authToken}`, // Add auth token to headers if available
         },
         body: JSON.stringify({ prompt: question }),
       });
@@ -42,7 +52,13 @@ const useConversations = () => {
             )
           );
         }, 1000);
-        setQuestionCount((prev) => prev + 1);
+        setQuestionCount((prev) => {
+          const newCount = prev + 1;
+          if (!authToken) {
+            Cookies.set("questionCount", newCount, { expires: 1, path: "/" });
+          }
+          return newCount;
+        });
       } else {
         throw new Error("Network response was not ok");
       }
@@ -52,7 +68,7 @@ const useConversations = () => {
         setConversations((prev) =>
           prev.map((conv, index) =>
             index === prev.length - 1
-              ? { ...conv, answer: "Aku gak ngerti,coba tanya yang lain" }
+              ? { ...conv, answer: "Aku gak ngerti, coba tanya yang lain" }
               : conv
           )
         );
@@ -61,6 +77,14 @@ const useConversations = () => {
       setTimeout(() => {
         setIsLoading(false);
       }, 1000);
+    }
+  };
+
+  const startNewConversation = () => {
+    setConversations([]);
+    setQuestionCount(0);
+    if (!authToken) {
+      Cookies.remove("questionCount");
     }
   };
 
@@ -80,6 +104,7 @@ const useConversations = () => {
     conversations,
     handleSubmit,
     questionCount,
+    startNewConversation,
   };
 };
 

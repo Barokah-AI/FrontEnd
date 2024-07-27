@@ -6,6 +6,7 @@ export const useLogout = () => {
 
   const logout = () => {
     Cookies.remove("authToken");
+    localStorage.removeItem("questionCount");
     navigate("/signin");
   };
 
