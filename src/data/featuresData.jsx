@@ -55,7 +55,7 @@ const featuresData = [
       </svg>
     ),
     title: "Safe and Reliable",
-    paragraph: "Ensures a secure and dependable support environment.",
+    paragraph: "BarokahAI ensures a safe and reliable support environment.",
   },
   {
     id: 6,
