@@ -66,7 +66,7 @@ const featuresData = [
       </svg>
     ),
     title: "Knowledge Exploration",
-    paragraph: "Facilitats the discovery of new information and learning opportunities.",
+    paragraph: "Facilitate the discovery of new information and learning opportunities.",
   },
 ];
 
