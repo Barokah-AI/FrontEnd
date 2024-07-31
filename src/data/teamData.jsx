@@ -42,7 +42,7 @@ const teamData = [
     content:
       "Bachelor of Applied Informatics Engineering students who are enthusiastic about learning continuously and are always eager to explore new technology.",
     image: "/images/testimonials/ade.png",
-    contact: "@ade_candra12",
+    contact: "@ade_cndra12",
   },
   {
     id: 6,
