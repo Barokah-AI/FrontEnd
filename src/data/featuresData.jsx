@@ -2,7 +2,7 @@ const featuresData = [
   {
     id: 1,
     icon: (
-      <svg width="40" height="41" viewBox="0 0 40 41" className="fill-current">
+      <svg width="40" height="40" viewBox="0 0 40 41" className="fill-current">
         <path opacity="0.5" d="M20 2C9.063 2 1 10.063 1 21s8.063 19 19 19 19-8.063 19-19S30.937 2 20 2zM20 32c-6.074 0-11-4.926-11-11s4.926-11 11-11 11 4.926 11 11-4.926 11-11 11z" />
         <path d="M20 10c-1.104 0-2 .896-2 2v7c0 1.104.896 2 2 2s2-.896 2-2v-7c0-1.104-.896-2-2-2zM20 24c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2z" />
       </svg>
