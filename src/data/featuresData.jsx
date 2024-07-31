@@ -8,7 +8,7 @@ const featuresData = [
       </svg>
     ),
     title: "Quick and Precise Answers",
-    paragraph: "BarokahAI provides rapid and accurate responses to user inquiries.",
+    paragraph: "BarokahAI provides fast and accurate responses to user questions.",
   },
   {
     id: 2,
