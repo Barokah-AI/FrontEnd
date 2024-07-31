@@ -28,6 +28,9 @@ const Conversation = ({ conversations }) => {
                 <li className="text-sm text-gray-800 dark:text-white">
                   How to use Barokah AI?
                 </li>
+                <li className="text-sm text-gray-800 dark:text-white">
+                  what is the price of Barokah AI?
+                </li>
               </ul>
             </div>
           </div>
