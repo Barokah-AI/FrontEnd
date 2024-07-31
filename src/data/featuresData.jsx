@@ -19,7 +19,7 @@ const featuresData = [
       </svg>
     ),
     title: "Atificial Intelligence",
-    paragraph: "Utilizes AI technology to deliver the necessary information.",
+    paragraph: "Leveraging AI technology to deliver necessary information to users.",
   },
   {
     id: 3,
