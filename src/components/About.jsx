@@ -33,6 +33,7 @@ const About = () => {
     visible: { opacity: 1, x: 0 },
   };
 
+   // Variants for image animation
   const imageVariants = {
     hidden: { opacity: 0, x: 50 },
     visible: { opacity: 1, x: 0 },
