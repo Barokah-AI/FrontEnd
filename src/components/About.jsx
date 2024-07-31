@@ -136,7 +136,7 @@ const About = () => {
                     Open your favorite browser and head over to the official
                     Barokah-AI website at barokah-ai.vercel.app. On the
                     homepage, you'll find a 'Get Started' button. Click it, and
-                    you're ready to start chatting!
+                    you're ready to start chatting with the best AI!
                   </p>
                 </div>
 
