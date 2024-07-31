@@ -22,6 +22,7 @@ const About = () => {
     );
   };
 
+  // Define prop types for the List component
   List.propTypes = {
     text: PropTypes.string.isRequired,
   };
