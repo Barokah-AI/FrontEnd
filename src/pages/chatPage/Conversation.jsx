@@ -14,7 +14,7 @@ const Conversation = ({ conversations }) => {
           {/* Card --> */}
           <div className="bg-white border border-gray-200 rounded-lg p-4 space-y-3 dark:bg-neutral-900 dark:border-neutral-700">
             <h2 className="font-medium text-gray-800 dark:text-white">
-              How can we help?
+            How can we help you?
             </h2>
             <div className="space-y-1.5">
               <p className="mb-1.5 text-sm text-gray-800 dark:text-white">
