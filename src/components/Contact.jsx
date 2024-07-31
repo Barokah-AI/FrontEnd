@@ -14,7 +14,7 @@ const Contact = () => {
                 Having trouble? Submit a Request.
               </h2>
               <p className="mb-12 text-base font-medium text-body-color">
-                Barokah AI&apos;s support team will respond to you as soon as possible via email.
+                Barokah AI&apos;s support team will respond to you via email as soon as possible.
               </p>
               <form>
                 <div className="mx-4 flex flex-wrap">
