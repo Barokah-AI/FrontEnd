@@ -30,7 +30,7 @@ const featuresData = [
       </svg>
     ),
     title: "Advanced Features",
-    paragraph: "Includes sophisticated functionalities designed to enhance user experience.",
+    paragraph: "Includes advanced functionality designed to enhance a comfortable user experience.",
   },
   {
     id: 4,
