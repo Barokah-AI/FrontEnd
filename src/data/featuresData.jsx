@@ -41,7 +41,7 @@ const featuresData = [
       </svg>
     ),
     title: "User Friendly Interface",
-    paragraph: "Offers an easy-to-navogate and intuitive platform.",
+    paragraph: "Offers an easy-to-navigate and intuitive platform.",
   },
   {
     id: 5,
