@@ -8,7 +8,6 @@ const checkIcon = (
   </svg>
 );
 
-// Define the About component
 const About = () => {
   const List = ({ text }) => {
     return (
