@@ -95,7 +95,7 @@ const SignupPage = () => {
                     <input
                       type="password"
                       name="confirmpass"
-                      placeholder="Confirm Password"
+                      placeholder="Enter password again"
                       value={confirmpass}
                       onChange={(e) => setConfirmpass(e.target.value)}
                       className="border-stroke dark:text-body-color-dark dark:shadow-two w-full rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none transition-all duration-300 focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
