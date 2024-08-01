@@ -27,7 +27,7 @@ const SigninPage = () => {
                   Sign in to your account
                 </h3>
                 <p className="mb-11 text-center text-base font-medium text-body-color">
-                  Please login to start more conversations.
+                Please log in to start more conversations with the bot.
                 </p>
 
                 <form onSubmit={(e) => handleSignin(e, email, password)}>
