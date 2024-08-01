@@ -132,7 +132,7 @@ const About = () => {
               <div className="max-w-[470px]">
                 <div className="mb-9">
                   <h2 className="mb-5 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
-                    Getting Started with Barokah-AI
+                    Getting Started with BarokahAI
                   </h2>
                   <h3 className="mb-5 text-xl font-bold text-black dark:text-white sm:text-2xl lg:text-xl xl:text-2xl">
                     Accessing Our Platform:
