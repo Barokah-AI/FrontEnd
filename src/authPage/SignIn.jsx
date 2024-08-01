@@ -47,7 +47,7 @@ const SigninPage = () => {
                       className="border-stroke dark:bg-form-input dark:border-form-strokedark dark:focus:border-primary dark:text-body-color-dark focus:border-primary w-full rounded-lg border bg-transparent py-3 px-6 text-base font-medium outline-none transition"
                     />
                   </div>
-                  <div className="mb-8">
+                  <div className="mb-9">
                     <label
                       htmlFor="password"
                       className="mb-3 block text-sm font-medium text-dark dark:text-white"
