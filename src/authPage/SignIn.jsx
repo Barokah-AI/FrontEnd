@@ -27,7 +27,7 @@ const SigninPage = () => {
                   Sign in to your account
                 </h3>
                 <p className="mb-11 text-center text-base font-medium text-body-color">
-                Please log in to start more conversations with the bot.
+                  Please login to start more conversations.
                 </p>
 
                 <form onSubmit={(e) => handleSignin(e, email, password)}>
@@ -36,7 +36,7 @@ const SigninPage = () => {
                       htmlFor="email"
                       className="mb-3 block text-sm font-medium text-dark dark:text-white"
                     >
-                      Email
+                      Your Email
                     </label>
                     <input
                       type="email"
@@ -52,12 +52,12 @@ const SigninPage = () => {
                       htmlFor="password"
                       className="mb-3 block text-sm font-medium text-dark dark:text-white"
                     >
-                      Password
+                      Your Password
                     </label>
                     <input
                       type="password"
                       name="password"
-                      placeholder="Enter Password"
+                      placeholder="Enter your Password"
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                       className="border-stroke dark:bg-form-input dark:border-form-strokedark dark:focus:border-primary dark:text-body-color-dark focus:border-primary w-full rounded-lg border bg-transparent py-3 px-6 text-base font-medium outline-none transition"
@@ -78,7 +78,7 @@ const SigninPage = () => {
                 </form>
                 {error && <p className="text-red-500 text-center">{error}</p>}
                 <p className="text-center text-base font-medium text-body-color">
-                    you don't have an account?
+                  Don’t you have an account?
                   <Link to="/signup" className="text-primary hover:underline">
                     Sign Up
                   </Link>
