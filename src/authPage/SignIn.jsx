@@ -36,7 +36,7 @@ const SigninPage = () => {
                       htmlFor="email"
                       className="mb-3 block text-sm font-medium text-dark dark:text-white"
                     >
-                      Your Email
+                      Email
                     </label>
                     <input
                       type="email"
