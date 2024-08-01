@@ -52,12 +52,12 @@ const SigninPage = () => {
                       htmlFor="password"
                       className="mb-3 block text-sm font-medium text-dark dark:text-white"
                     >
-                      Your Password
+                      Password
                     </label>
                     <input
                       type="password"
                       name="password"
-                      placeholder="Enter your Password"
+                      placeholder="Enter Password"
                       value={password}
                       onChange={(e) => setPassword(e.target.value)}
                       className="border-stroke dark:bg-form-input dark:border-form-strokedark dark:focus:border-primary dark:text-body-color-dark focus:border-primary w-full rounded-lg border bg-transparent py-3 px-6 text-base font-medium outline-none transition"
