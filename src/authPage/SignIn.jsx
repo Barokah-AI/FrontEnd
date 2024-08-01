@@ -78,7 +78,7 @@ const SigninPage = () => {
                 </form>
                 {error && <p className="text-red-500 text-center">{error}</p>}
                 <p className="text-center text-base font-medium text-body-color">
-                  Don’t you have an account?
+                    you don't have an account?
                   <Link to="/signup" className="text-primary hover:underline">
                     Sign Up
                   </Link>
