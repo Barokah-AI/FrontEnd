@@ -8,7 +8,7 @@ BarokahAI adalah aplikasi chatbot AI yang dirancang dengan menggunakan React, Ta
 - **About:** Bagian yang menjelaskan tentang aplikasi dan tujuan pembuatannya.
 - **Features:** Daftar fitur yang tersedia di dalam aplikasi.
 - **Teams:** Informasi mengenai tim yang mengembangkan aplikasi ini.
-- **Contact:** Bagian Fitur Pengaduan
+- **Contact:** Bagian Fitur Pengaduan kepada pemilik
 - **Chatbot AI:** Fitur utama aplikasi yang memungkinkan pengguna untuk berinteraksi dengan AI chatbot setelah melakukan login atau sign up.
 
 ## Teknologi yang Digunakan
