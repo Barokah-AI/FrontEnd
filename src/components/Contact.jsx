@@ -1,6 +1,5 @@
 import NewsLatterBox from "./NewsLatterBox";
 
-// Define the Contact component
 const Contact = () => {
   return (
     // Contact section with padding and overflow settings
