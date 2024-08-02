@@ -38,7 +38,7 @@ const TeamCard = ({ team }) => {
               <FaInstagram className="text-xl" />
             </a>
             <a
-              href={`https://linkedin.com/${contact.replace(/\s/g, "")}`} // Adjust LinkedIn URL accordingly
+              href={`https://linkedin.com/${contact.replace(/\s/g, "")}`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 dark:text-blue-400 flex items-center mr-2 hover:text-blue-600 dark:hover:text-blue-500"
