@@ -33,7 +33,7 @@ const TeamCard = ({ team }) => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-pink-500 dark:text-pink-400 flex items-center mr-2 hover:text-pink-600 dark:hover:text-pink-500"
-              style={{ color: "#EC3B5C" }} // Customize Instagram icon color
+              style={{ color: "#DF3F5D" }} // Customize Instagram icon color
             >
               <FaInstagram className="text-xl" />
             </a>
