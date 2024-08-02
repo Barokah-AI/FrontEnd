@@ -1,6 +1,6 @@
 # BarokahAI
 
-BarokahAI adalah aplikasi chatbot AI yang dirancang dengan menggunakan React, Tailwind CSS, dan Vite. Aplikasi ini memiliki tampilan landing page dengan beberapa bagian seperti Home, About, Features, Teams dan Contact. Sebelum pengguna dapat memulai percakapan dengan chatbot AI, harus melakukan sign in atau sign up terlebih dahulu.
+BarokahAI adalah aplikasi chatbot AI yang dirancang dengan menggunakan React, Tailwind CSS, dan Vite. Aplikasi ini memiliki tampilan landing page dengan beberapa bagian seperti Home, About, Features, Teams dan Contact. Sebelum pengguna dapat memulai percakapan dengan chatbot AI. Apikasi ini dilengkapi harus melakukan sign in atau sign up terlebih dahulu.
 
 ## Fitur
 
